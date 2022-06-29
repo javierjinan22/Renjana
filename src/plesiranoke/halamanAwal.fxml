@@ -14,17 +14,17 @@
             <Image url="@../gambar/Group%202.png" />
          </image>
       </ImageView>
-      <Text fill="WHITE" layoutX="107.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selamat datang di Plesiran">
+      <Text fill="WHITE" layoutX="108.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selamat datang di Plesiran">
          <font>
             <Font name="System Bold" size="37.0" />
          </font>
       </Text>
-      <Button layoutX="111.0" layoutY="240.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="176.0" style="-fx-background-radius: 15; -fx-background-color: #4A96F9;" text="Login" textFill="WHITE">
+      <Button layoutX="108.0" layoutY="240.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="176.0" style="-fx-background-radius: 15; -fx-background-color: #4A96F9;" text="Login" textFill="WHITE">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Button>
-      <Button layoutX="310.0" layoutY="240.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="176.0" style="-fx-background-radius: 15; -fx-background-color: white;" text="Daftar" textFill="#4a96f9">
+      <Button layoutX="306.0" layoutY="240.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="176.0" style="-fx-background-radius: 15; -fx-background-color: white;" text="Daftar" textFill="#4a96f9">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
