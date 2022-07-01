@@ -6,6 +6,7 @@ public class Pengguna {
 
     boolean statusOnline;
     private boolean admin;
+    private boolean manager;
 
     public Pengguna() {
     }
@@ -128,5 +129,15 @@ public class Pengguna {
     public void setAdmin(boolean admin) {
         this.admin = admin;
     }
+
+    public boolean getManager() {
+        return manager;
+    }
+
+    public void setManager(boolean manager) {
+        this.manager = manager;
+    }
+    
+    
 
 }
