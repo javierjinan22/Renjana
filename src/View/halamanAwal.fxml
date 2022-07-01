@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="1200.0" style="-fx-background-color: #072959;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="plesiranoke.HalamanAwalController">
+<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="1200.0" style="-fx-background-color: #072959;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.HalamanAwalController">
    <children>
       <ImageView fitHeight="649.0" fitWidth="1200.0" opacity="0.12" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -19,12 +19,12 @@
             <Font name="System Bold" size="37.0" />
          </font>
       </Text>
-      <Button layoutX="108.0" layoutY="240.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="176.0" style="-fx-background-radius: 15; -fx-background-color: #4A96F9;" text="Login" textFill="WHITE">
+      <Button layoutX="108.0" layoutY="240.0" mnemonicParsing="false" onAction="#loginButton" prefHeight="52.0" prefWidth="176.0" style="-fx-background-radius: 15; -fx-background-color: #4A96F9;" text="Login" textFill="WHITE">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Button>
-      <Button layoutX="306.0" layoutY="240.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="176.0" style="-fx-background-radius: 15; -fx-background-color: white;" text="Daftar" textFill="#4a96f9">
+      <Button layoutX="306.0" layoutY="240.0" mnemonicParsing="false" onAction="#daftar" prefHeight="52.0" prefWidth="176.0" style="-fx-background-radius: 15; -fx-background-color: white;" text="Daftar" textFill="#4a96f9">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
