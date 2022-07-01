@@ -83,6 +83,7 @@ public class LoginController implements Initializable {
 
         boolean validitasData = false; //untuk menandai kebenaran data
         boolean isAdmin = false; //untuk membedakan jenis akun admin dengan yg lainnya
+        boolean isTourist = false; //untuk membedakan jenis akun wisatawan/pengunjung dengan yg lainnya
 
         for (int i = 0; i < dataRegistration.size(); i++) {
             //Untuk mencocokan kesesuaian data login yg diinput dengan data registrasi yg telah didaftarkan
