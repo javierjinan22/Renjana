@@ -77,6 +77,18 @@ public class LoginController implements Initializable {
     private Button btLogin;
 
     @FXML
+    public void noAccount(ActionEvent event) throws IOException {
+        Parent tableViewParent = FXMLLoader.load(getClass().getResource("masukSebagai.fxml"));
+        Scene tableViewScene = new Scene(tableViewParent);
+
+        //This line gets the Stage information
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setScene(tableViewScene);
+        window.show();
+    }
+
+    @FXML
     public void loginButton(ActionEvent event) throws IOException {
         String email = tfEmail.getText();
         String pass = tfPassword.getText();

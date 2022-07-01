@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="1200.0" style="-fx-background-color: #072959;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="plesiranoke.MasukSebagaiController">
+<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="1200.0" style="-fx-background-color: #072959;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.MasukSebagaiController">
    <children>
       <ImageView fitHeight="649.0" fitWidth="1200.0" opacity="0.12" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -21,7 +21,7 @@
          </image>
       </ImageView>
       <Rectangle arcHeight="25.0" arcWidth="25.0" fill="WHITE" height="296.0" layoutX="348.0" layoutY="152.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="527.0" />
-      <Button layoutX="386.0" layoutY="201.0" mnemonicParsing="false" prefHeight="187.0" prefWidth="208.0" style="-fx-background-color: #072959; -fx-background-radius: 15;">
+      <Button layoutX="386.0" layoutY="201.0" mnemonicParsing="false" onAction="#wisatawanButton" prefHeight="187.0" prefWidth="208.0" style="-fx-background-color: #072959; -fx-background-radius: 15;">
          <graphic>
             <ImageView fitHeight="140.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -30,7 +30,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button layoutX="627.0" layoutY="201.0" mnemonicParsing="false" prefHeight="187.0" prefWidth="208.0" style="-fx-background-color: #072959; -fx-background-radius: 15;">
+      <Button layoutX="627.0" layoutY="201.0" mnemonicParsing="false" onAction="#pengelolaButton" prefHeight="187.0" prefWidth="208.0" style="-fx-background-color: #072959; -fx-background-radius: 15;">
          <graphic>
             <ImageView fitHeight="140.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
                <image>

@@ -39,7 +39,7 @@
             <Font name="System Bold" size="21.0" />
          </font>
       </Button>
-      <Button layoutX="512.0" layoutY="340.0" mnemonicParsing="false" style="-fx-background-color: 00000;" text="Belum Punya Akun?" textFill="WHITE">
+      <Button layoutX="512.0" layoutY="340.0" mnemonicParsing="false" onAction="#noAccount" style="-fx-background-color: 00000;" text="Belum Punya Akun?" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>

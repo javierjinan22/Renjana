@@ -12,21 +12,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class HalamanAwalController implements Initializable {
-
-    public void daftar(ActionEvent event) throws IOException {
-        Parent tableViewParent = FXMLLoader.load(getClass().getResource("masukSebagai.fxml"));
-        Scene tableViewScene = new Scene(tableViewParent);
-
-        //This line gets the Stage information
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-        window.setScene(tableViewScene);
-        window.show();
-    }
+public class MasukSebagaiController implements Initializable {
 
     @FXML
-    private void loginButton(ActionEvent event) throws IOException {
+    private void wisatawanButton(ActionEvent event) throws IOException {
         Parent tableViewParent = FXMLLoader.load(getClass().getResource("Login.fxml"));
         Scene tableViewScene = new Scene(tableViewParent);
 
@@ -36,6 +25,21 @@ public class HalamanAwalController implements Initializable {
         window.setScene(tableViewScene);
         window.show();
     }
+    
+    @FXML
+    private void pengelolaButton(ActionEvent event) throws IOException {
+        Parent tableViewParent = FXMLLoader.load(getClass().getResource("Login.fxml"));
+        Scene tableViewScene = new Scene(tableViewParent);
+
+        //This line gets the Stage information
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setScene(tableViewScene);
+        window.show();
+    }
+    
+    
+
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
