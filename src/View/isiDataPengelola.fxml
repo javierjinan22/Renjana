@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="1200.0" style="-fx-background-color: shadow;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.IsiDataPengelolaController">
+   <children>
+      <Button layoutX="239.0" layoutY="280.0" onAction="#simpanData" style="-fx-background-color: #7858A6; -fx-background-radius: 10;" text="Simpan" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfNama" layoutX="239.0" layoutY="109.0" prefHeight="26.0" prefWidth="438.0" promptText="Nama" style="-fx-background-radius: 12;" />
+      <TextField fx:id="tfkabupaten" layoutX="239.0" layoutY="152.0" prefHeight="26.0" prefWidth="438.0" promptText="Kabupaten" style="-fx-background-radius: 12;" />
+      <TextField fx:id="tfalamat" layoutX="239.0" layoutY="188.0" prefHeight="26.0" prefWidth="438.0" promptText="Alamat" style="-fx-background-radius: 12;" />
+      <TextField fx:id="tftelpon" layoutX="239.0" layoutY="227.0" prefHeight="26.0" prefWidth="438.0" promptText="Telpon" style="-fx-background-radius: 12;" />
+      <ChoiceBox fx:id="cbjenisWisata" layoutX="48.0" layoutY="112.0" prefWidth="150.0" style="-fx-background-color: gray;" />
+      <ChoiceBox fx:id="cbProvinsi" layoutX="48.0" layoutY="155.0" prefWidth="150.0" style="-fx-background-color: gray;" />
+      <Text fill="WHITE" layoutX="48.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tentang anda" wrappingWidth="128.54098510742188">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
