@@ -16,7 +16,7 @@ public class MasukSebagaiController implements Initializable {
 
     @FXML
     private void wisatawanButton(ActionEvent event) throws IOException {
-        Parent tableViewParent = FXMLLoader.load(getClass().getResource("Login.fxml"));
+        Parent tableViewParent = FXMLLoader.load(getClass().getResource("Daftar.fxml"));
         Scene tableViewScene = new Scene(tableViewParent);
 
         //This line gets the Stage information
@@ -28,7 +28,7 @@ public class MasukSebagaiController implements Initializable {
     
     @FXML
     private void pengelolaButton(ActionEvent event) throws IOException {
-        Parent tableViewParent = FXMLLoader.load(getClass().getResource("Login.fxml"));
+        Parent tableViewParent = FXMLLoader.load(getClass().getResource("Daftar.fxml"));
         Scene tableViewScene = new Scene(tableViewParent);
 
         //This line gets the Stage information
