@@ -3,28 +3,48 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="View.DaftarController">
+<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="1200.0" style="-fx-background-color: #072959;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.DaftarController">
    <children>
-      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="340.0" layoutX="329.0" layoutY="187.0" stroke="BLACK" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" style="-fx-effect: shadow;" width="587.0" />
-      <Label layoutX="591.0" layoutY="270.0" prefHeight="26.0" prefWidth="67.0" text="DAFTAR" textFill="#7858a6">
+      <ImageView fitHeight="649.0" fitWidth="1200.0" opacity="0.12" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/Group%202.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="132.0" layoutX="121.0" layoutY="658.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/Plesiran%20(2).png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="317.0" layoutY="242.0" prefHeight="5.0" prefWidth="552.0" />
+      <Separator layoutX="317.0" layoutY="312.0" prefHeight="5.0" prefWidth="552.0" />
+      <Separator layoutX="317.0" layoutY="390.0" prefHeight="5.0" prefWidth="552.0" />
+      <TextField fx:id="tfNama" layoutX="309.0" layoutY="208.0" prefHeight="36.0" prefWidth="552.0" promptText="Nama Lengkap" style="-fx-background-color: transparant;" styleClass="blue-btn" stylesheets="@style.css">
          <font>
-            <Font name="System Bold" size="16.0" />
+            <Font name="Calibri" size="23.0" />
          </font>
-      </Label>
-      <TextField fx:id="tfNama" layoutX="403.0" layoutY="303.0" prefHeight="26.0" prefWidth="442.0" promptText="Nama" style="-fx-background-radius: 7;" />
-      <TextField fx:id="tfEmail" layoutX="403.0" layoutY="337.0" prefHeight="26.0" prefWidth="442.0" promptText="Email" style="-fx-background-radius: 7;" />
-      <PasswordField fx:id="tfPassword" layoutX="403.0" layoutY="374.0" prefHeight="26.0" prefWidth="442.0" promptText="Password" style="-fx-background-radius: 7;" />
-      <Button layoutX="591.0" layoutY="419.0" mnemonicParsing="false" onAction="#daftarButton" style="-fx-background-color: #7858A6;" text="Daftar" textFill="WHITE">
+      </TextField>
+      <TextField fx:id="tfEmail" layoutX="309.0" layoutY="278.0" prefHeight="36.0" prefWidth="552.0" promptText="Email" style="-fx-background-color: transparant;" styleClass="blue-btn" stylesheets="@style.css">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="tfPassword" layoutX="309.0" layoutY="356.0" prefHeight="36.0" prefWidth="552.0" promptText="Password" styleClass="blue-btn" stylesheets="@style.css">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </PasswordField>
+      <Button layoutX="517.0" layoutY="476.0" mnemonicParsing="false" onAction="#daftarButton" prefHeight="52.0" prefWidth="139.0" style="-fx-background-color: white; -fx-background-radius: 12;" text="Daftar" textFill="#4a96f9">
+         <font>
+            <Font name="System Bold" size="21.0" />
          </font>
       </Button>
-      <Label fx:id="similarityAlert" layoutX="695.0" layoutY="422.0" prefHeight="18.0" prefWidth="170.0" />
+      <Label fx:id="similarityAlert" layoutX="456.0" layoutY="415.0" prefHeight="18.0" prefWidth="274.0" />
    </children>
 </AnchorPane>

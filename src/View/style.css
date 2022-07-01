@@ -1,0 +1,11 @@
+.blue-btn{
+   -fx-background-color: 000000;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #ffffff;
+}
+
+
+.new-btn{
+    -fx-background-color: 000000;
+    -fx-text-fill: #ffffff;
+}

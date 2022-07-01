@@ -18,11 +18,11 @@ import java.io.IOException;
 
 public class IsiDataPengelolaController implements Initializable {
 
-    @FXML
-    private ChoiceBox cbProvinsi;
-
-    @FXML
-    private ChoiceBox cbjenisWisata;
+//    @FXML
+//    private ChoiceBox cbProvinsi;
+//
+//    @FXML
+//    private ChoiceBox cbjenisWisata;
 
     @FXML
     private TextField tfNama;
@@ -35,6 +35,12 @@ public class IsiDataPengelolaController implements Initializable {
 
     @FXML
     private TextField tfTelfon;
+    
+    @FXML
+    private TextField tfProvinsi;
+    
+    @FXML
+    private TextField tfJenisWisata;
 
     LinkedList<Pengguna> dataRegistration = new LinkedList<>(); //inisialisasi LinkedList untuk  menyimpan data Pengelola Wisata yang dibutuhkan saat login
     //setiap node memiliki masing-masing Pengguna
@@ -96,40 +102,40 @@ public class IsiDataPengelolaController implements Initializable {
         String alamat = tfAlamat.getText();
         String telfon = tfTelfon.getText();
 
-        //        Menentukan provinsi melalui Choice Bar
-        if (cbProvinsi.getValue().equals("D.I.Yogyakarta")) {
-            provinsi = "D.I.Yogyakarta";
-        } else if (cbProvinsi.getValue().equals("Jawa Tengah")) {
-            provinsi = "Jawa Tengah";
-        } else if (cbProvinsi.getValue().equals("Jawa Barat")) {
-            provinsi = "Jawa Barat";
-        } else if (cbProvinsi.getValue().equals("Jawa Timur")) {
-            provinsi = "Jawa Timur";
-        } else {
-            provinsi = "D.K.I.Jakarta";
-        }
-        
-        //        Menentukan Jenis Wisata melalui Choice Bar
-        if (cbProvinsi.getValue().equals("D.I.Yogyakarta")) {
-            provinsi = "D.I.Yogyakarta";
-        } else if (cbProvinsi.getValue().equals("Jawa Tengah")) {
-            provinsi = "Jawa Tengah";
-        } else if (cbProvinsi.getValue().equals("Jawa Barat")) {
-            provinsi = "Jawa Barat";
-        } else if (cbProvinsi.getValue().equals("Jawa Timur")) {
-            provinsi = "Jawa Timur";
-        } else {
-            provinsi = "D.K.I.Jakarta";
-        }
-        
-        
+//        //        Menentukan provinsi melalui Choice Bar
+//        if (cbProvinsi.getValue().equals("D.I.Yogyakarta")) {
+//            provinsi = "D.I.Yogyakarta";
+//        } else if (cbProvinsi.getValue().equals("Jawa Tengah")) {
+//            provinsi = "Jawa Tengah";
+//        } else if (cbProvinsi.getValue().equals("Jawa Barat")) {
+//            provinsi = "Jawa Barat";
+//        } else if (cbProvinsi.getValue().equals("Jawa Timur")) {
+//            provinsi = "Jawa Timur";
+//        } else {
+//            provinsi = "D.K.I.Jakarta";
+//        }
+//        
+//        //        Menentukan Jenis Wisata melalui Choice Bar
+//        if (cbProvinsi.getValue().equals("D.I.Yogyakarta")) {
+//            provinsi = "D.I.Yogyakarta";
+//        } else if (cbProvinsi.getValue().equals("Jawa Tengah")) {
+//            provinsi = "Jawa Tengah";
+//        } else if (cbProvinsi.getValue().equals("Jawa Barat")) {
+//            provinsi = "Jawa Barat";
+//        } else if (cbProvinsi.getValue().equals("Jawa Timur")) {
+//            provinsi = "Jawa Timur";
+//        } else {
+//            provinsi = "D.K.I.Jakarta";
+//        }
+//        
+//        
 
     }
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         bukaXML();
-        cbProvinsi.getItems().addAll("D.I.Yogyakarta", "Jawa Tengah", "Jawa Barat", "Jawa Timur", "D.K.I.Jakarta");
+//        cbProvinsi.getItems().addAll("D.I.Yogyakarta", "Jawa Tengah", "Jawa Barat", "Jawa Timur", "D.K.I.Jakarta");
     }
 
 }

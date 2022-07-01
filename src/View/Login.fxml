@@ -3,28 +3,47 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="View.LoginController">
+<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="1200.0" style="-fx-background-color: #072959;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.LoginController">
    <children>
-      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="442.0" layoutX="259.0" layoutY="140.0" stroke="BLACK" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" style="-fx-effect: shadow;" width="724.0" />
-      <Label layoutX="591.0" layoutY="216.0" prefHeight="26.0" prefWidth="52.0" text="LOGIN" textFill="#7858a6">
+      <ImageView fitHeight="649.0" fitWidth="1200.0" opacity="0.12" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/Group%202.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="132.0" layoutX="121.0" layoutY="658.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/Plesiran%20(2).png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="317.0" layoutY="242.0" prefHeight="5.0" prefWidth="552.0" />
+      <Separator layoutX="317.0" layoutY="312.0" prefHeight="4.0" prefWidth="552.0" />
+      <TextField fx:id="tfEmail" layoutX="309.0" layoutY="205.0" prefHeight="50.0" prefWidth="559.0" promptText="Email" style="-fx-background-color: transparan;" styleClass="blue-btn" stylesheets="@style.css">
          <font>
-            <Font name="System Bold" size="16.0" />
+            <Font size="23.0" />
          </font>
-      </Label>
-      <TextField fx:id="tfEmail" layoutX="405.0" layoutY="262.0" prefHeight="26.0" prefWidth="442.0" promptText="Email" style="-fx-background-radius: 7;" />
-      <Button fx:id="btLogin" layoutX="593.0" layoutY="369.0" mnemonicParsing="false" onAction="#loginButton" style="-fx-background-color: #7858A6;" text="Login" textFill="WHITE">
+      </TextField>
+      <PasswordField fx:id="tfPassword" layoutX="309.0" layoutY="274.0" prefHeight="50.0" prefWidth="561.0" promptText="Password" styleClass="blue-btn" stylesheets="@style.css">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font size="23.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="btLogin" layoutX="513.0" layoutY="413.0" mnemonicParsing="false" onAction="#loginButton" prefHeight="52.0" prefWidth="139.0" style="-fx-background-color: white; -fx-background-radius: 15;" text="Masuk" textFill="#4a96f9">
+         <font>
+            <Font name="System Bold" size="21.0" />
          </font>
       </Button>
-      <PasswordField fx:id="tfPassword" layoutX="405.0" layoutY="301.0" prefHeight="26.0" prefWidth="442.0" promptText="Password" />
-      <Label fx:id="warning" layoutX="513.0" layoutY="337.0" prefHeight="11.0" prefWidth="210.0" />
-      <Button layoutX="557.0" layoutY="410.0" mnemonicParsing="false" style="-fx-background-color: shadow;" text="Belum punya akun ?" />
+      <Button layoutX="512.0" layoutY="340.0" mnemonicParsing="false" style="-fx-background-color: 00000;" text="Belum Punya Akun?" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="warning" layoutX="455.0" layoutY="377.0" prefHeight="18.0" prefWidth="254.0" />
    </children>
 </AnchorPane>
