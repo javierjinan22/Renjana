@@ -41,6 +41,12 @@ public class IsiDataPengelolaController implements Initializable {
     
     @FXML
     private TextField tfJenisWisata;
+    
+    @FXML
+    private TextField tfEmail; //new
+    
+    @FXML
+    private TextField tfPassword; //new
 
     LinkedList<Pengguna> dataRegistration = new LinkedList<>(); //inisialisasi LinkedList untuk  menyimpan data Pengelola Wisata yang dibutuhkan saat login
     //setiap node memiliki masing-masing Pengguna
