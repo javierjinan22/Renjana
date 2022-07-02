@@ -15,22 +15,22 @@
             <Image url="@../gambar/pbegron%202.png" />
          </image>
       </ImageView>
-      <TextField layoutX="163.0" layoutY="126.0" prefHeight="50.0" prefWidth="889.0" promptText="Nama Toko" style="-fx-background-radius: 15;">
+      <TextField fx:id="tfNamaToko" layoutX="163.0" layoutY="126.0" prefHeight="50.0" prefWidth="889.0" promptText="Nama Toko" style="-fx-background-radius: 15;">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField layoutX="163.0" layoutY="200.0" prefHeight="50.0" prefWidth="889.0" promptText="Alamat" style="-fx-background-radius: 15;">
+      <TextField fx:id="tfAlamat" layoutX="163.0" layoutY="200.0" prefHeight="50.0" prefWidth="889.0" promptText="Alamat" style="-fx-background-radius: 15;">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField layoutX="163.0" layoutY="276.0" prefHeight="50.0" prefWidth="889.0" promptText="Email" style="-fx-background-radius: 15;">
+      <TextField fx:id="tfEmail" layoutX="163.0" layoutY="276.0" prefHeight="50.0" prefWidth="889.0" promptText="Email" style="-fx-background-radius: 15;">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField layoutX="163.0" layoutY="353.0" prefHeight="50.0" prefWidth="889.0" promptText="No Telpon" style="-fx-background-radius: 15;">
+      <TextField fx:id="tfNoTelfon" layoutX="163.0" layoutY="353.0" prefHeight="50.0" prefWidth="889.0" promptText="No Telpon" style="-fx-background-radius: 15;">
          <font>
             <Font size="18.0" />
          </font>
@@ -52,7 +52,7 @@
             </Text>
          </graphic>
       </Button>
-      <Button layoutX="500.0" layoutY="486.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="157.0" style="-fx-background-radius: 15; -fx-background-color: #072959;" text="Unggah" textFill="WHITE">
+      <Button layoutX="500.0" layoutY="486.0" mnemonicParsing="false" onAction="#unggah" prefHeight="48.0" prefWidth="157.0" style="-fx-background-radius: 15; -fx-background-color: #072959;" text="Unggah" textFill="WHITE">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
