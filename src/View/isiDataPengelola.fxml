@@ -15,12 +15,12 @@
             <Image url="@../gambar/Group%202.png" />
          </image>
       </ImageView>
-      <Button layoutX="998.0" layoutY="529.0" onAction="#simpanData" prefHeight="52.0" prefWidth="139.0" style="-fx-background-color: white; -fx-background-radius: 12;" text="Simpan" textFill="#4a96f9">
+      <Button layoutX="998.0" layoutY="517.0" onAction="#simpanData" prefHeight="52.0" prefWidth="139.0" style="-fx-background-color: white; -fx-background-radius: 12;" text="Simpan" textFill="#4a96f9">
          <font>
             <Font name="System Bold" size="21.0" />
          </font>
       </Button>
-      <TextField fx:id="tfNama" layoutX="234.0" layoutY="418.0" prefHeight="42.0" prefWidth="682.0" promptText="Nama" style="-fx-background-radius: 12;">
+      <TextField fx:id="tfNama" layoutX="237.0" layoutY="418.0" prefHeight="42.0" prefWidth="682.0" promptText="Nama" style="-fx-background-radius: 12;">
          <font>
             <Font size="16.0" />
          </font></TextField>
@@ -51,17 +51,17 @@
             <Font size="16.0" />
          </font>
       </TextField>
-      <TextField fx:id="tfProvinsi" layoutX="235.0" layoutY="307.0" prefHeight="42.0" prefWidth="682.0" promptText="Provinsi" style="-fx-background-radius: 12;">
+      <TextField fx:id="tfProvinsi" layoutX="237.0" layoutY="307.0" prefHeight="42.0" prefWidth="682.0" promptText="Provinsi" style="-fx-background-radius: 12;">
          <font>
             <Font size="16.0" />
          </font>
       </TextField>
-      <TextField fx:id="tfEmail" layoutX="234.0" layoutY="472.0" prefHeight="42.0" prefWidth="682.0" promptText="Email" style="-fx-background-radius: 12;">
+      <TextField fx:id="tfEmail" layoutX="237.0" layoutY="472.0" prefHeight="42.0" prefWidth="682.0" promptText="Email" style="-fx-background-radius: 12;">
          <font>
             <Font size="16.0" />
          </font>
       </TextField>
-      <TextField fx:id="tfPassword" layoutX="232.0" layoutY="525.0" prefHeight="42.0" prefWidth="682.0" promptText="Password" style="-fx-background-radius: 12;">
+      <TextField fx:id="tfPassword" layoutX="237.0" layoutY="525.0" prefHeight="42.0" prefWidth="682.0" promptText="Password" style="-fx-background-radius: 12;">
          <font>
             <Font size="16.0" />
          </font>
