@@ -24,9 +24,9 @@
                   </Label>
                </children>
             </HBox>
-            <ImageView fx:id="gambar" fitHeight="150.0" fitWidth="325.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="gambar" fitHeight="176.0" fitWidth="395.0" pickOnBounds="true" preserveRatio="true">
                <VBox.margin>
-                  <Insets left="450.0" top="30.0" />
+                  <Insets left="420.0" top="30.0" />
                </VBox.margin>
             </ImageView>
             <HBox prefHeight="248.0" prefWidth="1203.0">
