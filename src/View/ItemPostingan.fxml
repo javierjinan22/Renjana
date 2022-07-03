@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Postingan.ItemPostingan">
+   <children>
+      <VBox layoutX="-2.0" layoutY="-1.0" prefHeight="402.0" prefWidth="1203.0">
+         <children>
+            <HBox prefHeight="54.0" prefWidth="1203.0">
+               <children>
+                  <Label fx:id="judul" alignment="TOP_LEFT" text="Keindahan Puncak Sosok di Malam Hari">
+                     <font>
+                        <Font name="Courier New Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="400.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <ImageView fx:id="gambar" fitHeight="150.0" fitWidth="325.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets left="450.0" top="30.0" />
+               </VBox.margin>
+            </ImageView>
+            <HBox prefHeight="248.0" prefWidth="1203.0">
+               <children>
+                  <Label fx:id="deskripsi" prefHeight="56.0" prefWidth="1202.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
