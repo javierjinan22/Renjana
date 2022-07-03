@@ -17,7 +17,7 @@
             <Image url="@../gambar/Group%202.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="63.0" fitWidth="132.0" layoutX="121.0" layoutY="658.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="63.0" fitWidth="132.0" layoutX="111.0" layoutY="648.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../gambar/Plesiran%20(2).png" />
          </image>
@@ -29,7 +29,7 @@
             <Font size="23.0" />
          </font>
       </TextField>
-      <PasswordField fx:id="tfPassword" layoutX="309.0" layoutY="274.0" prefHeight="30.0" prefWidth="562.0" promptText="Password" styleClass="blue-btn" stylesheets="@style.css">
+      <PasswordField fx:id="tfPassword" layoutX="309.0" layoutY="274.0" prefHeight="31.0" prefWidth="562.0" promptText="Password" styleClass="blue-btn" stylesheets="@style.css">
          <font>
             <Font size="23.0" />
          </font>
@@ -44,6 +44,9 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Label fx:id="warning" layoutX="455.0" layoutY="377.0" prefHeight="18.0" prefWidth="254.0" />
+      <Label fx:id="warning" alignment="CENTER" layoutX="455.0" layoutY="171.0" prefHeight="18.0" prefWidth="254.0" textFill="#bd0404">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
    </children>
 </AnchorPane>

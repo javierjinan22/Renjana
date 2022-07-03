@@ -41,7 +41,7 @@
             <Font name="System Bold" size="28.0" />
          </font>
       </Text>
-      <ImageView fitHeight="63.0" fitWidth="132.0" layoutX="121.0" layoutY="658.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="63.0" fitWidth="132.0" layoutX="111.0" layoutY="648.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../gambar/Plesiran%20(2).png" />
          </image>

@@ -183,7 +183,7 @@ public class LoginController implements Initializable {
                 }
             }
         } else if (validitasData == false) {
-            warning.setText("Email/Password anda salah");
+            warning.setText("Email/Password anda salah!!!");
         }
     }
 

@@ -17,7 +17,7 @@
             <Image url="@../gambar/Group%202.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="63.0" fitWidth="132.0" layoutX="121.0" layoutY="658.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="63.0" fitWidth="132.0" layoutX="111.0" layoutY="648.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../gambar/Plesiran%20(2).png" />
          </image>
@@ -25,12 +25,12 @@
       <Separator layoutX="317.0" layoutY="242.0" prefHeight="5.0" prefWidth="552.0" />
       <Separator layoutX="317.0" layoutY="312.0" prefHeight="5.0" prefWidth="552.0" />
       <Separator layoutX="317.0" layoutY="390.0" prefHeight="5.0" prefWidth="552.0" />
-      <TextField fx:id="tfNama" layoutX="309.0" layoutY="208.0" prefHeight="36.0" prefWidth="552.0" promptText="Nama Lengkap" style="-fx-background-color: transparant;" styleClass="blue-btn" stylesheets="@style.css">
+      <TextField fx:id="tfNama" layoutX="309.0" layoutY="208.0" prefHeight="32.0" prefWidth="552.0" promptText="Nama Lengkap" style="-fx-background-color: transparant;" styleClass="blue-btn" stylesheets="@style.css">
          <font>
             <Font name="Calibri" size="23.0" />
          </font>
       </TextField>
-      <TextField fx:id="tfEmail" layoutX="309.0" layoutY="278.0" prefHeight="36.0" prefWidth="552.0" promptText="Email" style="-fx-background-color: transparant;" styleClass="blue-btn" stylesheets="@style.css">
+      <TextField fx:id="tfEmail" layoutX="309.0" layoutY="278.0" prefHeight="32.0" prefWidth="552.0" promptText="Email" style="-fx-background-color: transparant;" styleClass="blue-btn" stylesheets="@style.css">
          <font>
             <Font name="Calibri" size="23.0" />
          </font>
@@ -40,7 +40,7 @@
             <Font name="Calibri" size="23.0" />
          </font>
       </PasswordField>
-      <Button layoutX="517.0" layoutY="476.0" mnemonicParsing="false" onAction="#daftarButton" prefHeight="52.0" prefWidth="139.0" style="-fx-background-color: white; -fx-background-radius: 12;" text="Daftar" textFill="#4a96f9">
+      <Button layoutX="526.0" layoutY="475.0" mnemonicParsing="false" onAction="#daftarButton" prefHeight="52.0" prefWidth="139.0" style="-fx-background-color: white; -fx-background-radius: 12;" text="Daftar" textFill="#4a96f9">
          <font>
             <Font name="System Bold" size="21.0" />
          </font>
