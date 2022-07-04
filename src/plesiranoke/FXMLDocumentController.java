@@ -44,8 +44,9 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     void lihatPostingan(ActionEvent event) throws IOException {
-        Pane halaman = bukaScene.getPane("/View/Postingan");
-        mainPane.setCenter(halaman);
+        Pane pane = FXMLLoader.load(PostinganController.class.getResource("Postingan.fxml"));
+//        Pane halaman = bukaScene.getPane("/View/Postingan");
+        mainPane.setCenter(pane);
         System.out.println("Button lihat postingan's Clicked");
     }
 
