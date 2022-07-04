@@ -13,8 +13,8 @@ import javafx.scene.control.TextField;
 import java.io.File;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import java.util.ArrayList;
 
-import Model.ArrayList;
 import Model.DaftarPostingan;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
