@@ -36,7 +36,7 @@ public class TambahTokoController implements Initializable {
     void openTabel() {
         FileInputStream berkasMasuk;
         try {
-            berkasMasuk = new FileInputStream("berkas2.xml");
+            berkasMasuk = new FileInputStream("listToko.xml");
             int isi;
             char c;
             String s = "";
@@ -57,7 +57,7 @@ public class TambahTokoController implements Initializable {
 
         try {
             byte[] info = xml.getBytes("UTF-8");
-            berkasKeluar = new FileOutputStream("berkas2.xml");
+            berkasKeluar = new FileOutputStream("listToko.xml");
             berkasKeluar.write(info);
             berkasKeluar.close();
 

@@ -23,6 +23,7 @@ import javafx.stage.Stage;
 
 //Import class Pengguna dari Package Model
 import Model.Pengguna;
+import plesiranoke.FXMLDocumentController;
 
 public class LoginController implements Initializable {
 
@@ -77,6 +78,15 @@ public class LoginController implements Initializable {
     private Button btLogin;
 
     @FXML
+    private Parent root;
+
+    @FXML
+    private Scene scene;
+
+    @FXML
+    private Stage stage;
+
+    @FXML
     public void noAccount(ActionEvent event) throws IOException {
         Parent tableViewParent = FXMLLoader.load(getClass().getResource("masukSebagai.fxml"));
         Scene tableViewScene = new Scene(tableViewParent);
@@ -96,9 +106,8 @@ public class LoginController implements Initializable {
         boolean validitasData = false; //untuk menandai kebenaran data
         boolean isAdmin = false; //untuk membedakan jenis akun admin dengan yg lainnya
         boolean isTourist = false; //untuk membedakan jenis akun wisatawan/pengunjung dengan yg lainnya
-        
-        //PR Mencoba mengset akun tourist
 
+        //PR Mencoba mengset akun tourist
         for (int i = 0; i < dataRegistration.size(); i++) {
             //Untuk mencocokan kesesuaian data login yg diinput dengan data registrasi yg telah didaftarkan
             if (email.equals(dataRegistration.get(i).getEmail()) && pass.equals(dataRegistration.get(i).getPassword())) {
@@ -114,7 +123,7 @@ public class LoginController implements Initializable {
         }
 
         if (validitasData && !isAdmin) { //Akun Pengunjung
-            Parent tableViewParent = FXMLLoader.load(getClass().getResource("FXMLDashboard.fxml"));
+            Parent tableViewParent = FXMLLoader.load(FXMLDocumentController.class.getResource("FXMLDocument.fxml"));
             Scene tableViewScene = new Scene(tableViewParent);
 
             //This line gets the Stage information
@@ -122,7 +131,6 @@ public class LoginController implements Initializable {
 
             window.setScene(tableViewScene);
             window.show();
-
             // larik double diubah menjadi string dengan format XML
             String xml = xstream.toXML(dataRegistration);
             FileOutputStream berkasBaru = null;
@@ -149,7 +157,7 @@ public class LoginController implements Initializable {
             }
 
         } else if (validitasData && isAdmin) { //Akun Admin
-            Parent tableViewParent = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+            Parent tableViewParent = FXMLLoader.load(FXMLDocumentController.class.getResource("FXMLDocument.fxml"));
             Scene tableViewScene = new Scene(tableViewParent);
 
             //This line gets the Stage information

@@ -26,7 +26,7 @@
                <font>
                   <Font size="18.0" />
                </font></TextField>
-            <Button layoutX="500.0" layoutY="468.0" mnemonicParsing="false" onAction="#handleButtonImg" style="-fx-background-color: white; -fx-border-color: #072959; -fx-background-radius: 12; -fx-border-radius: 13;">
+            <Button fx:id="btnGambar" layoutX="500.0" layoutY="468.0" mnemonicParsing="false" onAction="#handleButtonImg" style="-fx-background-color: white; -fx-border-color: #072959; -fx-background-radius: 12; -fx-border-radius: 13;">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
