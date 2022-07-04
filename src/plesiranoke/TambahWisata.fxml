@@ -9,24 +9,24 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="plesiranoke.TambahWisataController">
    <center>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <AnchorPane fx:id="anchor" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
             <ImageView fitHeight="740.0" fitWidth="1200.0" opacity="0.11" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../gambar/pbegron%202.png" />
                </image>
             </ImageView>
-            <TextField alignment="TOP_LEFT" layoutX="149.0" layoutY="140.0" prefHeight="82.0" prefWidth="889.0" promptText="Judul" style="-fx-background-radius: 15;">
+            <TextField fx:id="tfJudul" alignment="TOP_LEFT" layoutX="149.0" layoutY="140.0" prefHeight="82.0" prefWidth="889.0" promptText="Judul" style="-fx-background-radius: 15;">
                <font>
                   <Font size="18.0" />
                </font></TextField>
-            <TextField alignment="TOP_LEFT" layoutX="149.0" layoutY="244.0" prefHeight="192.0" prefWidth="890.0" promptText="Deskripsi" style="-fx-background-radius: 15;">
+            <TextField fx:id="tfDeskripsi" alignment="TOP_LEFT" layoutX="149.0" layoutY="244.0" prefHeight="192.0" prefWidth="890.0" promptText="Deskripsi" style="-fx-background-radius: 15;">
                <font>
                   <Font size="18.0" />
                </font></TextField>
-            <Button layoutX="500.0" layoutY="468.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: #072959; -fx-background-radius: 12; -fx-border-radius: 13;">
+            <Button layoutX="500.0" layoutY="468.0" mnemonicParsing="false" onAction="#handleButtonImg" style="-fx-background-color: white; -fx-border-color: #072959; -fx-background-radius: 12; -fx-border-radius: 13;">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
@@ -38,7 +38,7 @@
                   </Text>
                </graphic>
             </Button>
-            <Button layoutX="492.0" layoutY="526.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="157.0" style="-fx-background-radius: 15; -fx-background-color: #072959;" text="Unggah" textFill="WHITE">
+            <Button layoutX="492.0" layoutY="526.0" mnemonicParsing="false" onAction="#unggah" prefHeight="48.0" prefWidth="157.0" style="-fx-background-radius: 15; -fx-background-color: #072959;" text="Unggah" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
