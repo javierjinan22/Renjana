@@ -8,6 +8,8 @@ import javafx.scene.image.Image;
 
 //Import class dari package lain
 import Model.DaftarPostingan;
+import javafx.scene.input.MouseEvent;
+import plesiranoke.MyListener;
 
 public class ItemPostingan {
 
@@ -21,9 +23,18 @@ public class ItemPostingan {
     private ImageView gambar;
 
     private DaftarPostingan postingan;
-
-    public void setData(DaftarPostingan postingan) {
+    
+    @FXML
+    private void click(MouseEvent mouseEvent) {
+        myListener.onClickListener(post);
+    }
+    
+    private DaftarPostingan post;
+    private MyListener myListener;
+    
+    public void setData(DaftarPostingan postingan, MyListener myListener) {
         this.postingan = postingan;
+        this.myListener = myListener;
         judul.setText(postingan.getJudul());
         deskripsi.setText(postingan.getDeskripsi());
 

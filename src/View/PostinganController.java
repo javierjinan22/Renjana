@@ -24,6 +24,7 @@ import java.io.FileOutputStream;
 //Import class dari package lain
 import Model.DaftarPostingan;
 import Postingan.ItemPostingan;
+import plesiranoke.MyListener;
 
 public class PostinganController implements Initializable {
 
@@ -138,6 +139,7 @@ public class PostinganController implements Initializable {
     //Declaring post============================================================
     private ArrayList<DaftarPostingan> posts = new ArrayList<>();
     private Image image;
+    private MyListener myListener;
 
     void setPostinganDefault() {
         DaftarPostingan post;
@@ -180,13 +182,13 @@ public class PostinganController implements Initializable {
         try {
             for (int i = 0; i < posts.size(); i++) {
                 FXMLLoader fxmlLoader = new FXMLLoader();
-                fxmlLoader.setLocation(getClass().getResource("/Postingan/ItemPostingan.fxml"));
+                fxmlLoader.setLocation(ItemPostingan.class.getResource("ItemPostingan.fxml"));
                 AnchorPane anchorPane = fxmlLoader.load();
 
                 System.out.println(posts.get(i).getImgSrc());
                 System.out.println(posts.get(i).getOri());
                 ItemPostingan itemPostingan = fxmlLoader.getController();
-                itemPostingan.setData(posts.get(i));
+                itemPostingan.setData(posts.get(i), myListener);
 
                 if (column == 0) {
                     column = 0;

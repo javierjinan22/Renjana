@@ -5,8 +5,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="View.PostinganController">
+<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.PostinganController">
    <children>
       <ScrollPane fx:id="scroll" layoutX="-1.0" layoutY="-1.0" prefHeight="741.0" prefWidth="1202.0">
          <content>
