@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
@@ -9,32 +11,40 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Postingan.ItemPostingan">
+<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="892.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Postingan.ItemPostingan">
    <children>
-      <VBox layoutX="-2.0" layoutY="-1.0" prefHeight="402.0" prefWidth="1203.0">
+      <ImageView fitHeight="740.0" fitWidth="892.0" opacity="0.11" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/pbegron%201.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="-2.0" layoutY="-1.0" prefHeight="402.0" prefWidth="892.0">
          <children>
-            <HBox prefHeight="54.0" prefWidth="1203.0">
+            <HBox prefHeight="70.0" prefWidth="892.0" style="-fx-background-color: #072959;">
                <children>
-                  <Label fx:id="judul" alignment="TOP_LEFT" text="Keindahan Puncak Sosok di Malam Hari">
+                  <Label fx:id="judul" alignment="TOP_LEFT" text="Keindahan Puncak Sosok di Malam Hari" textFill="WHITE">
                      <font>
-                        <Font name="Courier New Bold" size="20.0" />
+                        <Font name="System Bold" size="20.0" />
                      </font>
                      <HBox.margin>
-                        <Insets left="400.0" top="20.0" />
+                        <Insets bottom="20.0" left="285.0" top="20.0" />
                      </HBox.margin>
                   </Label>
                </children>
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis>
             </HBox>
             <ImageView fx:id="gambar" fitHeight="176.0" fitWidth="395.0" pickOnBounds="true" preserveRatio="true">
                <VBox.margin>
-                  <Insets left="420.0" top="30.0" />
+                  <Insets left="275.0" top="30.0" />
                </VBox.margin>
             </ImageView>
-            <HBox prefHeight="248.0" prefWidth="1203.0">
+            <HBox prefHeight="248.0" prefWidth="892.0">
                <children>
-                  <Pane prefHeight="152.0" prefWidth="3000.0">
+                  <Pane prefHeight="152.0" prefWidth="892.0" style="-fx-background-color: white;">
                      <children>
-                        <Label fx:id="deskripsi" layoutX="389.0" layoutY="16.0" prefHeight="104.0" prefWidth="462.0" />
+                        <Label fx:id="deskripsi" alignment="TOP_LEFT" layoutX="243.0" layoutY="10.0" prefHeight="104.0" prefWidth="462.0" />
                      </children>
                   </Pane>
                </children>
