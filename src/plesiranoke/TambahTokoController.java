@@ -14,11 +14,22 @@ import javafx.scene.control.TextField;
 //import class DaftarToko
 import Model.DaftarToko;
 import Model.ArrayList;
+import java.io.File;
+import javafx.scene.control.Button;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
 public class TambahTokoController implements Initializable {
 
     ArrayList<DaftarToko> daftarToko = new ArrayList<DaftarToko>();
 
+    @FXML
+    private AnchorPane anchor;
+    
+    @FXML
+    private Button btnGambar;
+    
     @FXML
     private TextField tfNamaToko;
 
@@ -30,8 +41,12 @@ public class TambahTokoController implements Initializable {
 
     @FXML
     private TextField tfNoTelfon;
+    
+    @FXML
+    private Button mlebet;
 
     XStream xstream = new XStream(new StaxDriver());
+    
 
     void openTabel() {
         FileInputStream berkasMasuk;
@@ -65,6 +80,17 @@ public class TambahTokoController implements Initializable {
             System.out.println("Terjadi kesalahan : " + io.getMessage());
         }
     }
+    
+    @FXML
+    private void handleButtonImg(ActionEvent event) {
+        final FileChooser fc = new FileChooser();
+        Stage stage = (Stage) anchor.getScene().getWindow();
+        File file = fc.showOpenDialog(stage);
+        if (file != null) {
+            System.out.println("Dir: " + file.getAbsolutePath());
+            btnGambar.setText(file.toURI().toString());
+        }
+    }
 
     @FXML
     private void unggah(ActionEvent event) {
@@ -79,6 +105,8 @@ public class TambahTokoController implements Initializable {
         daftarToko.add(new DaftarToko(namaToko, alamat, email, noTelfon));
         
         simpanData();
+        Stage page = (Stage) mlebet.getScene().getWindow();
+        page.close();
     }
 
     @Override

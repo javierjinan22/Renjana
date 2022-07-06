@@ -34,6 +34,9 @@ public class TambahWisataController implements Initializable {
 
     @FXML
     private Button btnGambar;
+    
+    @FXML
+    private Button mlebet;
 
     void openTabel() {
         XStream xstream = new XStream(new StaxDriver());
@@ -100,6 +103,9 @@ public class TambahWisataController implements Initializable {
         } catch (Exception io) {
             System.out.println("Terjadi kesalahan : " + io.getMessage());
         }
+
+        Stage page = (Stage) mlebet.getScene().getWindow();
+        page.close();
     }
 
     @Override
