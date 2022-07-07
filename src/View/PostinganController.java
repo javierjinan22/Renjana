@@ -39,8 +39,6 @@ public class PostinganController implements Initializable {
     @FXML
     private GridPane grid;
 
-//    @FXML
-//    private Image gambar;
     @FXML
     private Label postTitle;
 
@@ -85,7 +83,7 @@ public class PostinganController implements Initializable {
 
         try {
             // membuat nama file & folder tempat menyimpan jika perlu
-            berkasKeluar = new FileOutputStream("dataListPostingan.xml");
+            berkasKeluar = new FileOutputStream("dataPostingan.xml");
 
             // mengubah karakter penyusun string xml sebagai 
             // bytes (berbentuk nomor2 kode ASCII
@@ -109,7 +107,7 @@ public class PostinganController implements Initializable {
     void bukaXML() {
         FileInputStream berkasMasuk = null;
         try {
-            berkasMasuk = new FileInputStream("dataListPostingan.xml");
+            berkasMasuk = new FileInputStream("dataPostingan.xml");
             // harus diingat objek apa yang dahulu disimpan di file 
             // program untuk membaca harus sinkron dengan program
             // yang dahulu digunakan untuk menyimpannya
@@ -195,7 +193,7 @@ public class PostinganController implements Initializable {
                     row++;
                 }
                 grid.add(anchorPane, column, row);
-                
+
                 //set grid width
                 grid.setMinWidth(Region.USE_COMPUTED_SIZE);
                 grid.setPrefWidth(Region.USE_COMPUTED_SIZE);
@@ -205,8 +203,8 @@ public class PostinganController implements Initializable {
                 grid.setMinHeight(Region.USE_COMPUTED_SIZE);
                 grid.setPrefHeight(Region.USE_COMPUTED_SIZE);
                 grid.setMaxHeight(Region.USE_PREF_SIZE);
-                
-                GridPane.setMargin(anchorPane, new Insets(10));
+
+                GridPane.setMargin(anchorPane, new Insets(12));
             }
         } catch (IOException e) {
             e.printStackTrace();

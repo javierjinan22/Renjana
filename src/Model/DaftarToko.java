@@ -2,48 +2,72 @@ package Model;
 
 public class DaftarToko {
 
-    String namaToko;
-    String alamat;
-    String email;
-    String noTelfon;
+    private String namaToko;
+    private String alamat;
+    private String email;
+    private String noTelfon;
+    private String imgSrc = "";
+    
+    private boolean ori = true;
 
-    public DaftarToko(String namaToko, String alamat, String email, String noTelfon) {
+    public DaftarToko(String namaToko, String alamat, String email, String noTelfon, String imgSrc, Boolean ori) {
         this.namaToko = namaToko;
         this.alamat = alamat;
         this.email = email;
         this.noTelfon = noTelfon;
+        this.imgSrc = imgSrc;
+        this.ori = ori;
     }
+    
+    public DaftarToko() {}
 
-    public String getNamaToko() {
-        return namaToko;
-    }
-
+    //Setter
     public void setNamaToko(String namaToko) {
         this.namaToko = namaToko;
-    }
-
-    public String getAlamat() {
-        return alamat;
     }
 
     public void setAlamat(String alamat) {
         this.alamat = alamat;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getNoTelfon() {
-        return noTelfon;
     }
 
     public void setNoTelfon(String noTelfon) {
         this.noTelfon = noTelfon;
     }
 
+    public void setImgSrc(String imgSrc) {
+        this.imgSrc = imgSrc;
+    }
+
+    public void setOri(boolean ori) {
+        this.ori = ori;
+    }
+    
+    //Getter
+    public String getNamaToko() {
+        return namaToko;
+    }
+
+    public String getAlamat() {
+        return alamat;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getNoTelfon() {
+        return noTelfon;
+    }
+
+    public String getImgSrc() {
+        return imgSrc;
+    }
+
+    public boolean getOri() {
+        return ori;
+    }
 }

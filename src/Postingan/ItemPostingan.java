@@ -4,11 +4,10 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.Image;
-
+import javafx.scene.input.MouseEvent;
 
 //Import class dari package lain
 import Model.DaftarPostingan;
-import javafx.scene.input.MouseEvent;
 import plesiranoke.MyListener;
 
 public class ItemPostingan {

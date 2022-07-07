@@ -10,14 +10,16 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
+import java.util.ArrayList;
+import javafx.scene.control.Button;
 
 //import class DaftarToko
 import Model.DaftarToko;
-import Model.ArrayList;
+
+//Untuk upload gambar
 import java.io.File;
-import javafx.scene.control.Button;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class TambahTokoController implements Initializable {
@@ -99,10 +101,12 @@ public class TambahTokoController implements Initializable {
         String noTelfon = tfNoTelfon.getText();
         String alamat = tfAlamat.getText();
         String email = tfEmail.getText();
+        String imgSrc = btnGambar.getText();
+        Boolean ori = false; //Menandakan bahwa belum terisi gambar dari toko yang akan diinputkan ke dalam data xml
 
         openTabel();
 
-        daftarToko.add(new DaftarToko(namaToko, alamat, email, noTelfon));
+        daftarToko.add(new DaftarToko(namaToko, alamat, email, noTelfon, imgSrc, ori));
         
         simpanData();
         Stage page = (Stage) mlebet.getScene().getWindow();
@@ -112,5 +116,6 @@ public class TambahTokoController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         openTabel();
+        simpanData();
     }
 }
