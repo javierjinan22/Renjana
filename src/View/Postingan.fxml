@@ -5,11 +5,11 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.PostinganController">
+<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.PostinganController">
    <children>
-      <ScrollPane fx:id="scroll" layoutX="-1.0" layoutY="-1.0" prefHeight="741.0" prefWidth="1202.0">
+      <ScrollPane fx:id="scroll" prefHeight="740.0" prefWidth="892.0" style="-fx-background-color: white;">
          <content>
-            <GridPane fx:id="grid" prefHeight="229.0" prefWidth="1200.0">
+            <GridPane fx:id="grid" prefHeight="370.0" prefWidth="892.0" style="-fx-background-color: white;">
               <rowConstraints>
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>

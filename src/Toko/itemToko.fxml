@@ -9,8 +9,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="892.0" style="-fx-background-color: white;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="Toko.ItemTokoController">
+<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="892.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Toko.ItemTokoController">
    <children>
       <ImageView fitHeight="740.0" fitWidth="892.0" opacity="0.11" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -18,7 +17,7 @@
          </image>
       </ImageView>
       <ImageView fitHeight="212.0" fitWidth="312.0" layoutX="297.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#072959" height="70.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="892.0" />
+      <Rectangle arcHeight="40.0" arcWidth="40.0" fill="#072959" height="70.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="892.0" />
       <Label alignment="CENTER" layoutX="262.0" layoutY="20.0" prefHeight="18.0" prefWidth="401.0" text="NAMA TOKO" textFill="WHITE">
          <font>
             <Font name="System Bold" size="20.0" />
