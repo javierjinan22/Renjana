@@ -42,10 +42,13 @@ public class TokoController implements Initializable {
     private GridPane grid;
     
     @FXML
-    private Label postTitle;
+    private Label namaToko;
     
     @FXML
-    private Label postDescription;
+    private Label alamatToko;
+    
+    @FXML
+    private Label noTelfonToko;
     
     @FXML
     private ScrollPane scroll;

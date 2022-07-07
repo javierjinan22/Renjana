@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="892.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Toko.ItemTokoController">
+<AnchorPane id="AnchorPane" prefHeight="370.0" prefWidth="892.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Toko.ItemTokoController">
    <children>
-      <ImageView fitHeight="740.0" fitWidth="892.0" opacity="0.11" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../gambar/pbegron%201.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="212.0" fitWidth="312.0" layoutX="297.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true" />
-      <Rectangle arcHeight="40.0" arcWidth="40.0" fill="#072959" height="70.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="892.0" />
-      <Label alignment="CENTER" layoutX="262.0" layoutY="20.0" prefHeight="18.0" prefWidth="401.0" text="NAMA TOKO" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="20.0" />
-         </font>
-      </Label>
-      <HBox layoutY="399.0" prefHeight="150.0" prefWidth="892.0" style="-fx-background-color: WHITE;">
+      <VBox layoutX="-2.0" layoutY="-1.0" prefHeight="402.0" prefWidth="892.0">
          <children>
-            <Label alignment="TOP_LEFT" prefHeight="121.0" prefWidth="378.0" text="Deskripsi">
-               <HBox.margin>
-                  <Insets left="300.0" top="15.0" />
-               </HBox.margin>
-            </Label>
+            <HBox prefHeight="424.0" prefWidth="892.0">
+               <children>
+                  <Pane prefHeight="310.0" prefWidth="892.0" style="-fx-background-color: white;">
+                     <children>
+                        <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="365.0" layoutX="34.0" layoutY="17.0" stroke="#072959" strokeType="INSIDE" strokeWidth="2.0" width="829.0" />
+                        <Label fx:id="alamat" alignment="TOP_LEFT" layoutX="406.0" layoutY="105.0" prefHeight="42.0" prefWidth="442.0" />
+                        <ImageView fx:id="gambar" fitHeight="252.0" fitWidth="347.0" layoutX="54.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="namaToko" alignment="TOP_CENTER" layoutX="217.0" layoutY="36.0" prefHeight="30.0" prefWidth="427.0" style="-fx-background-color: #072959; -fx-background-radius: 12;" text="Warung Panjalu" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="noTelfon" alignment="TOP_LEFT" layoutX="402.0" layoutY="154.0" prefHeight="42.0" prefWidth="442.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
          </children>
-      </HBox>
+      </VBox>
    </children>
 </AnchorPane>

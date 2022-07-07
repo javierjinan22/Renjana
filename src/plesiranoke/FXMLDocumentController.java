@@ -1,6 +1,5 @@
 package plesiranoke;
 
-import View.PostinganController;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -19,6 +18,10 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+
+//import class dari package lain
+import View.PostinganController;
+import View.TokoController;
 
 public class FXMLDocumentController implements Initializable {
 
@@ -48,6 +51,14 @@ public class FXMLDocumentController implements Initializable {
 //        Pane halaman = bukaScene.getPane("/View/Postingan");
         mainPane.setCenter(pane);
         System.out.println("Button lihat postingan's Clicked");
+    }
+    
+    @FXML
+    void lihatToko(ActionEvent event) throws IOException {
+        Pane pane = FXMLLoader.load(TokoController.class.getResource("Toko.fxml"));
+//        Pane halaman = bukaScene.getPane("/View/Postingan");
+        mainPane.setCenter(pane);
+        System.out.println("Button lihat toko's Clicked");
     }
 
     @FXML
