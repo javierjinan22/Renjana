@@ -137,7 +137,4 @@ public class Pengguna {
     public void setManager(boolean manager) {
         this.manager = manager;
     }
-    
-    
-
 }
