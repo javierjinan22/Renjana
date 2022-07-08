@@ -25,11 +25,11 @@
                   <Image url="@../gambar/home-free-icon-font.png" />
                </image>
             </ImageView>
-            <Button layoutX="23.0" layoutY="252.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="253.0" style="-fx-background-color: #072959;" text="Lihat Wisata" textFill="WHITE">
+            <Button layoutX="23.0" layoutY="252.0" mnemonicParsing="false" onAction="#lihatPostingan" prefHeight="78.0" prefWidth="253.0" style="-fx-background-color: #072959;" text="Lihat Wisata" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font></Button>
-            <Button layoutX="2.0" layoutY="331.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="304.0" style="-fx-background-color: #072959;">
+            <Button layoutX="2.0" layoutY="331.0" mnemonicParsing="false" onAction="#lihatToko" prefHeight="78.0" prefWidth="304.0" style="-fx-background-color: #072959;">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>

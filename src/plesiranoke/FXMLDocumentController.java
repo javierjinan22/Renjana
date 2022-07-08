@@ -26,6 +26,7 @@ import View.TokoController;
 public class FXMLDocumentController implements Initializable {
 
     OpenScene bukaScene = new OpenScene();
+    
     @FXML
     private BarChart bcDiagram;
 

@@ -23,6 +23,7 @@ import javafx.stage.Stage;
 
 //Import class Pengguna dari Package Model
 import Model.Pengguna;
+import Pengunjung.DashbordController;
 import plesiranoke.FXMLDocumentController;
 
 public class LoginController implements Initializable {
@@ -121,9 +122,9 @@ public class LoginController implements Initializable {
                 dataRegistration.get(i).setStatusOnline(true);
             }
         }
-
+        
         if (validitasData && !isAdmin) { //Akun Pengunjung
-            Parent tableViewParent = FXMLLoader.load(FXMLDocumentController.class.getResource("FXMLDocument.fxml"));
+            Parent tableViewParent = FXMLLoader.load(DashbordController.class.getResource("Dashbord.fxml"));
             Scene tableViewScene = new Scene(tableViewParent);
 
             //This line gets the Stage information
