@@ -19,6 +19,8 @@ import javafx.stage.Stage;
 import plesiranoke.OpenScene;
 import plesiranoke.TambahTokoController;
 import plesiranoke.TambahWisataController;
+import View.PostinganController;
+import View.TokoController;
 
 public class DashboardPengelolaController implements Initializable {
     

@@ -2,7 +2,7 @@ package Model;
 
 public class Pengguna {
 
-    String nama, email, password, namaWisata, jenisWisata, provinsi, kabupaten, alamat, noTelfon, jenisAkun;
+    String nama, email, password, jenisWisata, provinsi, kabupaten, alamat, noTelfon;
 
     boolean statusOnline;
     private boolean admin;
@@ -17,21 +17,23 @@ public class Pengguna {
         this.password = password;
     }
 
-    public Pengguna(String nama, String email, String password, boolean admin) {
+    public Pengguna(String nama, String email, String password, boolean manager) {
         this.nama = nama;
         this.email = email;
         this.password = password;
-        this.admin = admin;
+        this.manager = manager;
     }
 
-    public Pengguna(String namaWisata, String jenisWisata, String provinsi, String kabupaten, String alamat, String noTelfon, String jenisAkun) {
-        this.namaWisata = namaWisata;
+    public Pengguna(String nama, String email, String password, String jenisWisata, String provinsi, String kabupaten, String alamat, String noTelfon, boolean manager) {
+        this.nama = nama;
+        this.email = email;
+        this.password = password;
         this.jenisWisata = jenisWisata;
         this.provinsi = provinsi;
         this.kabupaten = kabupaten;
         this.alamat = alamat;
         this.noTelfon = noTelfon;
-        this.jenisAkun = jenisAkun;
+        this.manager = manager;
     }
 
     public String getNama() {
@@ -56,14 +58,6 @@ public class Pengguna {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public String getNamaWisata() {
-        return this.namaWisata;
-    }
-
-    public void setNamaWisata(String namaWisata) {
-        this.namaWisata = namaWisata;
     }
 
     public String getJenisWisata() {
@@ -104,14 +98,6 @@ public class Pengguna {
 
     public void setNoTelfon(String noTelfon) {
         this.noTelfon = noTelfon;
-    }
-
-    public String getJenisAkun() {
-        return this.jenisAkun;
-    }
-
-    public void setJenisAkun(String jenisAkun) {
-        this.jenisAkun = jenisAkun;
     }
 
     public boolean getStatusOnline() {

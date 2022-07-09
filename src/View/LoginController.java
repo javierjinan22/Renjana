@@ -115,7 +115,8 @@ public class LoginController implements Initializable {
             if (email.equals(dataRegistration.get(i).getEmail()) && pass.equals(dataRegistration.get(i).getPassword())) {
                 dataRegistration.get(i).setStatusOnline(true);
                 validitasData = true;
-                manager = true;
+                manager = dataRegistration.get(i).getManager();
+                isAdmin = dataRegistration.get(i).getAdmin();
                 dataRegistration.get(i).setManager(manager);
                 break;
             } else if (email.equals("admin") && pass.equals("123")) {
@@ -126,7 +127,7 @@ public class LoginController implements Initializable {
             }
         }
 
-        if (validitasData && !isAdmin && manager) { //Akun Manager
+        if (validitasData && manager) { //Akun Manager
             Parent tableViewParent = FXMLLoader.load(DashboardPengelolaController.class.getResource("DashboardPengelola.fxml"));
             Scene tableViewScene = new Scene(tableViewParent);
 
@@ -160,7 +161,7 @@ public class LoginController implements Initializable {
                 }
             }
 
-        } else if (validitasData && isAdmin && !manager) { //Akun Admin
+        } else if (validitasData && isAdmin) { //Akun Admin
             Parent tableViewParent = FXMLLoader.load(FXMLDocumentController.class.getResource("FXMLDocument.fxml"));
             Scene tableViewScene = new Scene(tableViewParent);
 
@@ -194,7 +195,7 @@ public class LoginController implements Initializable {
                     }
                 }
             }
-        } else if (validitasData && !isAdmin && !manager) {
+        } else if (validitasData && !manager) { //Akun Wisatawan
             Parent tableViewParent = FXMLLoader.load(DashbordController.class.getResource("Dashbord.fxml"));
             Scene tableViewScene = new Scene(tableViewParent);
 

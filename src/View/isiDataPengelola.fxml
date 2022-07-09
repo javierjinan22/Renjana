@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -11,6 +13,11 @@
 <AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="1200.0" style="-fx-background-color: #072959;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.IsiDataPengelolaController">
    <children>
       <ImageView fitHeight="649.0" fitWidth="1200.0" opacity="0.12" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/Group%202.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="649.0" fitWidth="1200.0" layoutX="10.0" layoutY="10.0" opacity="0.12" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../gambar/Group%202.png" />
          </image>
@@ -61,15 +68,20 @@
             <Font size="16.0" />
          </font>
       </TextField>
-      <TextField fx:id="tfPassword" layoutX="237.0" layoutY="525.0" prefHeight="42.0" prefWidth="682.0" promptText="Password" style="-fx-background-radius: 12;">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </TextField>
       <Text fill="WHITE" layoutX="241.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Data Diri">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
       </Text>
+      <Label fx:id="similarityAlert" layoutX="35.0" layoutY="479.0" prefHeight="32.0" prefWidth="178.0" textFill="#e70606">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="tfPassword" layoutX="241.0" layoutY="527.0" prefHeight="39.0" prefWidth="678.0" promptText="Password">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </PasswordField>
    </children>
 </AnchorPane>

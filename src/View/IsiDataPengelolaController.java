@@ -11,19 +11,20 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Label;
+import java.io.IOException;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
 //Untuk membuka data XML yang disimpan
 import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.FileOutputStream;
+import javafx.scene.control.PasswordField;
 
 public class IsiDataPengelolaController implements Initializable {
-
-//    @FXML
-//    private ChoiceBox cbProvinsi;
-//
-//    @FXML
-//    private ChoiceBox cbjenisWisata;
-
     @FXML
     private TextField tfNama;
 
@@ -46,7 +47,10 @@ public class IsiDataPengelolaController implements Initializable {
     private TextField tfEmail; //new
     
     @FXML
-    private TextField tfPassword; //new
+    private PasswordField tfPassword;
+    
+    @FXML
+    private Label similarityAlert;
 
     LinkedList<Pengguna> dataRegistration = new LinkedList<>(); //inisialisasi LinkedList untuk  menyimpan data Pengelola Wisata yang dibutuhkan saat login
     //setiap node memiliki masing-masing Pengguna
@@ -100,48 +104,80 @@ public class IsiDataPengelolaController implements Initializable {
     }
 
     @FXML
-    private void simpanData(ActionEvent Event) {
-        String jenisWisata, provinsi;
-
+    private void simpanData(ActionEvent Event) throws IOException {
+        //mengambil text dari masing-masing textfield untuk dimasukkan dalam variabel
+        //Data Diri
         String nama = tfNama.getText();
+        String email = tfEmail.getText();
+        String pass = tfPassword.getText();
+        
+        //Data Wisata
         String kabupaten = tfKabupaten.getText();
         String alamat = tfAlamat.getText();
         String telfon = tfTelfon.getText();
+        String jenisWisata = tfJenisWisata.getText();
+        String provinsi = tfProvinsi.getText();
+        boolean manager = true;
+        
+        boolean similarEmail = false; //variabel digunakan untuk mengecek apakah ada ID yang sama (telah digunakan)
+        
+        //Melakukan pencarian terhadap tiap index di Linked List untuk mendapatkan email pada setiap index
+        for (int i = 0; i < dataRegistration.size(); i++) {
+            System.out.println(dataRegistration.get(i));
+            if (email.equals(dataRegistration.get(i).getEmail())) {
+                /*Jika Email yang didaftatkan, 
+                ditemukan kesamaan dengan email yg telah terdaftar sebelumnya, maka variabel similarEmail == true */
+                similarEmail = true; //similarEmail set True (Terdapat email yang sama antara yg terdaftar dengan yg telah terdaftar seblmnya)
+            }
+        }
+        
+        if (similarEmail) {
+            similarityAlert.setText("Email telah digunakan"); //Muncul apabila email yang didaftarkan, telah terdaftar sebelumnya (sama)
+            System.out.println("Email telah digunakan");
+        } else if (!similarEmail) {
+            dataRegistration.add(new Pengguna(nama, email, pass, jenisWisata, provinsi, kabupaten, alamat, telfon, manager));
+            /*Jika tidak terdapat Email yang sama, data akan disimpan ke dalam
+                LinkedList dataRegistration*/
 
-//        //        Menentukan provinsi melalui Choice Bar
-//        if (cbProvinsi.getValue().equals("D.I.Yogyakarta")) {
-//            provinsi = "D.I.Yogyakarta";
-//        } else if (cbProvinsi.getValue().equals("Jawa Tengah")) {
-//            provinsi = "Jawa Tengah";
-//        } else if (cbProvinsi.getValue().equals("Jawa Barat")) {
-//            provinsi = "Jawa Barat";
-//        } else if (cbProvinsi.getValue().equals("Jawa Timur")) {
-//            provinsi = "Jawa Timur";
-//        } else {
-//            provinsi = "D.K.I.Jakarta";
-//        }
-//        
-//        //        Menentukan Jenis Wisata melalui Choice Bar
-//        if (cbProvinsi.getValue().equals("D.I.Yogyakarta")) {
-//            provinsi = "D.I.Yogyakarta";
-//        } else if (cbProvinsi.getValue().equals("Jawa Tengah")) {
-//            provinsi = "Jawa Tengah";
-//        } else if (cbProvinsi.getValue().equals("Jawa Barat")) {
-//            provinsi = "Jawa Barat";
-//        } else if (cbProvinsi.getValue().equals("Jawa Timur")) {
-//            provinsi = "Jawa Timur";
-//        } else {
-//            provinsi = "D.K.I.Jakarta";
-//        }
-//        
-//        
+            // larik double diubah menjadi string dengan format XML
+            String xml = xstream.toXML(dataRegistration);
+            FileOutputStream berkasBaru = null;
+            try {
+                // membuat nama file & folder tempat menyimpan jika perlu
+                berkasBaru = new FileOutputStream("dataRegistration.xml");
 
+                // mengubah karakter penyusun string xml sebagai 
+                // bytes (berbentuk nomor2 kode ASCII
+                byte[] bytes = xml.getBytes("UTF-8");
+
+                //Menyimpan file dari bytes
+                berkasBaru.write(bytes);
+            } catch (Exception e) {
+                System.err.println("Perhatian : " + e.getMessage());
+            } finally {
+                if (berkasBaru != null) {
+                    try {
+                        berkasBaru.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+
+            Parent tableViewParent = FXMLLoader.load(getClass().getResource("Login.fxml"));
+            Scene tableViewScene = new Scene(tableViewParent);
+
+            //This line gets the Stage information
+            Stage window = (Stage) ((Node) Event.getSource()).getScene().getWindow();
+
+            window.setScene(tableViewScene);
+            window.show();
+        }
     }
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        bukaXML();
-//        cbProvinsi.getItems().addAll("D.I.Yogyakarta", "Jawa Tengah", "Jawa Barat", "Jawa Timur", "D.K.I.Jakarta");
+        bukaXML();    
     }
 
 }

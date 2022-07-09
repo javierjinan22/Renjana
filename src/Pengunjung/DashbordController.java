@@ -14,8 +14,8 @@ import javafx.scene.layout.Pane;
 
 //Import Class dari Package lain
 import plesiranoke.OpenScene;
-//import View.PostinganController;
-//import View.TokoController;
+import View.PostinganController;
+import View.TokoController;
 
 public class DashbordController implements Initializable {
     OpenScene bukaScene = new OpenScene();

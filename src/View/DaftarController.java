@@ -111,6 +111,7 @@ public class DaftarController implements Initializable {
         String nama = tfNama.getText();
         String email = tfEmail.getText();
         String pass = tfPassword.getText();
+        boolean manager = false; //It means this user's categorized as manager;
 
         boolean similarEmail = false; //variabel digunakan untuk mengecek apakah ada ID yang sama (telah digunakan)
 
@@ -128,7 +129,7 @@ public class DaftarController implements Initializable {
             similarityAlert.setText("Email telah digunakan"); //Muncul apabila email yang didaftarkan, telah terdaftar sebelumnya (sama)
             System.out.println("Email telah digunakan");
         } else if (!similarEmail) {
-            dataRegistration.add(new Pengguna(nama, email, pass));
+            dataRegistration.add(new Pengguna(nama, email, pass, manager));
             /*Jika tidak terdapat Email yang sama, data akan disimpan ke dalam
                 LinkedList dataRegistration*/
 
