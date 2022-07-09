@@ -77,24 +77,8 @@
                   <Image url="@../gambar/pbegron%201.png" />
                </image>
             </ImageView>
-            <Button layoutX="175.0" layoutY="54.0" mnemonicParsing="false" onAction="#tambahPostingan" prefHeight="187.0" prefWidth="266.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;">
-               <graphic>
-                  <ImageView fitHeight="106.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../gambar/map-marker-free-icon-font.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="454.0" layoutY="55.0" mnemonicParsing="false" onAction="#tambahToko" prefHeight="187.0" prefWidth="266.0" style="-fx-background-color: #072959; -fx-background-radius: 15; -fx-border-color: #072959; -fx-border-radius: 16;">
-               <graphic>
-                  <ImageView fitHeight="106.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../gambar/Toko%201.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
+            <Button layoutX="178.0" layoutY="18.0" mnemonicParsing="false" onAction="#tambahPostingan" prefHeight="102.0" prefWidth="261.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;" />
+            <Button layoutX="462.0" layoutY="14.0" mnemonicParsing="false" onAction="#tambahToko" prefHeight="107.0" prefWidth="256.0" style="-fx-background-color: #072959; -fx-background-radius: 15; -fx-border-color: #072959; -fx-border-radius: 16;" />
             <Text layoutX="175.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destinasi terbaik">
                <font>
                   <Font name="System Bold" size="18.0" />
@@ -139,6 +123,32 @@
             <Text layoutX="175.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toko ">
                <font>
                   <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="45.0" fitWidth="53.0" layoutX="283.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/map-marker-free-icon-font.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="79.0" layoutX="572.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/Toko%201.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="236.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Wisata">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="530.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Toko">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Button layoutX="174.0" layoutY="146.0" mnemonicParsing="false" onAction="#dataPost" prefHeight="100.0" prefWidth="256.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;" />
+            <Text fill="WHITE" layoutX="245.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Wisata">
+               <font>
+                  <Font name="System Bold" size="20.0" />
                </font>
             </Text>
          </children>

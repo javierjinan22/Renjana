@@ -90,30 +90,14 @@
                   <Rectangle2D width="1200.0" />
                </viewport>
             </ImageView>
-            <Button layoutX="175.0" layoutY="54.0" mnemonicParsing="false" onAction="#tambahPostingan" prefHeight="187.0" prefWidth="266.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;">
-               <graphic>
-                  <ImageView fitHeight="106.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../gambar/map-marker-free-icon-font.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="454.0" layoutY="55.0" mnemonicParsing="false" onAction="#tambahToko" prefHeight="187.0" prefWidth="266.0" style="-fx-background-color: #072959; -fx-background-radius: 15; -fx-border-color: #072959; -fx-border-radius: 16;">
-               <graphic>
-                  <ImageView fitHeight="106.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../gambar/Toko%201.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Text fill="WHITE" layoutX="235.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Wisata">
+            <Button layoutX="204.0" layoutY="20.0" mnemonicParsing="false" onAction="#tambahPostingan" prefHeight="100.0" prefWidth="256.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;" />
+            <Button layoutX="490.0" layoutY="16.0" mnemonicParsing="false" onAction="#tambahToko" prefHeight="105.0" prefWidth="244.0" style="-fx-background-color: #072959; -fx-background-radius: 15; -fx-border-color: #072959; -fx-border-radius: 16;" />
+            <Text fill="WHITE" layoutX="260.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Wisata">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="526.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Toko">
+            <Text fill="WHITE" layoutX="545.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Toko">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
@@ -178,6 +162,22 @@
                </font>
             </Text>
             <ChoiceBox fx:id="cbDiagram" layoutX="398.0" layoutY="481.0" prefHeight="25.0" prefWidth="127.0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #072959;" />
+            <ImageView fitHeight="45.0" fitWidth="50.0" layoutX="312.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/map-marker-free-icon-font.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="50.0" layoutX="589.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/Toko%201.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="205.0" layoutY="139.0" mnemonicParsing="false" onAction="#dataPost" prefHeight="100.0" prefWidth="256.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;" />
+            <Text fill="WHITE" layoutX="276.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Wisata">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
          </children></Pane>
    </center>
 </BorderPane>
