@@ -17,11 +17,12 @@ public class Pengguna {
         this.password = password;
     }
 
-    public Pengguna(String nama, String email, String password, boolean manager) {
+    public Pengguna(String nama, String email, String password, boolean manager, boolean admin) {
         this.nama = nama;
         this.email = email;
         this.password = password;
         this.manager = manager;
+        this.admin = admin;
     }
 
     public Pengguna(String nama, String email, String password, String jenisWisata, String provinsi, String kabupaten, String alamat, String noTelfon, boolean manager) {
