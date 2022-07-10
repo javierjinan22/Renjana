@@ -173,11 +173,16 @@
                </image>
             </ImageView>
             <Button layoutX="205.0" layoutY="139.0" mnemonicParsing="false" onAction="#dataPost" prefHeight="100.0" prefWidth="256.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;" />
-            <Text fill="WHITE" layoutX="276.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Wisata">
+            <Text fill="WHITE" layoutX="276.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Wisata">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Text>
+            <ImageView fitHeight="54.0" fitWidth="65.0" layoutX="305.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/list.png" />
+               </image>
+            </ImageView>
          </children></Pane>
    </center>
 </BorderPane>

@@ -74,20 +74,6 @@ public class DashboardPengelolaController implements Initializable {
         System.out.println("Button lihat toko's Clicked");
     }
     
-     @FXML
-    void dataPost(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(TabelPostinganController.class.getResource("TabelPostingan.fxml"));
-
-        Stage dialogStage = new Stage();
-        dialogStage.setTitle("Data Postingan");
-        dialogStage.initModality(Modality.APPLICATION_MODAL);
-        Scene scene = new Scene(loader.load());
-        dialogStage.setScene(scene);
-        // Show the dialog and wait until the user closes it 
-        dialogStage.showAndWait();
-    }   
-    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

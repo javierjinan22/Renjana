@@ -122,8 +122,8 @@ public class LoginController implements Initializable {
             } else if (email.equals("admin") && pass.equals("123")) {
                 validitasData = true;
                 isAdmin = true;
-                dataRegistration.get(i).setAdmin(true);
-                dataRegistration.get(i).setStatusOnline(true);
+//                dataRegistration.get(i).setAdmin(true);
+//                dataRegistration.get(i).setStatusOnline(true);
             }
         }
 

@@ -44,7 +44,7 @@ public class FXMLDocumentController implements Initializable {
     void addMarket(ActionEvent event) {
         Pane halaman = bukaScene.getPane("TambahWisata");
         mainPane.setCenter(halaman);
-        System.out.println("Button home's Clicked");
+        System.out.println("Button Tambah Wisata's Clicked");
     }
 
     @FXML
