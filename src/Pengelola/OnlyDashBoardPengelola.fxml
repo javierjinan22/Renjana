@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="892.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="Pengelola.OnlyDashBoardPengelolaController">
+   <children>
+      <ImageView fitHeight="767.0" fitWidth="925.0" layoutY="-2.0" opacity="0.11" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/pbegron%201.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="182.0" layoutY="80.0" mnemonicParsing="false" onAction="#tambahPostingan" prefHeight="102.0" prefWidth="261.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;" />
+      <Button layoutX="472.0" layoutY="76.0" mnemonicParsing="false" onAction="#tambahToko" prefHeight="107.0" prefWidth="256.0" style="-fx-background-color: #072959; -fx-background-radius: 15; -fx-border-color: #072959; -fx-border-radius: 16;" />
+      <ImageView fitHeight="45.0" fitWidth="53.0" layoutX="287.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/map-marker-free-icon-font.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="79.0" layoutX="582.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/Toko%201.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="240.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Wisata">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="540.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Toko">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="185.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destinasi terbaik">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="169.0" fitWidth="155.0" layoutX="188.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/pexels-pixabay-161293%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="169.0" fitWidth="155.0" layoutX="381.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/pexels-aron-visuals-1694621%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="169.0" fitWidth="155.0" layoutX="577.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/pexels-feri-feri-9286872%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="169.0" fitWidth="155.0" layoutX="188.0" layoutY="551.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/gudeg1%201.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="188.0" layoutY="530.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toko ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
