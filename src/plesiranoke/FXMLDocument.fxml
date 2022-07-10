@@ -21,7 +21,7 @@
    <left>
       <AnchorPane prefHeight="740.0" prefWidth="308.0" style="-fx-background-color: #072959;" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="2.0" layoutY="174.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="277.0" style="-fx-background-color: #072959;" text="Dashboard" textFill="WHITE">
+            <Button layoutX="2.0" layoutY="174.0" mnemonicParsing="false" onAction="#dashboard" prefHeight="78.0" prefWidth="277.0" style="-fx-background-color: #072959;" text="Dashboard" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font></Button>
@@ -90,14 +90,14 @@
                   <Rectangle2D width="1200.0" />
                </viewport>
             </ImageView>
-            <Button layoutX="204.0" layoutY="20.0" mnemonicParsing="false" onAction="#tambahPostingan" prefHeight="100.0" prefWidth="256.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;" />
-            <Button layoutX="490.0" layoutY="16.0" mnemonicParsing="false" onAction="#tambahToko" prefHeight="105.0" prefWidth="244.0" style="-fx-background-color: #072959; -fx-background-radius: 15; -fx-border-color: #072959; -fx-border-radius: 16;" />
-            <Text fill="WHITE" layoutX="260.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Wisata">
+            <Button layoutX="177.0" layoutY="20.0" mnemonicParsing="false" onAction="#tambahPostingan" prefHeight="100.0" prefWidth="256.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;" />
+            <Button layoutX="484.0" layoutY="16.0" mnemonicParsing="false" onAction="#tambahToko" prefHeight="105.0" prefWidth="244.0" style="-fx-background-color: #072959; -fx-background-radius: 15; -fx-border-color: #072959; -fx-border-radius: 16;" />
+            <Text fill="WHITE" layoutX="233.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Wisata">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="545.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Toko">
+            <Text fill="WHITE" layoutX="539.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Toko">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
@@ -162,23 +162,23 @@
                </font>
             </Text>
             <ChoiceBox fx:id="cbDiagram" layoutX="398.0" layoutY="481.0" prefHeight="25.0" prefWidth="127.0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #072959;" />
-            <ImageView fitHeight="45.0" fitWidth="50.0" layoutX="312.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="45.0" fitWidth="50.0" layoutX="285.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../gambar/map-marker-free-icon-font.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="41.0" fitWidth="50.0" layoutX="589.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="41.0" fitWidth="50.0" layoutX="583.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../gambar/Toko%201.png" />
                </image>
             </ImageView>
-            <Button layoutX="205.0" layoutY="139.0" mnemonicParsing="false" onAction="#dataPost" prefHeight="100.0" prefWidth="256.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;" />
-            <Text fill="WHITE" layoutX="276.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Wisata">
+            <Button layoutX="178.0" layoutY="139.0" mnemonicParsing="false" onAction="#dataPost" prefHeight="100.0" prefWidth="256.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;" />
+            <Text fill="WHITE" layoutX="249.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Wisata">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Text>
-            <ImageView fitHeight="54.0" fitWidth="65.0" layoutX="305.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="54.0" fitWidth="65.0" layoutX="278.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../gambar/list.png" />
                </image>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.OnlyDashboardAdminController">
+   <children>
+      <ImageView fitHeight="740.0" fitWidth="892.0" layoutX="-2.0" layoutY="-1.0" opacity="0.11" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/pbegron%201.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="189.0" layoutY="30.0" mnemonicParsing="false" onAction="#tambahPostingan" prefHeight="100.0" prefWidth="256.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;" />
+      <Button layoutX="500.0" layoutY="26.0" mnemonicParsing="false" onAction="#tambahToko" prefHeight="105.0" prefWidth="244.0" style="-fx-background-color: #072959; -fx-background-radius: 15; -fx-border-color: #072959; -fx-border-radius: 16;" />
+      <Text fill="WHITE" layoutX="245.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Wisata">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="555.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Toko">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="45.0" fitWidth="50.0" layoutX="297.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/map-marker-free-icon-font.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="41.0" fitWidth="50.0" layoutX="599.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/Toko%201.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="190.0" layoutY="149.0" mnemonicParsing="false" onAction="#dataPost" prefHeight="100.0" prefWidth="256.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;" />
+      <Text fill="WHITE" layoutX="261.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Wisata">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="54.0" fitWidth="65.0" layoutX="290.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/list.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="185.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destinasi terbaik">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="169.0" fitWidth="155.0" layoutX="182.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/pexels-pixabay-161293%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="169.0" fitWidth="155.0" layoutX="378.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/pexels-aron-visuals-1694621%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="169.0" fitWidth="155.0" layoutX="572.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/pexels-feri-feri-9286872%201.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="571.0" layoutY="514.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toko ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="169.0" fitWidth="155.0" layoutX="573.0" layoutY="528.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/gudeg1%201.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="185.0" layoutY="510.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diagram">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <BarChart fx:id="bcDiagram" layoutX="172.0" layoutY="520.0" prefHeight="179.0" prefWidth="374.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis prefHeight="155.0" prefWidth="19.0" side="LEFT" />
+         </yAxis>
+      </BarChart>
+      <ChoiceBox fx:id="cbDiagram" layoutX="408.0" layoutY="491.0" prefHeight="25.0" prefWidth="127.0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #072959;" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pengunjung.OnlyDashboardPengunjungController">
+   <children>
+      <ImageView fitHeight="740.0" fitWidth="892.0" layoutX="1.0" layoutY="-1.0" opacity="0.11" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/pbegron%201.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="185.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destinasi terbaik">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="169.0" fitWidth="155.0" layoutX="185.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/pexels-pixabay-161293%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="169.0" fitWidth="155.0" layoutX="387.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/pexels-aron-visuals-1694621%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="169.0" fitWidth="155.0" layoutX="593.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/pexels-feri-feri-9286872%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="169.0" fitWidth="155.0" layoutX="190.0" layoutY="438.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/gudeg1%201.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="193.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toko ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

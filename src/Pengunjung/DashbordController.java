@@ -39,6 +39,14 @@ public class DashbordController implements Initializable {
         System.out.println("Button lihat toko's Clicked");
     }
     
+    @FXML
+    void dashboard(ActionEvent event) throws IOException {
+        Pane pane = FXMLLoader.load(OnlyDashboardPengunjungController.class.getResource("OnlyDashboardPengunjung.fxml"));
+//        Pane halaman = bukaScene.getPane("/View/Postingan");
+        mainPane.setCenter(pane);
+        System.out.println("Button lihat toko's Clicked");
+    }
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
