@@ -105,6 +105,18 @@ public class DaftarController implements Initializable {
 //    }
     
     @FXML
+    public void haveAccount(ActionEvent event) throws IOException {
+        Parent tableViewParent = FXMLLoader.load(getClass().getResource("Login.fxml"));
+        Scene tableViewScene = new Scene(tableViewParent);
+
+        //This line gets the Stage information
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setScene(tableViewScene);
+        window.show();
+    }
+
+    @FXML
     private void daftarButton(ActionEvent Event) throws IOException {
 
         //mengambil text dari masing-masing textfield untuk dimasukkan dalam variabel

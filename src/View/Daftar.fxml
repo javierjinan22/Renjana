@@ -40,11 +40,16 @@
             <Font name="Calibri" size="23.0" />
          </font>
       </PasswordField>
-      <Button layoutX="526.0" layoutY="475.0" mnemonicParsing="false" onAction="#daftarButton" prefHeight="52.0" prefWidth="139.0" style="-fx-background-color: white; -fx-background-radius: 12;" text="Daftar" textFill="#4a96f9">
+      <Button layoutX="519.0" layoutY="465.0" mnemonicParsing="false" onAction="#daftarButton" prefHeight="52.0" prefWidth="139.0" style="-fx-background-color: white; -fx-background-radius: 12;" text="Daftar" textFill="#4a96f9">
          <font>
             <Font name="System Bold" size="21.0" />
          </font>
       </Button>
       <Label fx:id="similarityAlert" layoutX="456.0" layoutY="415.0" prefHeight="18.0" prefWidth="274.0" />
+      <Button layoutX="514.0" layoutY="414.0" mnemonicParsing="false" onAction="#haveAccount" style="-fx-background-color: 00000;" text="Sudah punya akun ?" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
