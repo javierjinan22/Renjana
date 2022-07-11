@@ -40,6 +40,8 @@ public class FXMLDocumentController implements Initializable {
 
     private String[] kunjungan = {"toko", "wisata"};
     XYChart.Series databc = new XYChart.Series<>();
+    
+    
 
     @FXML
     void lihatPostingan(ActionEvent event) throws IOException {
