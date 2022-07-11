@@ -24,11 +24,12 @@ import View.PostinganController;
 import View.TabelPostinganController;
 import View.TokoController;
 import Admin.OnlyDashboardAdminController;
+import View.TabelTokoController;
 
 public class FXMLDocumentController implements Initializable {
 
     OpenScene bukaScene = new OpenScene();
-    
+
     @FXML
     private BarChart bcDiagram;
 
@@ -40,8 +41,6 @@ public class FXMLDocumentController implements Initializable {
 
     private String[] kunjungan = {"toko", "wisata"};
     XYChart.Series databc = new XYChart.Series<>();
-    
-    
 
     @FXML
     void lihatPostingan(ActionEvent event) throws IOException {
@@ -50,7 +49,7 @@ public class FXMLDocumentController implements Initializable {
         mainPane.setCenter(pane);
         System.out.println("Button lihat postingan's Clicked");
     }
-    
+
     @FXML
     void lihatToko(ActionEvent event) throws IOException {
         Pane pane = FXMLLoader.load(TokoController.class.getResource("Toko.fxml"));
@@ -86,7 +85,7 @@ public class FXMLDocumentController implements Initializable {
         // Show the dialog and wait until the user closes it 
         dialogStage.showAndWait();
     }
-    
+
     @FXML
     void dataPost(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader();
@@ -101,7 +100,21 @@ public class FXMLDocumentController implements Initializable {
         dialogStage.showAndWait();
     }
     
-        @FXML
+    @FXML
+    void dataToko(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(TabelTokoController.class.getResource("TabelToko.fxml"));
+
+        Stage dialogStage = new Stage();
+        dialogStage.setTitle("Data Toko");
+        dialogStage.initModality(Modality.APPLICATION_MODAL);
+        Scene scene = new Scene(loader.load());
+        dialogStage.setScene(scene);
+        // Show the dialog and wait until the user closes it 
+        dialogStage.showAndWait();
+    }
+
+    @FXML
     void dashboard(ActionEvent event) throws IOException {
         Pane pane = FXMLLoader.load(OnlyDashboardAdminController.class.getResource("OnlyDashboardAdmin.fxml"));
 //        Pane halaman = bukaScene.getPane("/View/Postingan");
