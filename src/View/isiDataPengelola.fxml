@@ -31,15 +31,15 @@
          <font>
             <Font size="16.0" />
          </font></TextField>
-      <TextField fx:id="tfKabupaten" layoutX="237.0" layoutY="91.0" prefHeight="42.0" prefWidth="682.0" promptText="Kabupaten" style="-fx-background-radius: 12;">
+      <TextField fx:id="tfKabupaten" layoutX="238.0" layoutY="328.0" prefHeight="42.0" prefWidth="682.0" promptText="Kabupaten" style="-fx-background-radius: 12;">
          <font>
             <Font size="16.0" />
          </font></TextField>
-      <TextField fx:id="tfAlamat" layoutX="237.0" layoutY="143.0" prefHeight="42.0" prefWidth="682.0" promptText="Alamat" style="-fx-background-radius: 12;">
+      <TextField fx:id="tfAlamat" layoutX="237.0" layoutY="166.0" prefHeight="42.0" prefWidth="682.0" promptText="Alamat" style="-fx-background-radius: 12;">
          <font>
             <Font size="16.0" />
          </font></TextField>
-      <TextField fx:id="tfTelfon" layoutX="237.0" layoutY="196.0" prefHeight="42.0" prefWidth="682.0" promptText="Telpon" style="-fx-background-radius: 12;">
+      <TextField fx:id="tfTelfon" layoutX="237.0" layoutY="219.0" prefHeight="42.0" prefWidth="682.0" promptText="Telpon" style="-fx-background-radius: 12;">
          <font>
             <Font size="16.0" />
          </font></TextField>
@@ -53,12 +53,12 @@
             <Image url="@../gambar/Plesiran%20(2).png" />
          </image>
       </ImageView>
-      <TextField fx:id="tfJenisWisata" layoutX="237.0" layoutY="252.0" prefHeight="42.0" prefWidth="682.0" promptText="Jenis Wisata" style="-fx-background-radius: 12;">
+      <TextField fx:id="tfJenisWisata" layoutX="237.0" layoutY="275.0" prefHeight="42.0" prefWidth="682.0" promptText="Jenis Wisata" style="-fx-background-radius: 12;">
          <font>
             <Font size="16.0" />
          </font>
       </TextField>
-      <TextField fx:id="tfProvinsi" layoutX="237.0" layoutY="307.0" prefHeight="42.0" prefWidth="682.0" promptText="Provinsi" style="-fx-background-radius: 12;">
+      <TextField fx:id="tfProvinsi" layoutX="236.0" layoutY="114.0" prefHeight="42.0" prefWidth="682.0" promptText="Provinsi" style="-fx-background-radius: 12;">
          <font>
             <Font size="16.0" />
          </font>
@@ -78,10 +78,15 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <PasswordField fx:id="tfPassword" layoutX="241.0" layoutY="527.0" prefHeight="39.0" prefWidth="678.0" promptText="Password">
+      <PasswordField fx:id="tfPassword" layoutX="239.0" layoutY="527.0" prefHeight="39.0" prefWidth="678.0" promptText="Password" style="-fx-background-radius: 12;">
          <font>
             <Font size="16.0" />
          </font>
       </PasswordField>
+      <TextField fx:id="tfNamaWisata" layoutX="236.0" layoutY="63.0" prefHeight="42.0" prefWidth="682.0" promptText="Nama Wisata" style="-fx-background-radius: 12;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
    </children>
 </AnchorPane>

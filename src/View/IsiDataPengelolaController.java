@@ -41,6 +41,9 @@ public class IsiDataPengelolaController implements Initializable {
     private TextField tfProvinsi;
     
     @FXML
+    private TextField tfNamaWisata;
+    
+    @FXML
     private TextField tfJenisWisata;
     
     @FXML
@@ -112,6 +115,7 @@ public class IsiDataPengelolaController implements Initializable {
         String pass = tfPassword.getText();
         
         //Data Wisata
+        String namaWisata = tfNamaWisata.getText();
         String kabupaten = tfKabupaten.getText();
         String alamat = tfAlamat.getText();
         String telfon = tfTelfon.getText();
@@ -135,7 +139,7 @@ public class IsiDataPengelolaController implements Initializable {
             similarityAlert.setText("Email telah digunakan"); //Muncul apabila email yang didaftarkan, telah terdaftar sebelumnya (sama)
             System.out.println("Email telah digunakan");
         } else if (!similarEmail) {
-            dataRegistration.add(new Pengguna(nama, email, pass, jenisWisata, provinsi, kabupaten, alamat, telfon, manager));
+            dataRegistration.add(new Pengguna(nama, email, pass, namaWisata, jenisWisata, provinsi, kabupaten, alamat, telfon, manager));
             /*Jika tidak terdapat Email yang sama, data akan disimpan ke dalam
                 LinkedList dataRegistration*/
 

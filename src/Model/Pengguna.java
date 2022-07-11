@@ -2,7 +2,7 @@ package Model;
 
 public class Pengguna {
 
-    String nama, email, password, jenisWisata, provinsi, kabupaten, alamat, noTelfon;
+    String nama, email, password, namaWisata, jenisWisata, provinsi, kabupaten, alamat, noTelfon;
 
     boolean statusOnline;
     private boolean admin;
@@ -25,10 +25,11 @@ public class Pengguna {
         this.admin = admin;
     }
 
-    public Pengguna(String nama, String email, String password, String jenisWisata, String provinsi, String kabupaten, String alamat, String noTelfon, boolean manager) {
+    public Pengguna(String nama, String email, String password, String namaWisata, String jenisWisata, String provinsi, String kabupaten, String alamat, String noTelfon, boolean manager) {
         this.nama = nama;
         this.email = email;
         this.password = password;
+        this.namaWisata = namaWisata;
         this.jenisWisata = jenisWisata;
         this.provinsi = provinsi;
         this.kabupaten = kabupaten;
