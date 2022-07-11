@@ -62,6 +62,11 @@
                      </image></ImageView>
                </graphic>
             </Button>
+            <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="31.0" layoutY="648.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/USER%20(2).png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </left>
