@@ -117,7 +117,6 @@ public class TabelPostinganController implements Initializable {
         }
     }
     
-    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         tcJudul.setCellValueFactory(new PropertyValueFactory<>("judul"));

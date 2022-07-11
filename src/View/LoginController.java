@@ -23,6 +23,7 @@ import javafx.stage.Stage;
 
 //Import class Pengguna dari Package Model
 import Model.Pengguna;
+import Model.DataIndex;
 import Pengelola.DashboardPengelolaController;
 import Pengunjung.DashbordController;
 import plesiranoke.FXMLDocumentController;
@@ -87,7 +88,7 @@ public class LoginController implements Initializable {
 
     @FXML
     private Stage stage;
-
+    
     @FXML
     public void noAccount(ActionEvent event) throws IOException {
         Parent tableViewParent = FXMLLoader.load(getClass().getResource("masukSebagai.fxml"));
@@ -102,6 +103,7 @@ public class LoginController implements Initializable {
 
     @FXML
     public void loginButton(ActionEvent event) throws IOException {
+//        DataIndex di = new DataIndex();
         String email = tfEmail.getText();
         String pass = tfPassword.getText();
 
@@ -111,6 +113,7 @@ public class LoginController implements Initializable {
 
         //PR Mencoba mengset akun tourist
         for (int i = 0; i < dataRegistration.size(); i++) {
+            DataIndex.index = i; //Untuk mengetahui index dari data yg berhasil login agar kemudian ditampilkan nama pengguna
             //Untuk mencocokan kesesuaian data login yg diinput dengan data registrasi yg telah didaftarkan
             if (email.equals(dataRegistration.get(i).getEmail()) && pass.equals(dataRegistration.get(i).getPassword())) {
                 dataRegistration.get(i).setStatusOnline(true);

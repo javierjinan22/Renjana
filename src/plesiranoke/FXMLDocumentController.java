@@ -18,15 +18,27 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import View.TabelTokoController;
+import java.util.LinkedList;
+import java.util.ArrayList;
 
 //import class dari package lain
 import View.PostinganController;
 import View.TabelPostinganController;
 import View.TokoController;
 import Admin.OnlyDashboardAdminController;
-import View.TabelTokoController;
+import Model.DaftarPostingan;
+import Model.DataIndex;
+import Model.Pengguna;
+
+//File XML
+import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.io.xml.StaxDriver;
+import java.io.FileInputStream;
 
 public class FXMLDocumentController implements Initializable {
+    
+    LinkedList<Pengguna> dataRegistration = new LinkedList<>();
 
     OpenScene bukaScene = new OpenScene();
 
@@ -38,9 +50,37 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private BorderPane mainPane;
+    
+    @FXML
+    private Label jenisUser;
+    
+    @FXML
+    private Label namaUser;
 
     private String[] kunjungan = {"toko", "wisata"};
     XYChart.Series databc = new XYChart.Series<>();
+    
+    void openTabel() {
+        XStream xstream = new XStream(new StaxDriver());
+        FileInputStream berkasMasuk;
+        try {
+            berkasMasuk = new FileInputStream("dataRegistration.xml");
+            // harus diingat objek apa yang dahulu disimpan di file 
+            // program untuk membaca harus sinkron dengan program
+            // yang dahulu digunakan untuk menyimpannya
+            int isi;
+            char c;
+            String s = "";
+            while ((isi = berkasMasuk.read()) != - 1) {
+                c = (char) isi;
+                s = s + c;
+            }
+            dataRegistration = (LinkedList<Pengguna>) xstream.fromXML(s);
+            berkasMasuk.close();
+        } catch (Exception e) {
+            System.out.println("Terjadi kesalahan: " + e.getMessage());
+        }
+    }
 
     @FXML
     void lihatPostingan(ActionEvent event) throws IOException {
@@ -124,6 +164,18 @@ public class FXMLDocumentController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        openTabel();
+        //untuk menampilkan siapa user yang sedang login
+        DataIndex di = new DataIndex();
+        namaUser.setText(dataRegistration.get(di.getData()).getNama());
+        if (dataRegistration.get(di.getData()).getAdmin() == true) {
+            jenisUser.setText("Admin");
+        } else if (dataRegistration.get(di.getData()).getManager() == true) {
+            jenisUser.setText("Pengelola");
+        } else {
+            jenisUser.setText("Pengunjung");
+        }
+        
         cbDiagram.setValue("toko");
         cbDiagram.getItems().addAll(kunjungan);
 

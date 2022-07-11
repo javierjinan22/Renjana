@@ -121,7 +121,6 @@ public class TabelTokoController implements Initializable {
             listTabelToko.add(daftarToko.get(i));
         }
         table.setItems(listTabelToko);
-
     }
 
 }
