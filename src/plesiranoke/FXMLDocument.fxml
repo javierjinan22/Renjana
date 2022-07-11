@@ -76,6 +76,11 @@
                      </image></ImageView>
                </graphic>
             </Button>
+            <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="31.0" layoutY="648.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/USER%20(2).png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </left>
@@ -90,23 +95,23 @@
                   <Rectangle2D width="1200.0" />
                </viewport>
             </ImageView>
-            <Button layoutX="177.0" layoutY="20.0" mnemonicParsing="false" onAction="#tambahPostingan" prefHeight="100.0" prefWidth="256.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;" />
-            <Button layoutX="484.0" layoutY="16.0" mnemonicParsing="false" onAction="#tambahToko" prefHeight="105.0" prefWidth="244.0" style="-fx-background-color: #072959; -fx-background-radius: 15; -fx-border-color: #072959; -fx-border-radius: 16;" />
-            <Text fill="WHITE" layoutX="233.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Wisata">
+            <Button layoutX="177.0" layoutY="38.0" mnemonicParsing="false" onAction="#tambahPostingan" prefHeight="100.0" prefWidth="256.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;" />
+            <Button layoutX="484.0" layoutY="34.0" mnemonicParsing="false" onAction="#tambahToko" prefHeight="105.0" prefWidth="244.0" style="-fx-background-color: #072959; -fx-background-radius: 15; -fx-border-color: #072959; -fx-border-radius: 16;" />
+            <Text fill="WHITE" layoutX="233.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Wisata">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="539.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Toko">
+            <Text fill="WHITE" layoutX="539.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Toko">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Text>
-            <Text layoutX="175.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destinasi terbaik">
+            <Text layoutX="175.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destinasi terbaik">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></Text>
-            <Button layoutX="167.0" layoutY="288.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="159.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
+            <Button layoutX="167.0" layoutY="306.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="159.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
                <graphic>
                   <ImageView fitHeight="169.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -115,7 +120,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="362.0" layoutY="288.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="159.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
+            <Button layoutX="362.0" layoutY="306.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="159.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
                <graphic>
                   <ImageView fitHeight="169.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -124,7 +129,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="556.0" layoutY="288.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="159.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
+            <Button layoutX="556.0" layoutY="306.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="159.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
                <graphic>
                   <ImageView fitHeight="169.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -133,7 +138,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="556.0" layoutY="515.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="159.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
+            <Button layoutX="556.0" layoutY="533.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="159.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
                <graphic>
                   <ImageView fitHeight="169.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -142,12 +147,12 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Text layoutX="561.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toko ">
+            <Text layoutX="561.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toko ">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Text>
-            <Rectangle arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="218.0" layoutX="175.0" layoutY="475.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="365.0" />
+            <Rectangle arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="218.0" layoutX="175.0" layoutY="493.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="365.0" />
             <BarChart fx:id="bcDiagram" layoutX="162.0" layoutY="497.0" prefHeight="179.0" prefWidth="374.0">
               <xAxis>
                 <CategoryAxis side="BOTTOM" />
@@ -156,40 +161,40 @@
                 <NumberAxis prefHeight="155.0" prefWidth="19.0" side="LEFT" />
               </yAxis>
             </BarChart>
-            <Text layoutX="175.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diagram">
+            <Text layoutX="175.0" layoutY="518.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diagram">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Text>
-            <ChoiceBox fx:id="cbDiagram" layoutX="398.0" layoutY="481.0" prefHeight="25.0" prefWidth="127.0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #072959;" />
-            <ImageView fitHeight="45.0" fitWidth="50.0" layoutX="285.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+            <ChoiceBox fx:id="cbDiagram" layoutX="398.0" layoutY="499.0" prefHeight="25.0" prefWidth="127.0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #072959;" />
+            <ImageView fitHeight="45.0" fitWidth="50.0" layoutX="285.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../gambar/map-marker-free-icon-font.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="41.0" fitWidth="50.0" layoutX="583.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="41.0" fitWidth="50.0" layoutX="583.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../gambar/Toko%201.png" />
                </image>
             </ImageView>
-            <Button layoutX="178.0" layoutY="139.0" mnemonicParsing="false" onAction="#dataPost" prefHeight="100.0" prefWidth="256.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;" />
-            <Text fill="WHITE" layoutX="249.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Wisata">
+            <Button layoutX="178.0" layoutY="157.0" mnemonicParsing="false" onAction="#dataPost" prefHeight="100.0" prefWidth="256.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;" />
+            <Text fill="WHITE" layoutX="249.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Wisata">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Text>
-            <ImageView fitHeight="54.0" fitWidth="65.0" layoutX="278.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="54.0" fitWidth="65.0" layoutX="278.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../gambar/list.png" />
                </image>
             </ImageView>
-            <Button layoutX="480.0" layoutY="139.0" mnemonicParsing="false" onAction="#dataToko" prefHeight="100.0" prefWidth="256.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;" />
-            <Text fill="WHITE" layoutX="559.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Toko">
+            <Button layoutX="480.0" layoutY="159.0" mnemonicParsing="false" onAction="#dataToko" prefHeight="100.0" prefWidth="256.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;" />
+            <Text fill="WHITE" layoutX="559.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Toko">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Text>
-            <ImageView fitHeight="54.0" fitWidth="65.0" layoutX="580.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="54.0" fitWidth="65.0" layoutX="580.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../gambar/list.png" />
                </image>

@@ -66,6 +66,11 @@
                   <Image url="@../gambar/lihatToko2%201%20(1).png" />
                </image>
             </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="65.0" layoutX="31.0" layoutY="648.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/USER%20(2).png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </left>
@@ -77,8 +82,8 @@
                   <Image url="@../gambar/pbegron%201.png" />
                </image>
             </ImageView>
-            <Button layoutX="169.0" layoutY="70.0" mnemonicParsing="false" onAction="#tambahPostingan" prefHeight="102.0" prefWidth="261.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;" />
-            <Button layoutX="462.0" layoutY="66.0" mnemonicParsing="false" onAction="#tambahToko" prefHeight="107.0" prefWidth="256.0" style="-fx-background-color: #072959; -fx-background-radius: 15; -fx-border-color: #072959; -fx-border-radius: 16;" />
+            <Button layoutX="169.0" layoutY="135.0" mnemonicParsing="false" onAction="#tambahPostingan" prefHeight="102.0" prefWidth="261.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;" />
+            <Button layoutX="462.0" layoutY="135.0" mnemonicParsing="false" onAction="#tambahToko" prefHeight="102.0" prefWidth="261.0" style="-fx-background-color: #072959; -fx-background-radius: 15; -fx-border-color: #072959; -fx-border-radius: 16;" />
             <Text layoutX="175.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destinasi terbaik">
                <font>
                   <Font name="System Bold" size="18.0" />
@@ -125,22 +130,22 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Text>
-            <ImageView fitHeight="45.0" fitWidth="53.0" layoutX="274.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="45.0" fitWidth="53.0" layoutX="274.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../gambar/map-marker-free-icon-font.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="45.0" fitWidth="79.0" layoutX="572.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="45.0" fitWidth="79.0" layoutX="572.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../gambar/Toko%201.png" />
                </image>
             </ImageView>
-            <Text fill="WHITE" layoutX="227.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Wisata">
+            <Text fill="WHITE" layoutX="227.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Wisata">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="530.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Toko">
+            <Text fill="WHITE" layoutX="530.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Toko">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
