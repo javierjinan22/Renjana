@@ -37,8 +37,6 @@ import com.thoughtworks.xstream.io.xml.StaxDriver;
 import java.io.FileInputStream;
 
 public class FXMLDocumentController implements Initializable {
-    
-    LinkedList<Pengguna> dataRegistration = new LinkedList<>();
 
     OpenScene bukaScene = new OpenScene();
 
@@ -50,38 +48,17 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private BorderPane mainPane;
-    
+
     @FXML
     private Label jenisUser;
-    
+
     @FXML
     private Label namaUser;
 
     private String[] kunjungan = {"toko", "wisata"};
+    
     XYChart.Series databc = new XYChart.Series<>();
     
-    void openTabel() {
-        XStream xstream = new XStream(new StaxDriver());
-        FileInputStream berkasMasuk;
-        try {
-            berkasMasuk = new FileInputStream("dataRegistration.xml");
-            // harus diingat objek apa yang dahulu disimpan di file 
-            // program untuk membaca harus sinkron dengan program
-            // yang dahulu digunakan untuk menyimpannya
-            int isi;
-            char c;
-            String s = "";
-            while ((isi = berkasMasuk.read()) != - 1) {
-                c = (char) isi;
-                s = s + c;
-            }
-            dataRegistration = (LinkedList<Pengguna>) xstream.fromXML(s);
-            berkasMasuk.close();
-        } catch (Exception e) {
-            System.out.println("Terjadi kesalahan: " + e.getMessage());
-        }
-    }
-
     @FXML
     void lihatPostingan(ActionEvent event) throws IOException {
         Pane pane = FXMLLoader.load(PostinganController.class.getResource("Postingan.fxml"));
@@ -139,7 +116,7 @@ public class FXMLDocumentController implements Initializable {
         // Show the dialog and wait until the user closes it 
         dialogStage.showAndWait();
     }
-    
+
     @FXML
     void dataToko(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader();
@@ -164,18 +141,9 @@ public class FXMLDocumentController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        openTabel();
-        //untuk menampilkan siapa user yang sedang login
-        DataIndex di = new DataIndex();
-        namaUser.setText(dataRegistration.get(di.getData()).getNama());
-        if (dataRegistration.get(di.getData()).getAdmin() == true) {
-            jenisUser.setText("Admin");
-        } else if (dataRegistration.get(di.getData()).getManager() == true) {
-            jenisUser.setText("Pengelola");
-        } else {
-            jenisUser.setText("Pengunjung");
-        }
-        
+        namaUser.setText("JAVIER");
+        jenisUser.setText("ADMIN");
+
         cbDiagram.setValue("toko");
         cbDiagram.getItems().addAll(kunjungan);
 
