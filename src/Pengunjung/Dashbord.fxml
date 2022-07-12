@@ -17,6 +17,17 @@
    <left>
       <AnchorPane prefHeight="740.0" prefWidth="308.0" style="-fx-background-color: #072959;" BorderPane.alignment="CENTER">
          <children>
+            <Pane layoutX="18.0" layoutY="25.0" opacity="0.11" prefHeight="86.0" prefWidth="270.0" style="-fx-border-color: #85898e; -fx-border-radius: 15; -fx-background-color: white; -fx-background-radius: 15;" />
+            <Label layoutX="127.0" layoutY="658.0" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="39.0" fitWidth="42.0" layoutX="67.0" layoutY="656.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/log%20out%201.png" />
+               </image>
+            </ImageView>
             <Label layoutX="88.0" layoutY="304.0" prefHeight="35.0" prefWidth="149.0" text="Lihat Toko" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="24.0" />
@@ -58,22 +69,22 @@
                   <Image url="@../gambar/lihatToko2%201%20(1).png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="63.0" fitWidth="57.0" layoutX="19.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="63.0" fitWidth="57.0" layoutX="25.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../gambar/USER%20(2).png" />
+                  <Image url="@../gambar/profil%201.png" />
                </image>
             </ImageView>
-            <Label fx:id="namaUser" layoutX="89.0" layoutY="38.0" prefHeight="30.0" prefWidth="182.0" textFill="WHITE">
+            <Label fx:id="namaUser" layoutX="89.0" layoutY="40.0" prefHeight="30.0" prefWidth="182.0" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Label fx:id="jenisUser" layoutX="89.0" layoutY="68.0" prefHeight="30.0" prefWidth="182.0" textFill="WHITE">
+            <Label fx:id="jenisUser" layoutX="89.0" layoutY="64.0" prefHeight="30.0" prefWidth="182.0" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <Button alignment="CENTER" layoutY="358.0" mnemonicParsing="false" onAction="#logOut" prefHeight="70.0" prefWidth="304.0" style="-fx-background-color: 000000;" textFill="WHITE">
+            <Button alignment="CENTER" layoutX="42.0" layoutY="648.0" mnemonicParsing="false" onAction="#logOut" prefHeight="54.0" prefWidth="220.0" style="-fx-background-color: 000000; -fx-border-color: #85898e; -fx-border-radius: 19;" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
@@ -81,16 +92,6 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <ImageView fitHeight="39.0" fitWidth="42.0" layoutX="32.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../gambar/log%20out%201.png" />
-               </image>
-            </ImageView>
-            <Label layoutX="88.0" layoutY="376.0" text="Log Out" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
          </children>
       </AnchorPane>
    </left>
@@ -177,7 +178,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <TextField layoutX="464.0" layoutY="45.0" prefHeight="46.0" prefWidth="265.0" promptText="Search here..." style="-fx-background-radius: 12; -fx-border-color: #072959; -fx-border-radius: 13;">
+            <TextField layoutX="464.0" layoutY="45.0" prefHeight="46.0" prefWidth="265.0" promptText="Search here..." style="-fx-background-radius: 12; -fx-border-color: #85898e; -fx-border-radius: 13;">
                <font>
                   <Font size="17.0" />
                </font></TextField>
@@ -192,7 +193,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="758.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="33.0" fitWidth="29.0" layoutX="752.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../gambar/notif.png" />
                </image>
@@ -212,15 +213,15 @@
                   <Font name="System Bold" size="20.0" />
                </font>
             </Text>
-            <Button layoutX="129.0" layoutY="130.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="86.0" style="-fx-background-radius: 19; -fx-background-color: white; -fx-border-color: #072959; -fx-border-radius: 20;" text="Wisata">
+            <Button layoutX="129.0" layoutY="130.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="86.0" style="-fx-background-radius: 19; -fx-background-color: white; -fx-border-color: #85898e; -fx-border-radius: 20;" text="Wisata">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Button layoutX="226.0" layoutY="130.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="86.0" style="-fx-background-radius: 19; -fx-background-color: white; -fx-border-color: #072959; -fx-border-radius: 20;" text="Kuliner">
+            <Button layoutX="226.0" layoutY="130.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="86.0" style="-fx-background-radius: 19; -fx-background-color: white; -fx-border-color: #85898e; -fx-border-radius: 20;" text="Kuliner">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Button layoutX="323.0" layoutY="130.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="86.0" style="-fx-background-radius: 19; -fx-background-color: white; -fx-border-color: #072959; -fx-border-radius: 20;" text="Souvenir">
+            <Button layoutX="323.0" layoutY="130.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="86.0" style="-fx-background-radius: 19; -fx-background-color: white; -fx-border-color: #85898e; -fx-border-radius: 20;" text="Souvenir">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
