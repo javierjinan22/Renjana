@@ -138,6 +138,14 @@ public class FXMLDocumentController implements Initializable {
         mainPane.setCenter(pane);
         System.out.println("Button Dashboard's Clicked");
     }
+    
+    @FXML
+    void diagram(ActionEvent event) throws IOException {
+        Pane pane = FXMLLoader.load(DiagramController.class.getResource("Diagram.fxml"));
+//        Pane halaman = bukaScene.getPane("/View/Postingan");
+        mainPane.setCenter(pane);
+        System.out.println("Button Diagram's Clicked");
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {

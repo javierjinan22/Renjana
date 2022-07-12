@@ -55,7 +55,7 @@
                   <Image url="@../gambar/lihatToko2%201%20(1).png" />
                </image>
             </ImageView>
-            <Button layoutX="-52.0" layoutY="410.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="358.0" style="-fx-background-color: #072959;" text="Diagram" textFill="WHITE">
+            <Button layoutX="-52.0" layoutY="410.0" mnemonicParsing="false" onAction="#diagram" prefHeight="78.0" prefWidth="358.0" style="-fx-background-color: #072959;" text="Diagram" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font></Button>
