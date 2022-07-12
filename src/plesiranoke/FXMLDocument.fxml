@@ -106,8 +106,8 @@
                   <Rectangle2D width="1200.0" />
                </viewport>
             </ImageView>
-            <Button layoutX="177.0" layoutY="38.0" mnemonicParsing="false" onAction="#tambahPostingan" prefHeight="100.0" prefWidth="256.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;" />
-            <Button layoutX="484.0" layoutY="34.0" mnemonicParsing="false" onAction="#tambahToko" prefHeight="105.0" prefWidth="244.0" style="-fx-background-color: #072959; -fx-background-radius: 15; -fx-border-color: #072959; -fx-border-radius: 16;" />
+            <Button layoutX="178.0" layoutY="38.0" mnemonicParsing="false" onAction="#tambahPostingan" prefHeight="100.0" prefWidth="256.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;" />
+            <Button layoutX="480.0" layoutY="38.0" mnemonicParsing="false" onAction="#tambahToko" prefHeight="100.0" prefWidth="256.0" style="-fx-background-color: #072959; -fx-background-radius: 15; -fx-border-color: #072959; -fx-border-radius: 16;" />
             <Text fill="WHITE" layoutX="233.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Wisata">
                <font>
                   <Font name="System Bold" size="20.0" />
