@@ -81,6 +81,7 @@
                   <Font size="14.0" />
                </font>
             </Label>
+            <Button layoutX="96.0" layoutY="512.0" mnemonicParsing="false" onAction="#logOut" text="Log Out" />
          </children>
       </AnchorPane>
    </left>

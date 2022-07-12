@@ -15,6 +15,8 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.scene.control.Label;
+import javafx.scene.Node;
+import javafx.scene.Parent;
 
 //Import class dari package lain
 import plesiranoke.OpenScene;
@@ -25,12 +27,15 @@ import View.TabelPostinganController;
 import View.TokoController;
 import Model.DataIndex;
 import Model.Pengguna;
+import View.HalamanAwalController;
 
 //XML
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.StaxDriver;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.util.LinkedList;
+
 
 public class DashboardPengelolaController implements Initializable {
 
@@ -80,6 +85,33 @@ public class DashboardPengelolaController implements Initializable {
             }
         }
         return null;
+    }
+    
+    void simpanData() {
+        XStream xstream = new XStream(new StaxDriver());
+        String xml = xstream.toXML(dataRegistration);
+        FileOutputStream berkasBaru = null;
+        try {
+            // membuat nama file & folder tempat menyimpan jika perlu
+            berkasBaru = new FileOutputStream("dataRegistration.xml");
+
+            // mengubah karakter penyusun string xml sebagai 
+            // bytes (berbentuk nomor2 kode ASCII
+            byte[] bytes = xml.getBytes("UTF-8");
+
+            //Menyimpan file dari bytes
+            berkasBaru.write(bytes);
+        } catch (Exception e) {
+            System.err.println("Perhatian : " + e.getMessage());
+        } finally {
+            if (berkasBaru != null) {
+                try {
+                    berkasBaru.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
     @FXML
@@ -133,10 +165,32 @@ public class DashboardPengelolaController implements Initializable {
         mainPane.setCenter(pane);
         System.out.println("Button lihat toko's Clicked");
     }
+    
+    @FXML
+    void logOut(ActionEvent event) throws IOException {
+        boolean status = false;
+        for (int i = 0; i < dataRegistration.size(); i++) {
+            if (dataRegistration.get(i).getStatusOnline() == true) {
+                dataRegistration.get(i).setStatusOnline(false);
+            }
+        }
+        simpanData();
+        
+        Parent tableViewParent = FXMLLoader.load(HalamanAwalController.class.getResource("halamanAwal.fxml"));
+        Scene tableViewScene = new Scene(tableViewParent);
+
+        //This line gets the Stage information
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setScene(tableViewScene);
+        window.show();
+    }
+
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         bukaXML();
+        simpanData();
         //untuk menampilkan siapa user yang sedang login
         DataIndex di = new DataIndex();
         namaUser.setText(dataRegistration.get(di.getData()).getNama());

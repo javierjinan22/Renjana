@@ -30,11 +30,13 @@ import Admin.OnlyDashboardAdminController;
 import Model.DaftarPostingan;
 import Model.DataIndex;
 import Model.Pengguna;
+import View.HalamanAwalController;
 
 //File XML
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.StaxDriver;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 
 public class FXMLDocumentController implements Initializable {
 
@@ -56,9 +58,9 @@ public class FXMLDocumentController implements Initializable {
     private Label namaUser;
 
     private String[] kunjungan = {"toko", "wisata"};
-    
+
     XYChart.Series databc = new XYChart.Series<>();
-    
+
     @FXML
     void lihatPostingan(ActionEvent event) throws IOException {
         Pane pane = FXMLLoader.load(PostinganController.class.getResource("Postingan.fxml"));
@@ -138,7 +140,7 @@ public class FXMLDocumentController implements Initializable {
         mainPane.setCenter(pane);
         System.out.println("Button Dashboard's Clicked");
     }
-    
+
     @FXML
     void diagram(ActionEvent event) throws IOException {
         Pane pane = FXMLLoader.load(DiagramController.class.getResource("Diagram.fxml"));
@@ -147,8 +149,22 @@ public class FXMLDocumentController implements Initializable {
         System.out.println("Button Diagram's Clicked");
     }
 
+    @FXML
+    void logOut(ActionEvent event) throws IOException {
+//        Langsung ganti windows tanpa set status online karena akun admin dideklarasi langsung
+        Parent tableViewParent = FXMLLoader.load(HalamanAwalController.class.getResource("halamanAwal.fxml"));
+        Scene tableViewScene = new Scene(tableViewParent);
+
+        //This line gets the Stage information
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setScene(tableViewScene);
+        window.show();
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        //Untuk label siapa user yang sedang login
         namaUser.setText("JAVIER");
         jenisUser.setText("ADMIN");
 

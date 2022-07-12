@@ -1,7 +1,5 @@
 package Pengunjung;
 
-import View.PostinganController;
-import View.TokoController;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -17,27 +15,38 @@ import javafx.scene.control.Label;
 import plesiranoke.OpenScene;
 import View.PostinganController;
 import View.TokoController;
+import View.PostinganController;
+import View.TokoController;
 import Model.DataIndex;
 import Model.Pengguna;
+import View.HalamanAwalController;
 
 //XML
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.StaxDriver;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.util.LinkedList;
 
+//Ganti windows
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
 public class DashbordController implements Initializable {
+
     OpenScene bukaScene = new OpenScene();
-    
+
     @FXML
     private BorderPane mainPane;
-    
+
     @FXML
     private Label namaUser;
-    
+
     @FXML
     private Label jenisUser;
-    
+
     LinkedList<Pengguna> dataRegistration = bukaXML();
 
     LinkedList<Pengguna> bukaXML() {
@@ -74,7 +83,34 @@ public class DashbordController implements Initializable {
         }
         return null;
     }
-    
+
+    void simpanData() {
+        XStream xstream = new XStream(new StaxDriver());
+        String xml = xstream.toXML(dataRegistration);
+        FileOutputStream berkasBaru = null;
+        try {
+            // membuat nama file & folder tempat menyimpan jika perlu
+            berkasBaru = new FileOutputStream("dataRegistration.xml");
+
+            // mengubah karakter penyusun string xml sebagai 
+            // bytes (berbentuk nomor2 kode ASCII
+            byte[] bytes = xml.getBytes("UTF-8");
+
+            //Menyimpan file dari bytes
+            berkasBaru.write(bytes);
+        } catch (Exception e) {
+            System.err.println("Perhatian : " + e.getMessage());
+        } finally {
+            if (berkasBaru != null) {
+                try {
+                    berkasBaru.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
     @FXML
     void lihatPostingan(ActionEvent event) throws IOException {
         Pane pane = FXMLLoader.load(PostinganController.class.getResource("Postingan.fxml"));
@@ -82,7 +118,7 @@ public class DashbordController implements Initializable {
         mainPane.setCenter(pane);
         System.out.println("Button lihat postingan's Clicked");
     }
-    
+
     @FXML
     void lihatToko(ActionEvent event) throws IOException {
         Pane pane = FXMLLoader.load(TokoController.class.getResource("Toko.fxml"));
@@ -90,7 +126,7 @@ public class DashbordController implements Initializable {
         mainPane.setCenter(pane);
         System.out.println("Button lihat toko's Clicked");
     }
-    
+
     @FXML
     void dashboard(ActionEvent event) throws IOException {
         Pane pane = FXMLLoader.load(OnlyDashboardPengunjungController.class.getResource("OnlyDashboardPengunjung.fxml"));
@@ -99,9 +135,30 @@ public class DashbordController implements Initializable {
         System.out.println("Button lihat toko's Clicked");
     }
     
+    @FXML
+    void logOut(ActionEvent event) throws IOException {
+        boolean status = false;
+        for (int i = 0; i < dataRegistration.size(); i++) {
+            if (dataRegistration.get(i).getStatusOnline() == true) {
+                dataRegistration.get(i).setStatusOnline(false);
+            }
+        }
+        simpanData();
+        
+        Parent tableViewParent = FXMLLoader.load(HalamanAwalController.class.getResource("halamanAwal.fxml"));
+        Scene tableViewScene = new Scene(tableViewParent);
+
+        //This line gets the Stage information
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setScene(tableViewScene);
+        window.show();
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         bukaXML();
+        simpanData();
         //untuk menampilkan siapa user yang sedang login
         DataIndex di = new DataIndex();
         namaUser.setText(dataRegistration.get(di.getData()).getNama());
@@ -112,5 +169,5 @@ public class DashbordController implements Initializable {
         } else {
             jenisUser.setText("Pengunjung");
         }
-    }    
+    }
 }

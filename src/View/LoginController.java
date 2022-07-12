@@ -68,6 +68,34 @@ public class LoginController implements Initializable {
         return null;
     }
 
+    void simpanData() {
+        XStream xstream = new XStream(new StaxDriver());
+        // larik double diubah menjadi string dengan format XML
+        String xml = xstream.toXML(dataRegistration);
+        FileOutputStream berkasBaru = null;
+        try {
+            // membuat nama file & folder tempat menyimpan jika perlu
+            berkasBaru = new FileOutputStream("dataRegistration.xml");
+
+            // mengubah karakter penyusun string xml sebagai 
+            // bytes (berbentuk nomor2 kode ASCII
+            byte[] bytes = xml.getBytes("UTF-8");
+
+            //Menyimpan file dari bytes
+            berkasBaru.write(bytes);
+        } catch (Exception e) {
+            System.err.println("Perhatian : " + e.getMessage());
+        } finally {
+            if (berkasBaru != null) {
+                try {
+                    berkasBaru.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
     @FXML
     private TextField tfEmail;
 
@@ -88,7 +116,7 @@ public class LoginController implements Initializable {
 
     @FXML
     private Stage stage;
-    
+
     @FXML
     public void noAccount(ActionEvent event) throws IOException {
         Parent tableViewParent = FXMLLoader.load(getClass().getResource("masukSebagai.fxml"));
@@ -125,8 +153,6 @@ public class LoginController implements Initializable {
             } else if (email.equals("admin") && pass.equals("123")) {
                 validitasData = true;
                 isAdmin = true;
-//                dataRegistration.get(i).setAdmin(true);
-//                dataRegistration.get(i).setStatusOnline(true);
             }
         }
 
@@ -139,31 +165,8 @@ public class LoginController implements Initializable {
 
             window.setScene(tableViewScene);
             window.show();
-            // larik double diubah menjadi string dengan format XML
-            String xml = xstream.toXML(dataRegistration);
-            FileOutputStream berkasBaru = null;
-            try {
-                // membuat nama file & folder tempat menyimpan jika perlu
-                berkasBaru = new FileOutputStream("dataRegistration.xml");
-
-                // mengubah karakter penyusun string xml sebagai 
-                // bytes (berbentuk nomor2 kode ASCII
-                byte[] bytes = xml.getBytes("UTF-8");
-
-                //Menyimpan file dari bytes
-                berkasBaru.write(bytes);
-            } catch (Exception e) {
-                System.err.println("Perhatian : " + e.getMessage());
-            } finally {
-                if (berkasBaru != null) {
-                    try {
-                        berkasBaru.close();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-
+            
+            simpanData();
         } else if (validitasData && isAdmin) { //Akun Admin
             Parent tableViewParent = FXMLLoader.load(FXMLDocumentController.class.getResource("FXMLDocument.fxml"));
             Scene tableViewScene = new Scene(tableViewParent);
@@ -174,30 +177,7 @@ public class LoginController implements Initializable {
             window.setScene(tableViewScene);
             window.show();
 
-            // larik double diubah menjadi string dengan format XML
-            String xml = xstream.toXML(dataRegistration);
-            FileOutputStream berkasBaru = null;
-            try {
-                // membuat nama file & folder tempat menyimpan jika perlu
-                berkasBaru = new FileOutputStream("dataRegistration.xml");
-
-                // mengubah karakter penyusun string xml sebagai 
-                // bytes (berbentuk nomor2 kode ASCII
-                byte[] bytes = xml.getBytes("UTF-8");
-
-                //Menyimpan file dari bytes
-                berkasBaru.write(bytes);
-            } catch (Exception e) {
-                System.err.println("Perhatian : " + e.getMessage());
-            } finally {
-                if (berkasBaru != null) {
-                    try {
-                        berkasBaru.close();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
+            simpanData();
         } else if (validitasData && !manager) { //Akun Wisatawan
             Parent tableViewParent = FXMLLoader.load(DashbordController.class.getResource("Dashbord.fxml"));
             Scene tableViewScene = new Scene(tableViewParent);
@@ -207,30 +187,8 @@ public class LoginController implements Initializable {
 
             window.setScene(tableViewScene);
             window.show();
-            // larik double diubah menjadi string dengan format XML
-            String xml = xstream.toXML(dataRegistration);
-            FileOutputStream berkasBaru = null;
-            try {
-                // membuat nama file & folder tempat menyimpan jika perlu
-                berkasBaru = new FileOutputStream("dataRegistration.xml");
-
-                // mengubah karakter penyusun string xml sebagai 
-                // bytes (berbentuk nomor2 kode ASCII
-                byte[] bytes = xml.getBytes("UTF-8");
-
-                //Menyimpan file dari bytes
-                berkasBaru.write(bytes);
-            } catch (Exception e) {
-                System.err.println("Perhatian : " + e.getMessage());
-            } finally {
-                if (berkasBaru != null) {
-                    try {
-                        berkasBaru.close();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
+           
+            simpanData();
         } else if (validitasData == false) {
             warning.setText("Email/Password anda salah!!!");
         }
@@ -239,6 +197,7 @@ public class LoginController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         bukaXML();
+        simpanData();
     }
 
 }
