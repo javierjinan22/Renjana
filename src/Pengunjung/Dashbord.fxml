@@ -77,7 +77,6 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <Button layoutX="110.0" layoutY="487.0" mnemonicParsing="false" onAction="#logOut" text="Log Out" />
          </children>
       </AnchorPane>
    </left>
@@ -92,61 +91,78 @@
                   <Rectangle2D width="1200.0" />
                </viewport>
             </ImageView>
-            <Text fill="WHITE" layoutX="235.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Wisata">
-               <font>
-                  <Font name="System Bold" size="20.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="526.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Toko">
-               <font>
-                  <Font name="System Bold" size="20.0" />
-               </font>
-            </Text>
-            <Text layoutX="175.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destinasi terbaik">
+            <Text layoutX="168.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destinasi terbaik">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></Text>
-            <Button layoutX="167.0" layoutY="174.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="159.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
+            <Button layoutX="167.0" layoutY="173.0" mnemonicParsing="false" prefHeight="204.0" prefWidth="199.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
                <graphic>
-                  <ImageView fitHeight="169.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="204.0" fitWidth="199.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../gambar/pexels-pixabay-161293%201.png" />
                      </image>
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="362.0" layoutY="174.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="159.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
+            <Button layoutX="396.0" layoutY="173.0" mnemonicParsing="false" prefHeight="204.0" prefWidth="199.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
                <graphic>
-                  <ImageView fitHeight="169.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="204.0" fitWidth="199.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../gambar/pexels-aron-visuals-1694621%201.png" />
                      </image>
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="556.0" layoutY="174.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="159.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
+            <Button layoutX="620.0" layoutY="173.0" mnemonicParsing="false" prefHeight="204.0" prefWidth="199.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
                <graphic>
-                  <ImageView fitHeight="169.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="204.0" fitWidth="199.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../gambar/pexels-feri-feri-9286872%201.png" />
                      </image>
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="168.0" layoutY="401.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="159.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
+            <Button layoutX="163.0" layoutY="451.0" mnemonicParsing="false" prefHeight="204.0" prefWidth="199.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
                <graphic>
-                  <ImageView fitHeight="169.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="204.0" fitWidth="199.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../gambar/gudeg1%201.png" />
                      </image>
                   </ImageView>
                </graphic>
             </Button>
-            <Text layoutX="175.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toko ">
+            <Text layoutX="180.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toko ">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Text>
+            <Button layoutX="824.0" layoutY="672.0" mnemonicParsing="false" onAction="#logOut" prefHeight="48.0" prefWidth="56.0" style="-fx-background-color: 000000;">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gambar/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="398.0" layoutY="447.0" mnemonicParsing="false" prefHeight="204.0" prefWidth="199.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
+               <graphic>
+                  <ImageView fitHeight="204.0" fitWidth="194.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gambar/gudeg1%201.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="628.0" layoutY="451.0" mnemonicParsing="false" prefHeight="204.0" prefWidth="199.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
+               <graphic>
+                  <ImageView fitHeight="204.0" fitWidth="199.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gambar/gudeg1%201.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
          </children></Pane>
    </center>
 </BorderPane>
