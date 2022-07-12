@@ -43,6 +43,9 @@ public class DashbordController implements Initializable {
 
     @FXML
     private Label namaUser;
+    
+    @FXML
+    private Label namaUser2;
 
     @FXML
     private Label jenisUser;
@@ -162,6 +165,7 @@ public class DashbordController implements Initializable {
         //untuk menampilkan siapa user yang sedang login
         DataIndex di = new DataIndex();
         namaUser.setText(dataRegistration.get(di.getData()).getNama());
+        namaUser2.setText(dataRegistration.get(di.getData()).getNama());
         if (dataRegistration.get(di.getData()).getAdmin() == true) {
             jenisUser.setText("Admin");
         } else if (dataRegistration.get(di.getData()).getManager() == true) {
