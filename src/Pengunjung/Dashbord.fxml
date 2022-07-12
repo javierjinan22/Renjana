@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
@@ -16,30 +17,37 @@
    <left>
       <AnchorPane prefHeight="740.0" prefWidth="308.0" style="-fx-background-color: #072959;" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="2.0" layoutY="126.0" mnemonicParsing="false" onAction="#dashboard" prefHeight="78.0" prefWidth="277.0" style="-fx-background-color: #072959;" text="Dashboard" textFill="WHITE">
+            <Label layoutX="88.0" layoutY="304.0" prefHeight="35.0" prefWidth="149.0" text="Lihat Toko" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="24.0" />
-               </font></Button>
+               </font>
+            </Label>
+            <Button layoutX="2.0" layoutY="126.0" mnemonicParsing="false" onAction="#dashboard" prefHeight="78.0" prefWidth="297.0" style="-fx-background-color: #072959;" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
             <ImageView fitHeight="39.0" fitWidth="42.0" layoutX="30.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../gambar/home-free-icon-font.png" />
                </image>
             </ImageView>
-            <Button layoutX="23.0" layoutY="204.0" mnemonicParsing="false" onAction="#lihatPostingan" prefHeight="78.0" prefWidth="253.0" style="-fx-background-color: #072959;" text="Lihat Wisata" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font></Button>
-            <Button layoutX="2.0" layoutY="283.0" mnemonicParsing="false" onAction="#lihatToko" prefHeight="78.0" prefWidth="304.0" style="-fx-background-color: #072959;">
+            <Button layoutX="23.0" layoutY="204.0" mnemonicParsing="false" onAction="#lihatPostingan" prefHeight="78.0" prefWidth="269.0" style="-fx-background-color: #072959;" text="Lihat Wisata" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
-               <graphic>
-                  <Label prefHeight="35.0" prefWidth="149.0" text="Lihat Toko" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="24.0" />
-                     </font>
-                  </Label>
-               </graphic></Button>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="2.0" layoutY="283.0" mnemonicParsing="false" onAction="#lihatToko" prefHeight="78.0" prefWidth="304.0" style="-fx-background-color: 000000;">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
             <ImageView fitHeight="39.0" fitWidth="42.0" layoutX="30.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../gambar/Lihattoko%201.png" />
@@ -50,19 +58,37 @@
                   <Image url="@../gambar/lihatToko2%201%20(1).png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="63.0" fitWidth="57.0" layoutX="27.0" layoutY="656.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="63.0" fitWidth="57.0" layoutX="19.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../gambar/USER%20(2).png" />
                </image>
             </ImageView>
-            <Label fx:id="namaUser" layoutX="101.0" layoutY="657.0" prefHeight="30.0" prefWidth="182.0" textFill="WHITE">
+            <Label fx:id="namaUser" layoutX="89.0" layoutY="38.0" prefHeight="30.0" prefWidth="182.0" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Label fx:id="jenisUser" layoutX="101.0" layoutY="681.0" prefHeight="30.0" prefWidth="182.0" textFill="WHITE">
+            <Label fx:id="jenisUser" layoutX="89.0" layoutY="68.0" prefHeight="30.0" prefWidth="182.0" textFill="WHITE">
                <font>
                   <Font size="14.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" layoutY="358.0" mnemonicParsing="false" onAction="#logOut" prefHeight="70.0" prefWidth="304.0" style="-fx-background-color: 000000;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="39.0" fitWidth="42.0" layoutX="32.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/log%20out%201.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="88.0" layoutY="376.0" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
                </font>
             </Label>
          </children>
@@ -87,28 +113,37 @@
                <graphic>
                   <ImageView fitHeight="204.0" fitWidth="187.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../gambar/pexels-pixabay-161293%201.png" />
+                        <Image url="@../gambar/Prambanan.png" />
                      </image>
                   </ImageView>
                </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
             <Button layoutX="353.0" layoutY="207.0" mnemonicParsing="false" prefHeight="204.0" prefWidth="199.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
                <graphic>
                   <ImageView fitHeight="204.0" fitWidth="199.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../gambar/pexels-aron-visuals-1694621%201.png" />
+                        <Image url="@../gambar/Bedugul.png" />
                      </image>
                   </ImageView>
                </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
             <Button layoutX="585.0" layoutY="207.0" mnemonicParsing="false" prefHeight="204.0" prefWidth="199.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
                <graphic>
                   <ImageView fitHeight="204.0" fitWidth="199.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../gambar/pexels-feri-feri-9286872%201.png" />
+                        <Image url="@../gambar/Bromo.png" />
                      </image>
                   </ImageView>
                </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
             <Button layoutX="120.0" layoutY="454.0" mnemonicParsing="false" prefHeight="204.0" prefWidth="199.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
                <graphic>
@@ -124,15 +159,6 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Text>
-            <Button layoutX="824.0" layoutY="672.0" mnemonicParsing="false" onAction="#logOut" prefHeight="48.0" prefWidth="56.0" style="-fx-background-color: 000000;">
-               <graphic>
-                  <ImageView fitHeight="33.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../gambar/logout.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
             <Button layoutX="355.0" layoutY="450.0" mnemonicParsing="false" prefHeight="204.0" prefWidth="199.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
                <graphic>
                   <ImageView fitHeight="204.0" fitWidth="194.0" pickOnBounds="true" preserveRatio="true">
@@ -151,41 +177,53 @@
                   </ImageView>
                </graphic>
             </Button>
-            <TextField layoutX="489.0" layoutY="30.0" prefHeight="46.0" prefWidth="265.0" promptText="Search here..." style="-fx-background-radius: 12; -fx-border-color: #072959; -fx-border-radius: 13;">
+            <TextField layoutX="464.0" layoutY="45.0" prefHeight="46.0" prefWidth="265.0" promptText="Search here..." style="-fx-background-radius: 12; -fx-border-color: #072959; -fx-border-radius: 13;">
                <font>
                   <Font size="17.0" />
                </font></TextField>
-            <Button layoutX="697.0" layoutY="34.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="50.0" style="-fx-background-radius: 12; -fx-background-color: white;">
+            <Button layoutX="672.0" layoutY="49.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="50.0" style="-fx-background-radius: 12; -fx-background-color: white;">
                <graphic>
                   <ImageView fitHeight="25.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../gambar/search1%201%20(1).png" />
                      </image></ImageView>
                </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
-            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="783.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="758.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../gambar/notif.png" />
                </image>
             </ImageView>
-            <Text layoutX="127.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Halo,">
+            <Text layoutX="127.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Halo,">
                <font>
                   <Font name="System Bold" size="29.0" />
                </font>
             </Text>
-            <Label layoutX="203.0" layoutY="29.0" prefHeight="43.0" prefWidth="242.0" text="Javier">
+            <Label layoutX="203.0" layoutY="44.0" prefHeight="43.0" prefWidth="242.0" text="Javier">
                <font>
                   <Font name="System Bold" size="29.0" />
                </font>
             </Label>
-            <Text layoutX="128.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mau kemana kita hari ini ?">
+            <Text layoutX="128.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mau kemana kita hari ini ?">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Text>
-            <Button layoutX="129.0" layoutY="130.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="86.0" style="-fx-background-radius: 19; -fx-background-color: white; -fx-border-color: #072959; -fx-border-radius: 20;" text="Wisata" />
-            <Button layoutX="226.0" layoutY="130.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="86.0" style="-fx-background-radius: 19; -fx-background-color: white; -fx-border-color: #072959; -fx-border-radius: 20;" text="Kuliner" />
-            <Button layoutX="323.0" layoutY="130.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="86.0" style="-fx-background-radius: 19; -fx-background-color: white; -fx-border-color: #072959; -fx-border-radius: 20;" text="Souvenir" />
+            <Button layoutX="129.0" layoutY="130.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="86.0" style="-fx-background-radius: 19; -fx-background-color: white; -fx-border-color: #072959; -fx-border-radius: 20;" text="Wisata">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="226.0" layoutY="130.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="86.0" style="-fx-background-radius: 19; -fx-background-color: white; -fx-border-color: #072959; -fx-border-radius: 20;" text="Kuliner">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="323.0" layoutY="130.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="86.0" style="-fx-background-radius: 19; -fx-background-color: white; -fx-border-color: #072959; -fx-border-radius: 20;" text="Souvenir">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
          </children></Pane>
    </center>
 </BorderPane>
