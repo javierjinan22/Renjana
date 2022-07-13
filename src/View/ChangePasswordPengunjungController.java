@@ -26,7 +26,7 @@ public class ChangePasswordPengunjungController implements Initializable {
 
     @FXML
     private Label warning;
-    
+
     @FXML
     private Button medal;
 
@@ -36,9 +36,9 @@ public class ChangePasswordPengunjungController implements Initializable {
     @FXML
     private PasswordField passBaru;
 
-    LinkedList<Pengguna> dataRegistration = bukaXML();
+    LinkedList<Pengguna> dataRegistration = new LinkedList<Pengguna>();
 
-    LinkedList<Pengguna> bukaXML() {
+    void bukaXML() {
         XStream xstream = new XStream(new StaxDriver());
         FileInputStream buka = null;
         try {
@@ -61,16 +61,7 @@ public class ChangePasswordPengunjungController implements Initializable {
             dataRegistration = (LinkedList<Pengguna>) xstream.fromXML(s);
         } catch (Exception e) {
             System.err.println("test : " + e.getMessage());
-        } finally {
-            if (buka != null) {
-                try {
-                    buka.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
         }
-        return null;
     }
 
     void simpanData() {
@@ -107,13 +98,15 @@ public class ChangePasswordPengunjungController implements Initializable {
         //Pass
         String newPassword = passBaru.getText();
         String oldPassword = passLama.getText();
-        
+
         //Other Components
         String nama = dataRegistration.get(di.getData()).getNama();
         String email = dataRegistration.get(di.getData()).getEmail();
         boolean manager = false;
         boolean admin = false;
         
+        bukaXML();
+
         if (dataRegistration.get(di.getData()).getPassword().equals(oldPassword)) {
             dataRegistration.add(di.getData(), new Pengguna(nama, email, newPassword, manager, admin));
             simpanData();
