@@ -92,6 +92,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
+            <Button layoutX="132.0" layoutY="52.0" mnemonicParsing="false" onAction="#profil" text="Profil" />
          </children>
       </AnchorPane>
    </left>

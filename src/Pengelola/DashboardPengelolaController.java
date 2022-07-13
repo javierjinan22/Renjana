@@ -196,7 +196,7 @@ public class DashboardPengelolaController implements Initializable {
         namaUser.setText(dataRegistration.get(di.getData()).getNama());
         if (dataRegistration.get(di.getData()).getAdmin() == true) {
             jenisUser.setText("Admin");
-        } else if (dataRegistration.get(di.getData()).getManager() == true) {
+        } if (dataRegistration.get(di.getData()).getManager() == true) {
             jenisUser.setText("Pengelola");
         } else {
             jenisUser.setText("Pengunjung");

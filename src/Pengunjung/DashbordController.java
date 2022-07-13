@@ -20,6 +20,7 @@ import View.TokoController;
 import Model.DataIndex;
 import Model.Pengguna;
 import View.HalamanAwalController;
+import View.ProfilPengunjungController;
 
 //XML
 import com.thoughtworks.xstream.XStream;
@@ -133,6 +134,14 @@ public class DashbordController implements Initializable {
     @FXML
     void dashboard(ActionEvent event) throws IOException {
         Pane pane = FXMLLoader.load(OnlyDashboardPengunjungController.class.getResource("OnlyDashboardPengunjung.fxml"));
+//        Pane halaman = bukaScene.getPane("/View/Postingan");
+        mainPane.setCenter(pane);
+        System.out.println("Button lihat dashboard pengunjung's Clicked");
+    }
+    
+    @FXML
+    void profil(ActionEvent event) throws IOException {
+        Pane pane = FXMLLoader.load(ProfilPengunjungController.class.getResource("ProfilPengunjung.fxml"));
 //        Pane halaman = bukaScene.getPane("/View/Postingan");
         mainPane.setCenter(pane);
         System.out.println("Button lihat dashboard pengunjung's Clicked");
