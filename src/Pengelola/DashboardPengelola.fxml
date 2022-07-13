@@ -213,7 +213,7 @@
                   <Font name="System Bold" size="29.0" />
                </font>
             </Text>
-            <Label layoutX="203.0" layoutY="21.0" prefHeight="43.0" prefWidth="242.0" text="Javier">
+            <Label fx:id="namaUser2" layoutX="203.0" layoutY="21.0" prefHeight="43.0" prefWidth="242.0" text="Javier">
                <font>
                   <Font name="System Bold" size="29.0" />
                </font>

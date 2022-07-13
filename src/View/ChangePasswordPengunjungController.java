@@ -128,6 +128,7 @@ public class ChangePasswordPengunjungController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         di = new DataIndex();
         bukaXML();
+        simpanData();
     }
 
 }
