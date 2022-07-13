@@ -135,7 +135,7 @@ public class DashbordController implements Initializable {
         Pane pane = FXMLLoader.load(OnlyDashboardPengunjungController.class.getResource("OnlyDashboardPengunjung.fxml"));
 //        Pane halaman = bukaScene.getPane("/View/Postingan");
         mainPane.setCenter(pane);
-        System.out.println("Button lihat toko's Clicked");
+        System.out.println("Button lihat dashboard pengunjung's Clicked");
     }
     
     @FXML

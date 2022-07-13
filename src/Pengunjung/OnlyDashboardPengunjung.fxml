@@ -10,6 +10,14 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pengunjung.OnlyDashboardPengunjungController">
    <children>
+      <ImageView fitHeight="750.0" fitWidth="902.0" opacity="0.11" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/pbegron%201.png" />
+         </image>
+         <viewport>
+            <Rectangle2D width="1200.0" />
+         </viewport>
+      </ImageView>
       <Text layoutX="178.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destinasi terbaik">
          <font>
             <Font name="System Bold" size="18.0" />
@@ -56,15 +64,6 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Text>
-      <Button layoutX="834.0" layoutY="682.0" mnemonicParsing="false" onAction="#logOut" prefHeight="48.0" prefWidth="56.0" style="-fx-background-color: 000000;">
-         <graphic>
-            <ImageView fitHeight="33.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../gambar/logout.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
       <Button layoutX="408.0" layoutY="457.0" mnemonicParsing="false" prefHeight="204.0" prefWidth="199.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
          <graphic>
             <ImageView fitHeight="204.0" fitWidth="194.0" pickOnBounds="true" preserveRatio="true">
@@ -83,13 +82,5 @@
             </ImageView>
          </graphic>
       </Button>
-      <ImageView fitHeight="750.0" fitWidth="902.0" opacity="0.11" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../gambar/pbegron%201.png" />
-         </image>
-         <viewport>
-            <Rectangle2D width="1200.0" />
-         </viewport>
-      </ImageView>
    </children>
 </AnchorPane>
