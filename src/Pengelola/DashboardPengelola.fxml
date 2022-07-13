@@ -26,7 +26,7 @@
                   <Font name="System Bold" size="24.0" />
                </font>
             </Label>
-            <Pane layoutX="18.0" layoutY="25.0" opacity="0.11" prefHeight="86.0" prefWidth="270.0" style="-fx-background-color: white; -fx-background-radius: 15;" />
+            <Pane layoutX="18.0" layoutY="25.0" opacity="0.11" prefHeight="98.0" prefWidth="270.0" style="-fx-background-color: white; -fx-background-radius: 15;" />
             <Button layoutX="2.0" layoutY="126.0" mnemonicParsing="false" onAction="#dashboard" prefHeight="78.0" prefWidth="277.0" style="-fx-background-color: #072959;" text="Dashboard" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="24.0" />
@@ -73,17 +73,17 @@
                   <Image url="@../gambar/lihatToko2%201%20(1).png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="63.0" fitWidth="57.0" layoutX="25.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="48.0" fitWidth="50.0" layoutX="35.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../gambar/profil%201.png" />
                </image>
             </ImageView>
-            <Label fx:id="namaUser" layoutX="89.0" layoutY="40.0" prefHeight="30.0" prefWidth="182.0" textFill="WHITE">
+            <Label fx:id="namaUser" layoutX="89.0" layoutY="29.0" prefHeight="30.0" prefWidth="182.0" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Label fx:id="jenisUser" layoutX="89.0" layoutY="64.0" prefHeight="30.0" prefWidth="182.0" textFill="WHITE">
+            <Label fx:id="jenisUser" layoutX="89.0" layoutY="50.0" prefHeight="30.0" prefWidth="182.0" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
@@ -92,6 +92,14 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
+            <Button layoutX="35.0" layoutY="90.0" mnemonicParsing="false" onAction="#profil" prefHeight="15.0" prefWidth="48.0" style="-fx-background-color: 0000000; -fx-border-color: white; -fx-border-radius: 12;" text="Profil" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
          </children>
       </AnchorPane>
    </left>
