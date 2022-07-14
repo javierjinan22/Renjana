@@ -149,7 +149,7 @@
                <graphic>
                   <ImageView fitHeight="204.0" fitWidth="199.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../gambar/gudeg1%201.png" />
+                        <Image url="@../gambar/gudeg.png" />
                      </image>
                   </ImageView>
                </graphic>
