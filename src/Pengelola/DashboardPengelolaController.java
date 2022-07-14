@@ -1,7 +1,5 @@
 package Pengelola;
 
-import View.PostinganController;
-import View.TokoController;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -28,6 +26,7 @@ import View.TokoController;
 import Model.DataIndex;
 import Model.Pengguna;
 import View.HalamanAwalController;
+import View.ProfilPengelolaController;
 
 //XML
 import com.thoughtworks.xstream.XStream;
@@ -167,6 +166,14 @@ public class DashboardPengelolaController implements Initializable {
 //        Pane halaman = bukaScene.getPane("/View/Postingan");
         mainPane.setCenter(pane);
         System.out.println("Button lihat toko's Clicked");
+    }
+    
+    @FXML
+    void profil(ActionEvent event) throws IOException {
+        Pane pane = FXMLLoader.load(ProfilPengelolaController.class.getResource("ProfilPengelola.fxml"));
+//        Pane halaman = bukaScene.getPane("/View/Postingan");
+        mainPane.setCenter(pane);
+        System.out.println("Button lihat dashboard pengunjung's Clicked");
     }
     
     @FXML

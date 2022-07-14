@@ -125,4 +125,14 @@ public class Pengguna {
     public void setManager(boolean manager) {
         this.manager = manager;
     }
+
+    public String getNamaWisata() {
+        return namaWisata;
+    }
+
+    public void setNamaWisata(String namaWisata) {
+        this.namaWisata = namaWisata;
+    }
+    
+    
 }

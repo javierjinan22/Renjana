@@ -1,15 +1,13 @@
 package View;
 
-import java.io.IOException;
 import java.net.URL;
-import java.util.LinkedList;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
-import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 //Import class lain
@@ -21,20 +19,22 @@ import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.StaxDriver;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.LinkedList;
 
-public class ChangePasswordPengunjungController implements Initializable {
-
-    @FXML
-    private Label warning;
+public class ChangePasswordPengelolaController implements Initializable {
 
     @FXML
     private Button medal;
 
     @FXML
+    private PasswordField passBaru;
+
+    @FXML
     private PasswordField passLama;
 
     @FXML
-    private PasswordField passBaru;
+    private Label warning;
 
     LinkedList<Pengguna> dataRegistration = new LinkedList<Pengguna>();
 
@@ -94,16 +94,10 @@ public class ChangePasswordPengunjungController implements Initializable {
     DataIndex di;
 
     @FXML
-    private void changePass(ActionEvent Event) {
+    void changePass(ActionEvent event) {
         //Pass
         String newPassword = passBaru.getText();
         String oldPassword = passLama.getText();
-        
-        //Other Components
-        String nama = dataRegistration.get(di.getData()).getNama();
-        String email = dataRegistration.get(di.getData()).getEmail();
-        Boolean manager = false;
-        Boolean admin = false;
 
         bukaXML();
 
@@ -112,6 +106,7 @@ public class ChangePasswordPengunjungController implements Initializable {
             simpanData();
             Stage page = (Stage) medal.getScene().getWindow();
             page.close();
+            
         } else {
             warning.setText("Password lama anda tidak valid");
         }
