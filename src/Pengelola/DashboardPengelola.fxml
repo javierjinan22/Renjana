@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -26,7 +27,7 @@
                   <Font name="System Bold" size="24.0" />
                </font>
             </Label>
-            <Pane layoutX="18.0" layoutY="25.0" opacity="0.11" prefHeight="98.0" prefWidth="270.0" style="-fx-background-color: white; -fx-background-radius: 15;" />
+            <Pane layoutX="18.0" layoutY="25.0" opacity="0.11" prefHeight="98.0" prefWidth="270.0" style="-fx-background-color: #7FB5FF; -fx-background-radius: 15;" />
             <Button layoutX="2.0" layoutY="126.0" mnemonicParsing="false" onAction="#dashboard" prefHeight="78.0" prefWidth="277.0" style="-fx-background-color: #072959;" text="Dashboard" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="24.0" />
@@ -88,7 +89,7 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <Button layoutX="42.0" layoutY="648.0" mnemonicParsing="false" onAction="#logOut" prefHeight="54.0" prefWidth="220.0" style="-fx-background-color: 000000; -fx-border-radius: 19; -fx-border-color: #85898e;">
+            <Button layoutX="42.0" layoutY="648.0" mnemonicParsing="false" onAction="#logOut" prefHeight="54.0" prefWidth="220.0" style="-fx-background-color: 000000; -fx-border-radius: 19; -fx-border-color: #42C2FF;">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
@@ -111,98 +112,44 @@
                   <Image url="@../gambar/pbegron%201.png" />
                </image>
             </ImageView>
-            <Button layoutX="127.0" layoutY="107.0" mnemonicParsing="false" onAction="#tambahPostingan" prefHeight="122.0" prefWidth="291.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;" />
-            <Button layoutX="475.0" layoutY="108.0" mnemonicParsing="false" onAction="#tambahToko" prefHeight="122.0" prefWidth="291.0" style="-fx-background-color: #072959; -fx-background-radius: 15; -fx-border-color: #072959; -fx-border-radius: 16;" />
-            <Text layoutX="127.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destinasi terbaik">
+            <Button layoutX="128.0" layoutY="107.0" mnemonicParsing="false" onAction="#tambahPostingan" prefHeight="122.0" prefWidth="230.0" style="-fx-background-color: #7FB5FF; -fx-background-radius: 15; -fx-border-radius: 16;" />
+            <Button layoutX="418.0" layoutY="108.0" mnemonicParsing="false" onAction="#tambahToko" prefHeight="122.0" prefWidth="230.0" style="-fx-background-color: #42C2FF; -fx-background-radius: 15; -fx-border-radius: 16;" />
+            <Text fill="#06283d" layoutX="128.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destinasi terbaik">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Text>
-            <Button layoutX="127.0" layoutY="260.0" mnemonicParsing="false" prefHeight="204.0" prefWidth="199.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
-               <graphic>
-                  <ImageView fitHeight="204.0" fitWidth="199.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../gambar/Prambanan.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="351.0" layoutY="260.0" mnemonicParsing="false" prefHeight="204.0" prefWidth="199.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
-               <graphic>
-                  <ImageView fitHeight="204.0" fitWidth="199.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../gambar/Bedugul.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="571.0" layoutY="260.0" mnemonicParsing="false" prefHeight="204.0" prefWidth="199.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
-               <graphic>
-                  <ImageView fitHeight="204.0" fitWidth="199.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../gambar/Bromo.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="127.0" layoutY="504.0" mnemonicParsing="false" prefHeight="204.0" prefWidth="199.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
-               <graphic>
-                  <ImageView fitHeight="204.0" fitWidth="199.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../gambar/gudeg.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Text layoutX="127.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toko ">
+            <Text fill="#06283d" layoutX="128.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toko ">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Text>
-            <ImageView fitHeight="45.0" fitWidth="53.0" layoutX="248.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="45.0" fitWidth="53.0" layoutX="219.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../gambar/map-marker-free-icon-font.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="45.0" fitWidth="79.0" layoutX="591.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="45.0" fitWidth="79.0" layoutX="512.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../gambar/Toko%201.png" />
                </image>
             </ImageView>
-            <Text fill="WHITE" layoutX="198.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Wisata">
+            <Text fill="WHITE" layoutX="168.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Wisata">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="556.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Toko">
+            <Text fill="WHITE" layoutX="477.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Toko">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Text>
-            <Button layoutX="353.0" layoutY="504.0" mnemonicParsing="false" prefHeight="204.0" prefWidth="199.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
-               <graphic>
-                  <ImageView fitHeight="204.0" fitWidth="199.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../gambar/gudeg1%201.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="570.0" layoutY="504.0" mnemonicParsing="false" prefHeight="204.0" prefWidth="199.0" style="-fx-background-radius: 15; -fx-background-color: WHITE;">
-               <graphic>
-                  <ImageView fitHeight="204.0" fitWidth="199.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../gambar/gudeg1%201.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <TextField layoutX="464.0" layoutY="19.0" prefHeight="46.0" prefWidth="265.0" promptText="Search here..." style="-fx-background-radius: 12;">
+            <TextField layoutX="532.0" layoutY="29.0" prefHeight="46.0" prefWidth="265.0" promptText="Search here..." style="-fx-background-radius: 12;">
                <font>
                   <Font size="17.0" />
                </font>
             </TextField>
-            <Button layoutX="675.0" layoutY="23.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="50.0" style="-fx-background-radius: 12; -fx-background-color: white;">
+            <Button layoutX="743.0" layoutY="33.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="50.0" style="-fx-background-radius: 12; -fx-background-color: white;">
                <graphic>
                   <ImageView fitHeight="25.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -211,7 +158,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <ImageView fitHeight="33.0" fitWidth="29.0" layoutX="737.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="33.0" fitWidth="29.0" layoutX="815.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../gambar/notif.png" />
                </image>
@@ -221,16 +168,159 @@
                   <Font name="System Bold" size="29.0" />
                </font>
             </Text>
-            <Label fx:id="namaUser2" layoutX="203.0" layoutY="21.0" prefHeight="43.0" prefWidth="242.0" text="Javier">
+            <Label fx:id="namaUser2" layoutX="201.0" layoutY="21.0" prefHeight="43.0" prefWidth="242.0" text="Javier">
                <font>
                   <Font name="System Bold" size="29.0" />
                </font>
             </Label>
-            <Text layoutX="129.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kelola wisatamu di sini!">
+            <Text layoutX="127.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kelola wisatamu di sini!">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Text>
+            <Pane layoutX="129.0" layoutY="266.0" prefHeight="212.0" prefWidth="162.0" style="-fx-background-color: white; -fx-border-radius: 12; -fx-background-radius: 15;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Text fill="#06283d" layoutX="6.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Candi Prambanan">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="15.0" fitWidth="18.0" layoutX="8.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gambar/location.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#06283d" layoutX="27.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jawa Tengah" />
+                  <ImageView fitHeight="15.0" fitWidth="18.0" layoutX="184.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gambar/location.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ImageView fitHeight="164.0" fitWidth="173.0" layoutX="135.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/pexels-pixabay-161293%201.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="309.0" layoutY="266.0" prefHeight="212.0" prefWidth="161.0" style="-fx-background-color: white; -fx-border-radius: 12; -fx-background-radius: 15;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Text fill="#06283d" layoutX="8.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bedugul">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="15.0" fitWidth="18.0" layoutX="8.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gambar/location.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#06283d" layoutX="27.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bali" />
+                  <ImageView fitHeight="164.0" fitWidth="173.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gambar/pexels-aron-visuals-1694621%201.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="488.0" layoutY="266.0" prefHeight="212.0" prefWidth="161.0" style="-fx-background-color: white; -fx-border-radius: 12; -fx-background-radius: 15;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <ImageView fitHeight="164.0" fitWidth="173.0" layoutX="6.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gambar/pexels-feri-feri-9286872%201.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#06283d" layoutX="7.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bromo">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="15.0" fitWidth="18.0" layoutX="8.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gambar/location.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#06283d" layoutX="27.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jawa Timur" />
+               </children>
+            </Pane>
+            <Pane layoutX="130.0" layoutY="510.0" prefHeight="212.0" prefWidth="162.0" style="-fx-background-color: white; -fx-border-radius: 12; -fx-background-radius: 15;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Text fill="#06283d" layoutX="6.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gudeg Yu Djum">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="15.0" fitWidth="18.0" layoutX="8.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gambar/location.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#06283d" layoutX="28.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yogyakarta" />
+               </children>
+            </Pane>
+            <Pane layoutX="309.0" layoutY="508.0" prefHeight="212.0" prefWidth="162.0" style="-fx-background-color: white; -fx-border-radius: 12; -fx-background-radius: 15;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Text fill="#06283d" layoutX="5.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bakpia Pathok 175">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="29.0" fitWidth="15.0" layoutX="6.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gambar/location.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#06283d" layoutX="25.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yogyakarta" />
+               </children>
+            </Pane>
+            <Pane layoutX="488.0" layoutY="507.0" prefHeight="212.0" prefWidth="162.0" style="-fx-background-color: white; -fx-border-radius: 12; -fx-background-radius: 15;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Text fill="#06283d" layoutX="6.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gerabah Kasongan">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="15.0" fitWidth="18.0" layoutX="9.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gambar/location.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#06283d" layoutX="29.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yogyakarta" />
+               </children>
+            </Pane>
+            <ImageView fitHeight="164.0" fitWidth="173.0" layoutX="136.0" layoutY="515.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/gudeg1%201.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="164.0" fitWidth="173.0" layoutX="315.0" layoutY="513.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/Bakpia-Jogja-featured-rancupidtravel-com-1280x720%201.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="164.0" fitWidth="173.0" layoutX="494.0" layoutY="513.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/gerabah-kasongan-2-768x646%201.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
    </center>
