@@ -21,8 +21,8 @@
             <Image url="@../gambar/pbegron%201.png" />
          </image>
       </ImageView>
-      <Button layoutX="96.0" layoutY="90.0" mnemonicParsing="false" onAction="#tambahPostingan" prefHeight="100.0" prefWidth="145.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;" />
-      <Button layoutX="282.0" layoutY="90.0" mnemonicParsing="false" onAction="#tambahToko" prefHeight="100.0" prefWidth="145.0" style="-fx-background-color: #072959; -fx-background-radius: 15; -fx-border-color: #072959; -fx-border-radius: 16;" />
+      <Button layoutX="96.0" layoutY="90.0" mnemonicParsing="false" onAction="#tambahPostingan" prefHeight="100.0" prefWidth="145.0" style="-fx-background-color: #E8AA42; -fx-background-radius: 15; -fx-border-radius: 16;" />
+      <Button layoutX="282.0" layoutY="90.0" mnemonicParsing="false" onAction="#tambahToko" prefHeight="100.0" prefWidth="145.0" style="-fx-background-color: #E8AA42; -fx-background-radius: 15; -fx-border-radius: 16;" />
       <Text fill="WHITE" layoutX="103.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah Wisata">
          <font>
             <Font name="System Bold" size="18.0" />
@@ -38,31 +38,31 @@
             <Image url="@../gambar/map-marker-free-icon-font.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="41.0" fitWidth="50.0" layoutX="339.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="45.0" fitWidth="50.0" layoutX="330.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../gambar/Toko%201.png" />
          </image>
       </ImageView>
-      <Button layoutX="466.0" layoutY="91.0" mnemonicParsing="false" onAction="#dataPost" prefHeight="100.0" prefWidth="145.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;" />
+      <Button layoutX="466.0" layoutY="91.0" mnemonicParsing="false" onAction="#dataPost" prefHeight="100.0" prefWidth="145.0" style="-fx-background-color: #E8AA42; -fx-background-radius: 15; -fx-border-radius: 16;" />
       <Text fill="WHITE" layoutX="486.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Wisata">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Text>
-      <ImageView fitHeight="54.0" fitWidth="65.0" layoutX="512.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="45.0" fitWidth="50.0" layoutX="512.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../gambar/list.png" />
+            <Image url="@../gambar/world-free-icon-font.png" />
          </image>
       </ImageView>
-      <Button layoutX="649.0" layoutY="92.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="145.0" style="-fx-background-color: #072959; -fx-border-color: #072959; -fx-background-radius: 15; -fx-border-radius: 16;" />
+      <Button layoutX="649.0" layoutY="92.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="145.0" style="-fx-background-color: #E8AA42; -fx-background-radius: 15; -fx-border-radius: 16;" />
       <Text fill="WHITE" layoutX="679.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Toko">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Text>
-      <ImageView fitHeight="54.0" fitWidth="65.0" layoutX="700.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="45.0" fitWidth="50.0" layoutX="700.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../gambar/list.png" />
+            <Image url="@../gambar/shopping-cart-free-icon-font%20(1).png" />
          </image>
       </ImageView>
       <Pane layoutX="97.0" layoutY="209.0" prefHeight="233.0" prefWidth="699.0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #06283d;">
