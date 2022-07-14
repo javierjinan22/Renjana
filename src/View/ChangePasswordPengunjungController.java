@@ -80,36 +80,44 @@ public class ChangePasswordPengunjungController implements Initializable {
             berkasBaru.write(bytes);
         } catch (Exception e) {
             System.err.println("Perhatian : " + e.getMessage());
-        } finally {
-            if (berkasBaru != null) {
-                try {
-                    berkasBaru.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
         }
     }
 
-    DataIndex di;
-
     @FXML
     private void changePass(ActionEvent Event) {
+        DataIndex di = new DataIndex();
+
         //Pass
         String newPassword = passBaru.getText();
         String oldPassword = passLama.getText();
-        
-        //Other Components
-        String nama = dataRegistration.get(di.getData()).getNama();
-        String email = dataRegistration.get(di.getData()).getEmail();
-        Boolean manager = false;
-        Boolean admin = false;
 
+        //Other Components
+//        String nama = dataRegistration.get(di.getData()).getNama();
+//        String email = dataRegistration.get(di.getData()).getEmail();
+//        Boolean manager = false;
+//        Boolean admin = false;
         bukaXML();
 
         if (dataRegistration.get(di.getData()).getPassword().equals(oldPassword)) {
             dataRegistration.get(di.getData()).setPassword(newPassword);
-            simpanData();
+
+            XStream xstream = new XStream(new StaxDriver());
+            String xml = xstream.toXML(dataRegistration);
+            FileOutputStream berkasBaru = null;
+            try {
+                // membuat nama file & folder tempat menyimpan jika perlu
+                berkasBaru = new FileOutputStream("dataRegistration.xml");
+
+                // mengubah karakter penyusun string xml sebagai 
+                // bytes (berbentuk nomor2 kode ASCII
+                byte[] bytes = xml.getBytes("UTF-8");
+
+                //Menyimpan file dari bytes
+                berkasBaru.write(bytes);
+            } catch (Exception e) {
+                System.err.println("Perhatian : " + e.getMessage());
+            }
+
             Stage page = (Stage) medal.getScene().getWindow();
             page.close();
         } else {
@@ -119,9 +127,9 @@ public class ChangePasswordPengunjungController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        di = new DataIndex();
+//        di = new DataIndex();
         bukaXML();
-        simpanData();
+//        simpanData();
     }
 
 }
