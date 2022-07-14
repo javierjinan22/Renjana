@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="892.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="View.TabelUserController">
+   <children>
+      <TableView fx:id="table" layoutX="119.0" layoutY="40.0" prefHeight="408.0" prefWidth="654.0">
+        <columns>
+          <TableColumn fx:id="tcNama" prefWidth="193.5999984741211" text="Nama" />
+          <TableColumn fx:id="tcEmail" prefWidth="263.2000427246094" text="Email" />
+            <TableColumn fx:id="tcPass" prefWidth="200.7999267578125" text="Password" />
+        </columns>
+      </TableView>
+      <Button layoutX="413.0" layoutY="458.0" mnemonicParsing="false" onAction="#removeBthAction" text="Hapus" />
+   </children>
+</AnchorPane>

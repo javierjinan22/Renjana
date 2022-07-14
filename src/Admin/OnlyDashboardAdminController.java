@@ -1,6 +1,5 @@
 package Admin;
 
-import View.TabelPostinganController;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -20,6 +19,9 @@ import javafx.stage.Stage;
 import plesiranoke.TambahTokoController;
 import plesiranoke.TambahWisataController;
 import plesiranoke.FXMLDocumentController;
+import View.TabelPostinganController;
+import View.TabelTokoController;
+import View.TabelUserController;
 
 public class OnlyDashboardAdminController implements Initializable {
 
@@ -67,6 +69,34 @@ public class OnlyDashboardAdminController implements Initializable {
 
         Stage dialogStage = new Stage();
         dialogStage.setTitle("Data Postingan");
+        dialogStage.initModality(Modality.APPLICATION_MODAL);
+        Scene scene = new Scene(loader.load());
+        dialogStage.setScene(scene);
+        // Show the dialog and wait until the user closes it 
+        dialogStage.showAndWait();
+    }
+    
+    @FXML
+    void dataToko(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(TabelTokoController.class.getResource("TabelToko.fxml"));
+
+        Stage dialogStage = new Stage();
+        dialogStage.setTitle("Data Toko");
+        dialogStage.initModality(Modality.APPLICATION_MODAL);
+        Scene scene = new Scene(loader.load());
+        dialogStage.setScene(scene);
+        // Show the dialog and wait until the user closes it 
+        dialogStage.showAndWait();
+    }
+    
+    @FXML
+    void dataUser(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(TabelUserController.class.getResource("TabelUser.fxml"));
+
+        Stage dialogStage = new Stage();
+        dialogStage.setTitle("Data User");
         dialogStage.initModality(Modality.APPLICATION_MODAL);
         Scene scene = new Scene(loader.load());
         dialogStage.setScene(scene);

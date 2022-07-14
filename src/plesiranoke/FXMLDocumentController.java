@@ -31,6 +31,7 @@ import Model.DaftarPostingan;
 import Model.DataIndex;
 import Model.Pengguna;
 import View.HalamanAwalController;
+import View.TabelUserController;
 
 //File XML
 import com.thoughtworks.xstream.XStream;
@@ -60,7 +61,8 @@ public class FXMLDocumentController implements Initializable {
     private String[] kunjungan = {"toko", "wisata"};
 
     XYChart.Series databc = new XYChart.Series<>();
-
+    
+//    Ganti Scene
     @FXML
     void lihatPostingan(ActionEvent event) throws IOException {
         Pane pane = FXMLLoader.load(PostinganController.class.getResource("Postingan.fxml"));
@@ -76,7 +78,24 @@ public class FXMLDocumentController implements Initializable {
         mainPane.setCenter(pane);
         System.out.println("Button lihat toko's Clicked");
     }
+    
+    @FXML
+    void dashboard(ActionEvent event) throws IOException {
+        Pane pane = FXMLLoader.load(OnlyDashboardAdminController.class.getResource("OnlyDashboardAdmin.fxml"));
+//        Pane halaman = bukaScene.getPane("/View/Postingan");
+        mainPane.setCenter(pane);
+        System.out.println("Button Dashboard's Clicked");
+    }
 
+    @FXML
+    void diagram(ActionEvent event) throws IOException {
+        Pane pane = FXMLLoader.load(DiagramController.class.getResource("Diagram.fxml"));
+//        Pane halaman = bukaScene.getPane("/View/Postingan");
+        mainPane.setCenter(pane);
+        System.out.println("Button Diagram's Clicked");
+    }
+
+//    New Windows
     @FXML
     void tambahPostingan(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader();
@@ -132,23 +151,22 @@ public class FXMLDocumentController implements Initializable {
         // Show the dialog and wait until the user closes it 
         dialogStage.showAndWait();
     }
-
+    
     @FXML
-    void dashboard(ActionEvent event) throws IOException {
-        Pane pane = FXMLLoader.load(OnlyDashboardAdminController.class.getResource("OnlyDashboardAdmin.fxml"));
-//        Pane halaman = bukaScene.getPane("/View/Postingan");
-        mainPane.setCenter(pane);
-        System.out.println("Button Dashboard's Clicked");
+    void dataUser(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(TabelUserController.class.getResource("TabelUser.fxml"));
+
+        Stage dialogStage = new Stage();
+        dialogStage.setTitle("Data User");
+        dialogStage.initModality(Modality.APPLICATION_MODAL);
+        Scene scene = new Scene(loader.load());
+        dialogStage.setScene(scene);
+        // Show the dialog and wait until the user closes it 
+        dialogStage.showAndWait();
     }
 
-    @FXML
-    void diagram(ActionEvent event) throws IOException {
-        Pane pane = FXMLLoader.load(DiagramController.class.getResource("Diagram.fxml"));
-//        Pane halaman = bukaScene.getPane("/View/Postingan");
-        mainPane.setCenter(pane);
-        System.out.println("Button Diagram's Clicked");
-    }
-
+//    Tombol Log Out
     @FXML
     void logOut(ActionEvent event) throws IOException {
 //        Langsung ganti windows tanpa set status online karena akun admin dideklarasi langsung
