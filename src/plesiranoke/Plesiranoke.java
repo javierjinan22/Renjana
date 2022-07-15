@@ -12,7 +12,7 @@ public class Plesiranoke extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/View/halamanAwal.fxml"));
-        stage.getIcons().add(new Image("gambar/Plesiran (2).png"));
+        stage.getIcons().add(new Image("gambar/logples.png"));
         stage.setTitle("Plesiran");
         stage.setScene(new Scene(root));
         stage.show();
