@@ -25,7 +25,7 @@ import View.TabelPostinganController;
 import View.TokoController;
 import Model.DataIndex;
 import Model.Pengguna;
-import View.HalamanAwalController;
+import View.LoginController;
 import View.ProfilPengelolaController;
 
 //XML
@@ -186,7 +186,7 @@ public class DashboardPengelolaController implements Initializable {
         }
         simpanData();
         
-        Parent tableViewParent = FXMLLoader.load(HalamanAwalController.class.getResource("halamanAwal.fxml"));
+        Parent tableViewParent = FXMLLoader.load(LoginController.class.getResource("Login.fxml"));
         Scene tableViewScene = new Scene(tableViewParent);
 
         //This line gets the Stage information

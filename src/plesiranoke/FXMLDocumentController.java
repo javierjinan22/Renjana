@@ -30,7 +30,7 @@ import Admin.OnlyDashboardAdminController;
 import Model.DaftarPostingan;
 import Model.DataIndex;
 import Model.Pengguna;
-import View.HalamanAwalController;
+import View.LoginController;
 import View.TabelUserController;
 
 //File XML
@@ -170,7 +170,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     void logOut(ActionEvent event) throws IOException {
 //        Langsung ganti windows tanpa set status online karena akun admin dideklarasi langsung
-        Parent tableViewParent = FXMLLoader.load(HalamanAwalController.class.getResource("halamanAwal.fxml"));
+        Parent tableViewParent = FXMLLoader.load(LoginController.class.getResource("Login.fxml"));
         Scene tableViewScene = new Scene(tableViewParent);
 
         //This line gets the Stage information

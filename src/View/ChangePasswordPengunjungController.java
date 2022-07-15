@@ -36,7 +36,7 @@ public class ChangePasswordPengunjungController implements Initializable {
     @FXML
     private PasswordField passBaru;
 
-    LinkedList<Pengguna> dataRegistration = new LinkedList<Pengguna>();
+    LinkedList<Pengguna> dataRegistration = new LinkedList<>();
 
     void bukaXML() {
         XStream xstream = new XStream(new StaxDriver());
@@ -82,20 +82,20 @@ public class ChangePasswordPengunjungController implements Initializable {
             System.err.println("Perhatian : " + e.getMessage());
         }
     }
+    
+    DataIndex di;
 
     @FXML
     private void changePass(ActionEvent Event) {
-        DataIndex di = new DataIndex();
-
         //Pass
         String newPassword = passBaru.getText();
         String oldPassword = passLama.getText();
 
         //Other Components
-//        String nama = dataRegistration.get(di.getData()).getNama();
-//        String email = dataRegistration.get(di.getData()).getEmail();
-//        Boolean manager = false;
-//        Boolean admin = false;
+        String nama = dataRegistration.get(di.getData()).getNama();
+        String email = dataRegistration.get(di.getData()).getEmail();
+        Boolean manager = false;
+        Boolean admin = false;
         bukaXML();
 
         if (dataRegistration.get(di.getData()).getPassword().equals(oldPassword)) {
@@ -127,7 +127,7 @@ public class ChangePasswordPengunjungController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-//        di = new DataIndex();
+        di = new DataIndex();
         bukaXML();
 //        simpanData();
     }
