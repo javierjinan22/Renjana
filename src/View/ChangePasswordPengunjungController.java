@@ -92,31 +92,16 @@ public class ChangePasswordPengunjungController implements Initializable {
         String oldPassword = passLama.getText();
 
         //Other Components
-        String nama = dataRegistration.get(di.getData()).getNama();
-        String email = dataRegistration.get(di.getData()).getEmail();
-        Boolean manager = false;
-        Boolean admin = false;
+//        String nama = dataRegistration.get(di.getData()).getNama();
+//        String email = dataRegistration.get(di.getData()).getEmail();
+//        Boolean manager = false;
+//        Boolean admin = false;
         bukaXML();
 
         if (dataRegistration.get(di.getData()).getPassword().equals(oldPassword)) {
             dataRegistration.get(di.getData()).setPassword(newPassword);
 
-            XStream xstream = new XStream(new StaxDriver());
-            String xml = xstream.toXML(dataRegistration);
-            FileOutputStream berkasBaru = null;
-            try {
-                // membuat nama file & folder tempat menyimpan jika perlu
-                berkasBaru = new FileOutputStream("dataRegistration.xml");
-
-                // mengubah karakter penyusun string xml sebagai 
-                // bytes (berbentuk nomor2 kode ASCII
-                byte[] bytes = xml.getBytes("UTF-8");
-
-                //Menyimpan file dari bytes
-                berkasBaru.write(bytes);
-            } catch (Exception e) {
-                System.err.println("Perhatian : " + e.getMessage());
-            }
+            simpanData();
 
             Stage page = (Stage) medal.getScene().getWindow();
             page.close();
@@ -129,7 +114,7 @@ public class ChangePasswordPengunjungController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         di = new DataIndex();
         bukaXML();
-//        simpanData();
+        simpanData();
     }
 
 }

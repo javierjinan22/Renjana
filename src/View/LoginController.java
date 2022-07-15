@@ -144,7 +144,6 @@ public class LoginController implements Initializable {
             DataIndex.index = i; //Untuk mengetahui index dari data yg berhasil login agar kemudian ditampilkan nama pengguna
             //Untuk mencocokan kesesuaian data login yg diinput dengan data registrasi yg telah didaftarkan
             if (email.equals(dataRegistration.get(i).getEmail()) && pass.equals(dataRegistration.get(i).getPassword())) {
-                dataRegistration.get(i).setStatusOnline(true);
                 validitasData = true;
                 manager = dataRegistration.get(i).getManager();
                 isAdmin = dataRegistration.get(i).getAdmin();
@@ -165,7 +164,7 @@ public class LoginController implements Initializable {
 
             window.setScene(tableViewScene);
             window.show();
-            
+
             simpanData();
         } else if (validitasData && isAdmin) { //Akun Admin
             Parent tableViewParent = FXMLLoader.load(FXMLDocumentController.class.getResource("FXMLDocument.fxml"));
@@ -187,7 +186,7 @@ public class LoginController implements Initializable {
 
             window.setScene(tableViewScene);
             window.show();
-           
+
             simpanData();
         } else if (validitasData == false) {
             warning.setText("Email/Password anda salah!!!");

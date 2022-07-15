@@ -178,14 +178,6 @@ public class DashboardPengelolaController implements Initializable {
     
     @FXML
     void logOut(ActionEvent event) throws IOException {
-        boolean status = false;
-        for (int i = 0; i < dataRegistration.size(); i++) {
-            if (dataRegistration.get(i).getStatusOnline() == true) {
-                dataRegistration.get(i).setStatusOnline(false);
-            }
-        }
-        simpanData();
-        
         Parent tableViewParent = FXMLLoader.load(LoginController.class.getResource("Login.fxml"));
         Scene tableViewScene = new Scene(tableViewParent);
 
