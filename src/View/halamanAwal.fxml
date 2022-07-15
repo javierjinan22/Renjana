@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -23,11 +24,17 @@
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
       <Button layoutX="306.0" layoutY="240.0" mnemonicParsing="false" onAction="#daftar" prefHeight="52.0" prefWidth="176.0" style="-fx-background-radius: 15; -fx-background-color: white;" text="Daftar" textFill="#4a96f9">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
       <ImageView fitHeight="259.0" fitWidth="281.0" layoutX="775.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fitHeight="445.0" fitWidth="434.0" layoutX="671.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">

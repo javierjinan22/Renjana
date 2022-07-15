@@ -123,11 +123,11 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Text>
-            <TextField layoutX="464.0" layoutY="45.0" prefHeight="46.0" prefWidth="265.0" promptText="Search here..." style="-fx-background-radius: 12; -fx-border-color: #85898e; -fx-border-radius: 13;">
+            <TextField layoutX="399.0" layoutY="44.0" prefHeight="46.0" prefWidth="330.0" promptText="Search here..." style="-fx-background-radius: 12; -fx-border-color: #85898e; -fx-border-radius: 13;">
                <font>
                   <Font size="17.0" />
                </font></TextField>
-            <Button layoutX="672.0" layoutY="49.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="50.0" style="-fx-background-radius: 12; -fx-background-color: white;">
+            <Button layoutX="674.0" layoutY="48.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="50.0" style="-fx-background-radius: 12; -fx-background-color: white;">
                <graphic>
                   <ImageView fitHeight="25.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>

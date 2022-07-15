@@ -9,114 +9,116 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ProfilPengelolaController">
+<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ProfilPengelolaController">
    <children>
-      <ImageView fitHeight="740.0" fitWidth="968.0" layoutX="8.0" opacity="0.11" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="740.0" fitWidth="892.0" opacity="0.11" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../gambar/pbegron%201.png" />
          </image>
       </ImageView>
-      <Pane prefHeight="62.0" prefWidth="902.0" style="-fx-background-color: #072959;" />
-      <Text fill="WHITE" layoutX="398.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profil Anda">
-         <font>
-            <Font name="System Bold" size="20.0" />
-         </font>
-      </Text>
-      <Text layoutX="260.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-      </Text>
-      <Text layoutX="261.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-      </Text>
-      <Text layoutX="261.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+      <Pane layoutX="204.0" layoutY="122.0" prefHeight="477.0" prefWidth="506.0" style="-fx-background-color: #51C4D3; -fx-background-radius: 8;">
+         <children>
+            <Text fill="#06283d" layoutX="200.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profil Anda">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Button layoutX="189.0" layoutY="367.0" mnemonicParsing="false" onAction="#gantiPass" prefHeight="38.0" prefWidth="128.0" style="-fx-background-color: #072959; -fx-background-radius: 12;" text="Ubah Password" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Text layoutX="106.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ubah Password anda secara berkala guna proteksi akun" />
+         </children></Pane>
+      <Text layoutX="260.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="262.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama Wisata">
+      <Text layoutX="260.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="263.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Provinsi">
+      <Text layoutX="260.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="264.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kabupaten">
+      <Text layoutX="260.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama Wisata">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="263.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jenis Wisata">
+      <Text layoutX="260.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Provinsi">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="266.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alamat">
+      <Text layoutX="260.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kabupaten">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="268.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No Telfon">
+      <Text layoutX="260.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jenis Wisata">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Text>
-      <Label fx:id="nama" layoutX="405.0" layoutY="127.0" text="Null">
+      <Text layoutX="260.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alamat">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="260.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No Telfon">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Label fx:id="nama" layoutX="405.0" layoutY="199.0" text="Null">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="email" layoutX="404.0" layoutY="155.0" text="Null">
+      <Label fx:id="email" layoutX="405.0" layoutY="227.0" text="Null">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="password" layoutX="406.0" layoutY="185.0" text="Null">
+      <Label fx:id="password" layoutX="405.0" layoutY="257.0" text="Null">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="namaWisata" layoutX="405.0" layoutY="216.0" text="Null">
+      <Label fx:id="namaWisata" layoutX="405.0" layoutY="288.0" text="Null">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="kabupaten" layoutX="404.0" layoutY="310.0" text="Null">
+      <Label fx:id="kabupaten" layoutX="405.0" layoutY="382.0" text="Null">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="alamat" layoutX="404.0" layoutY="341.0" text="Null">
+      <Label fx:id="alamat" layoutX="405.0" layoutY="413.0" text="Null">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="noTelfon" layoutX="404.0" layoutY="372.0" text="Null">
+      <Label fx:id="noTelfon" layoutX="405.0" layoutY="444.0" text="Null">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="provinsi" layoutX="405.0" layoutY="278.0" text="Null">
+      <Label fx:id="provinsi" layoutX="405.0" layoutY="350.0" text="Null">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="jenisWisata" layoutX="406.0" layoutY="249.0" text="Null">
+      <Label fx:id="jenisWisata" layoutX="405.0" layoutY="321.0" text="Null">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Button layoutX="387.0" layoutY="434.0" mnemonicParsing="false" onAction="#gantiPass" prefHeight="38.0" prefWidth="128.0" style="-fx-background-color: #072959; -fx-background-radius: 12;" text="Change Password" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Button>
-      <Text layoutX="323.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ubah Password anda secara berkala guna proteksi akun" />
    </children>
 </AnchorPane>

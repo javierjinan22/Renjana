@@ -9,52 +9,55 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ProfilPengunjungController">
+<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="892.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ProfilPengunjungController">
    <children>
-      <ImageView fitHeight="740.0" fitWidth="902.0" layoutX="5.0" layoutY="1.0" opacity="0.11" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="740.0" fitWidth="892.0" opacity="0.11" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../gambar/pbegron%201.png" />
          </image>
       </ImageView>
-      <Text layoutX="308.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama" wrappingWidth="45.60333251953125">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-      </Text>
-      <Text layoutX="308.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="45.60333251953125">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-      </Text>
-      <Text layoutX="308.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="68.00332641601562">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-      </Text>
-      <Label fx:id="nama" layoutX="395.0" layoutY="139.0" text="Null">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label fx:id="email" layoutX="395.0" layoutY="171.0" text="Null">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label fx:id="password" layoutX="396.0" layoutY="202.0" text="Null">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Button layoutX="387.0" layoutY="254.0" mnemonicParsing="false" onAction="#changePass" prefHeight="38.0" prefWidth="128.0" style="-fx-background-color: #072959; -fx-background-radius: 12;" text="Change Password" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font></Button>
-      <Pane prefHeight="62.0" prefWidth="902.0" style="-fx-background-color: #072959;" />
-      <Text fill="WHITE" layoutX="398.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profil Anda">
-         <font>
-            <Font name="System Bold" size="20.0" />
-         </font>
-      </Text>
+      <Pane layoutX="204.0" layoutY="122.0" prefHeight="355.0" prefWidth="506.0" style="-fx-background-color: #51C4D3; -fx-background-radius: 8;">
+         <children>
+            <Text layoutX="140.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama" wrappingWidth="45.60333251953125">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="140.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="45.60333251953125">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="140.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="68.00332641601562">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Label fx:id="nama" layoutX="227.0" layoutY="96.0" text="Null">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="email" layoutX="227.0" layoutY="128.0" text="Null">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="password" layoutX="228.0" layoutY="159.0" text="Null">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="189.0" layoutY="215.0" mnemonicParsing="false" onAction="#changePass" prefHeight="38.0" prefWidth="128.0" style="-fx-background-color: #072959; -fx-background-radius: 12;" text="Ubah Password" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Text fill="#06283d" layoutX="199.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profil Anda">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+         </children></Pane>
    </children>
 </AnchorPane>

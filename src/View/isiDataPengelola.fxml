@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
@@ -17,24 +18,27 @@
             <Image url="@../gambar/Group%202.png" />
          </image>
       </ImageView>
-      <Button layoutX="984.0" layoutY="515.0" onAction="#simpanData" prefHeight="52.0" prefWidth="139.0" style="-fx-background-color: white; -fx-background-radius: 12;" text="Simpan" textFill="#4a96f9">
+      <Button layoutX="984.0" layoutY="515.0" onAction="#simpanData" prefHeight="52.0" prefWidth="139.0" style="-fx-background-color: #4a96f9; -fx-background-radius: 12;" text="Simpan" textFill="WHITE">
          <font>
             <Font name="System Bold" size="21.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
       <TextField fx:id="tfNama" layoutX="237.0" layoutY="418.0" prefHeight="42.0" prefWidth="682.0" promptText="Nama" style="-fx-background-radius: 12;">
          <font>
             <Font size="16.0" />
          </font></TextField>
-      <TextField fx:id="tfKabupaten" layoutX="238.0" layoutY="335.0" prefHeight="42.0" prefWidth="682.0" promptText="Kabupaten" style="-fx-background-radius: 12;">
+      <TextField fx:id="tfKabupaten" layoutX="238.0" layoutY="327.0" prefHeight="42.0" prefWidth="682.0" promptText="Kabupaten" style="-fx-background-radius: 12;">
          <font>
             <Font size="16.0" />
          </font></TextField>
-      <TextField fx:id="tfAlamat" layoutX="237.0" layoutY="224.0" prefHeight="42.0" prefWidth="682.0" promptText="Alamat" style="-fx-background-radius: 12;">
+      <TextField fx:id="tfAlamat" layoutX="237.0" layoutY="222.0" prefHeight="42.0" prefWidth="682.0" promptText="Alamat" style="-fx-background-radius: 12;">
          <font>
             <Font size="16.0" />
          </font></TextField>
-      <TextField fx:id="tfTelfon" layoutX="237.0" layoutY="279.0" prefHeight="42.0" prefWidth="682.0" promptText="Telpon" style="-fx-background-radius: 12;">
+      <TextField fx:id="tfTelfon" layoutX="237.0" layoutY="275.0" prefHeight="42.0" prefWidth="682.0" promptText="Telpon" style="-fx-background-radius: 12;">
          <font>
             <Font size="16.0" />
          </font></TextField>

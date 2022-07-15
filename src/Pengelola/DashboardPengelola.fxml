@@ -112,8 +112,8 @@
                   <Image url="@../gambar/pbegron%201.png" />
                </image>
             </ImageView>
-            <Button layoutX="128.0" layoutY="107.0" mnemonicParsing="false" onAction="#tambahPostingan" prefHeight="122.0" prefWidth="230.0" style="-fx-background-color: #E8AA42; -fx-background-radius: 15; -fx-border-radius: 16;" />
-            <Button layoutX="418.0" layoutY="108.0" mnemonicParsing="false" onAction="#tambahToko" prefHeight="122.0" prefWidth="230.0" style="-fx-background-color: #E8AA42; -fx-background-radius: 15; -fx-border-radius: 16;" />
+            <Button layoutX="128.0" layoutY="107.0" mnemonicParsing="false" onAction="#tambahPostingan" prefHeight="122.0" prefWidth="230.0" style="-fx-background-color: #51C4D3; -fx-background-radius: 15; -fx-border-radius: 16;" />
+            <Button layoutX="418.0" layoutY="108.0" mnemonicParsing="false" onAction="#tambahToko" prefHeight="122.0" prefWidth="230.0" style="-fx-background-color: #126E82; -fx-background-radius: 15; -fx-border-radius: 16;" />
             <Text fill="#06283d" layoutX="128.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destinasi terbaik">
                <font>
                   <Font name="System Bold" size="18.0" />
@@ -144,7 +144,7 @@
                   <Font name="System Bold" size="20.0" />
                </font>
             </Text>
-            <TextField layoutX="532.0" layoutY="29.0" prefHeight="46.0" prefWidth="265.0" promptText="Search here..." style="-fx-background-radius: 12;">
+            <TextField layoutX="418.0" layoutY="29.0" prefHeight="46.0" prefWidth="379.0" promptText="Search here..." style="-fx-background-radius: 12;">
                <font>
                   <Font size="17.0" />
                </font>
