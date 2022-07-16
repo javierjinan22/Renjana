@@ -18,7 +18,7 @@
       </ImageView>
       <Pane layoutX="204.0" layoutY="122.0" prefHeight="477.0" prefWidth="506.0" style="-fx-background-color: #51C4D3; -fx-background-radius: 8;">
          <children>
-            <Text fill="#06283d" layoutX="200.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profil Anda">
+            <Text fill="WHITE" layoutX="200.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profil Anda">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
