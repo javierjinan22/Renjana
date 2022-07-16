@@ -19,14 +19,14 @@
                   <Pane prefHeight="310.0" prefWidth="892.0" style="-fx-background-color: white;">
                      <children>
                         <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="365.0" layoutX="34.0" layoutY="17.0" stroke="#072959" strokeType="INSIDE" strokeWidth="2.0" width="829.0" />
-                        <Label fx:id="alamat" alignment="TOP_LEFT" layoutX="406.0" layoutY="105.0" prefHeight="42.0" prefWidth="442.0" />
-                        <ImageView fx:id="gambar" fitHeight="252.0" fitWidth="347.0" layoutX="54.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="alamat" alignment="TOP_LEFT" layoutX="453.0" layoutY="90.0" prefHeight="42.0" prefWidth="395.0" />
+                        <ImageView fx:id="gambar" fitHeight="176.0" fitWidth="395.0" layoutX="54.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" />
                         <Label fx:id="namaToko" alignment="TOP_CENTER" layoutX="217.0" layoutY="36.0" prefHeight="30.0" prefWidth="427.0" style="-fx-background-color: #E8AA42; -fx-background-radius: 12;" text="Warung Panjalu" textAlignment="CENTER" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="20.0" />
                            </font>
                         </Label>
-                        <Label fx:id="noTelfon" alignment="TOP_LEFT" layoutX="402.0" layoutY="154.0" prefHeight="42.0" prefWidth="442.0" />
+                        <Label fx:id="noTelfon" alignment="TOP_LEFT" layoutX="453.0" layoutY="125.0" prefHeight="42.0" prefWidth="395.0" />
                         <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="69.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../gambar/like.png" />
