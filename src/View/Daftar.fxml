@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="1200.0" style="-fx-background-color: #072959;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.DaftarController">
+<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="1200.0" style="-fx-background-color: #072959;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DaftarController">
    <children>
       <ImageView fitHeight="649.0" fitWidth="1200.0" opacity="0.12" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -25,28 +25,31 @@
       <Separator layoutX="317.0" layoutY="242.0" prefHeight="5.0" prefWidth="552.0" />
       <Separator layoutX="317.0" layoutY="312.0" prefHeight="5.0" prefWidth="552.0" />
       <Separator layoutX="317.0" layoutY="390.0" prefHeight="5.0" prefWidth="552.0" />
-      <TextField fx:id="tfNama" layoutX="309.0" layoutY="208.0" prefHeight="32.0" prefWidth="552.0" promptText="Nama Lengkap" style="-fx-background-color: transparant;" styleClass="blue-btn" stylesheets="@style.css">
+      <TextField fx:id="tfNama" layoutX="309.0" layoutY="208.0" prefHeight="32.0" prefWidth="552.0" promptText="Nama Lengkap" style="-fx-background-color: transparant;" styleClass="blue-btn" stylesheets="@../CSS/style.css">
          <font>
             <Font name="Calibri" size="23.0" />
          </font>
       </TextField>
-      <TextField fx:id="tfEmail" layoutX="309.0" layoutY="278.0" prefHeight="32.0" prefWidth="552.0" promptText="Email" style="-fx-background-color: transparant;" styleClass="blue-btn" stylesheets="@style.css">
+      <TextField fx:id="tfEmail" layoutX="309.0" layoutY="278.0" prefHeight="32.0" prefWidth="552.0" promptText="Email" style="-fx-background-color: transparant;" styleClass="blue-btn" stylesheets="@../CSS/style.css">
          <font>
             <Font name="Calibri" size="23.0" />
          </font>
       </TextField>
-      <PasswordField fx:id="tfPassword" layoutX="309.0" layoutY="356.0" prefHeight="36.0" prefWidth="552.0" promptText="Password" styleClass="blue-btn" stylesheets="@style.css">
+      <PasswordField fx:id="tfPassword" layoutX="309.0" layoutY="356.0" prefHeight="36.0" prefWidth="552.0" promptText="Password" styleClass="blue-btn" stylesheets="@../CSS/style.css">
          <font>
             <Font name="Calibri" size="23.0" />
          </font>
       </PasswordField>
-      <Button layoutX="519.0" layoutY="465.0" mnemonicParsing="false" onAction="#daftarButton" prefHeight="52.0" prefWidth="139.0" style="-fx-background-color: white; -fx-background-radius: 12;" text="Daftar" textFill="#4a96f9">
+      <Button layoutX="519.0" layoutY="498.0" mnemonicParsing="false" onAction="#daftarButton" prefHeight="52.0" prefWidth="139.0" style="-fx-background-color: white; -fx-background-radius: 12;" text="Daftar" textFill="#4a96f9">
          <font>
             <Font name="System Bold" size="21.0" />
          </font>
       </Button>
-      <Label fx:id="similarityAlert" layoutX="456.0" layoutY="415.0" prefHeight="18.0" prefWidth="274.0" />
-      <Button layoutX="514.0" layoutY="414.0" mnemonicParsing="false" onAction="#haveAccount" style="-fx-background-color: 00000;" text="Sudah punya akun ?" textFill="WHITE">
+      <Label fx:id="similarityAlert" layoutX="456.0" layoutY="415.0" prefHeight="18.0" prefWidth="274.0" textFill="#ff0101">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Button layoutX="514.0" layoutY="447.0" mnemonicParsing="false" onAction="#haveAccount" style="-fx-background-color: 00000;" text="Sudah punya akun ?" textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>

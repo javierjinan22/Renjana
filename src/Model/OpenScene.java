@@ -3,7 +3,7 @@ package Model;
 import java.net.URL;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.Pane;
-import plesiranoke.Plesiranoke;
+import Main.Plesiranoke;
 
 public class OpenScene {
 
@@ -11,7 +11,7 @@ public class OpenScene {
 
     public Pane getPane(String namaFile) {
         try {
-            URL fileHalaman = Plesiranoke.class.getResource("/Model/" + namaFile + ".fxml");
+            URL fileHalaman = Plesiranoke.class.getResource(namaFile + ".fxml");
             if (fileHalaman == null) {
                 throw new java.io.FileNotFoundException("Halaman tidak ditemukan");
             }

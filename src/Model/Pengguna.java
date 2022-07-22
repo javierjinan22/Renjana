@@ -17,7 +17,7 @@ public class Pengguna {
         this.password = password;
     }
 
-    public Pengguna(String nama, String email, String password, boolean manager, boolean admin) {
+    public Pengguna(String nama, String email, String password, boolean manager, boolean admin) { //Pengunjung
         this.nama = nama;
         this.email = email;
         this.password = password;
@@ -26,6 +26,7 @@ public class Pengguna {
     }
 
     public Pengguna(String nama, String email, String password, String namaWisata, String jenisWisata, String provinsi, String kabupaten, String alamat, String noTelfon, boolean manager) {
+        //Pengelola Wisata
         this.nama = nama;
         this.email = email;
         this.password = password;

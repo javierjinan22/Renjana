@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="1200.0" style="-fx-background-color: #072959;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.LoginController">
+<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="1200.0" style="-fx-background-color: #072959;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
    <children>
       <ImageView fitHeight="649.0" fitWidth="1200.0" opacity="0.12" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -24,12 +24,12 @@
       </ImageView>
       <Separator layoutX="317.0" layoutY="242.0" prefHeight="5.0" prefWidth="552.0" />
       <Separator layoutX="317.0" layoutY="312.0" prefHeight="4.0" prefWidth="552.0" />
-      <TextField fx:id="tfEmail" layoutX="309.0" layoutY="205.0" prefHeight="30.0" prefWidth="559.0" promptText="Email" style="-fx-background-color: transparan;" styleClass="blue-btn" stylesheets="@style.css">
+      <TextField fx:id="tfEmail" layoutX="309.0" layoutY="205.0" prefHeight="30.0" prefWidth="559.0" promptText="Email" style="-fx-background-color: transparan;" styleClass="blue-btn" stylesheets="@../CSS/style.css">
          <font>
             <Font size="23.0" />
          </font>
       </TextField>
-      <PasswordField fx:id="tfPassword" layoutX="309.0" layoutY="274.0" prefHeight="31.0" prefWidth="562.0" promptText="Password" styleClass="blue-btn" stylesheets="@style.css">
+      <PasswordField fx:id="tfPassword" layoutX="309.0" layoutY="274.0" prefHeight="31.0" prefWidth="562.0" promptText="Password" styleClass="blue-btn" stylesheets="@../CSS/style.css">
          <font>
             <Font size="23.0" />
          </font>

@@ -5,12 +5,13 @@ public class DaftarPostingan {
     private String judul, deskripsi;
     private String imgSrc = "";
 
-    private boolean ori = true;
+    private boolean ori = true; //Kosong tydack ada gambar
 
     public DaftarPostingan() {
     }
 
-    public DaftarPostingan(String judul, String deskripsi) {
+    public DaftarPostingan(String judul, String deskripsi, String imgSrc) {
+        this.imgSrc = imgSrc;
         this.judul = judul;
         this.deskripsi = deskripsi;
     }

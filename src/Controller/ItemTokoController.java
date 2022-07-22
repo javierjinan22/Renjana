@@ -1,0 +1,47 @@
+package Controller;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
+
+//Import class dari package lain
+import Model.DaftarToko;
+
+public class ItemTokoController {
+
+    @FXML
+    private Label namaToko;
+
+    @FXML
+    private Label alamat;
+
+    @FXML
+    private Label noTelfon;
+
+    @FXML
+    private ImageView gambar;
+
+    private DaftarToko market;
+
+    public void setData(DaftarToko market) {
+//        Untuk mengakses data judul, deskripsi, dan juga gambar dari objek market (parameter) agar dapat diterapkan ke
+//          dalam template toko
+        this.market = market;
+        namaToko.setText(market.getNamaToko());
+        alamat.setText(market.getAlamat());
+        noTelfon.setText(market.getNoTelfon());
+
+        if (market.getImgSrc().equals("")) {
+        } else {
+            Image image;
+            if (market.getOri()) {
+                image = new Image(getClass().getResourceAsStream(market.getImgSrc()));
+            } else {
+                image = new Image(market.getImgSrc());
+            }
+            gambar.setImage(image);
+        }
+    }
+}
