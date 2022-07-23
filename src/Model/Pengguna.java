@@ -4,7 +4,6 @@ public class Pengguna {
 
     String nama, email, password, namaWisata, jenisWisata, provinsi, kabupaten, alamat, noTelfon;
 
-    boolean statusOnline;
     private boolean admin;
     private boolean manager;
 
@@ -101,14 +100,6 @@ public class Pengguna {
 
     public void setNoTelfon(String noTelfon) {
         this.noTelfon = noTelfon;
-    }
-
-    public boolean getStatusOnline() {
-        return statusOnline;
-    }
-
-    public void setStatusOnline(boolean statusOnline) {
-        this.statusOnline = statusOnline;
     }
 
     public boolean getAdmin() {

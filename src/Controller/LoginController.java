@@ -86,6 +86,7 @@ public class LoginController implements Initializable {
         } finally {
             if (berkasBaru != null) {
                 try {
+//                    releases all system resources from the streams
                     berkasBaru.close();
                 } catch (IOException e) {
                     e.printStackTrace();

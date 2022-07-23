@@ -37,7 +37,7 @@ public class ItemPostingan {
             } else {
                 image = new Image(postingan.getImgSrc());
             }
-            gambar.setImage(image);
+            gambar.setImage(image); 
         }
     }
 }
